@@ -1,0 +1,147 @@
+{
+  "_id": "KPdiversiondoor0",
+  "name": "Diversion Door",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 446,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "charisma",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>Your touch wards an arch, doorway, entryway, or other threshold against intruders. For the duration of the spell, each time a creature attempts to cross the warded threshold, the creature must make a Charisma saving throw. On a failed save, the creature is redirected away from the threshold as if it had passed through the threshold from the other side, and it forgets its primary, intended course of action in relation to the threshold, such as obtaining an object or chasing a creature on the other side of the threshold, for 1 minute. On a successful save, the creature is redirected away from the threshold, but it doesn’t forget its primary, intended course of action.<br>When you cast this spell, you can designate a password or other trigger that allows a creature to pass through the threshold unimpeded, such as walking through the threshold backward or whistling a specific tune while stepping through the threshold.<br>You can create a permanently warded threshold by casting this spell on that threshold every day for a year and a day.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "diversion-door"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "a bundle of aromatic herbs or incense either of which must be worth at least 100 gp",
+        "consumed": false,
+        "cost": 100
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 24,
+      "units": "hour"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "abjuration",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "null",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPdiversiondoor0"
+}

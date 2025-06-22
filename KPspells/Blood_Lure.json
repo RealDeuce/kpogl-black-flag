@@ -1,0 +1,147 @@
+{
+  "_id": "KPbloodlure00000",
+  "name": "Blood Lure",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 225,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "charisma",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "10"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You point at any location (a jar, a bowl, even a puddle) within range that contains at least a pint of blood. Each creature that feeds on blood and is within 60 feet of that location must make a Charisma saving throw. (This includes undead, such as vampires. ) A creature that has Keen Smell or any similar scent-boosting ability has disadvantage on the saving throw, while undead have advantage on the saving throw. On a failed save, the creature is attracted to the blood and must move toward it unless impeded.<br>Once an affected creature reaches the blood, it tries to consume it, foregoing all other actions while the blood is present. A successful attack against an affected creature ends the effect, as does the consumption of the blood, which requires an action by an affected creature.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "blood-lure"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 2
+    },
+    "components": {
+      "material": {
+        "description": "a container or pool of blood",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "10",
+      "units": "foot"
+    },
+    "school": "necromancy",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "60",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPbloodlure00000"
+}

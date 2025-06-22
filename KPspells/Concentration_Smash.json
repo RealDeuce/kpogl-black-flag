@@ -1,0 +1,146 @@
+{
+  "_id": "KPconcentrations",
+  "name": "Concentration Smash",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 339,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "self",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>The next attack you make before the start of your next turn has advantage if the target of the attack is concentrating on a spell. If the attack hits, the target has disadvantage on the Constitution saving throw it makes to maintain concentration after being damaged by your attack. If the attack is a critical hit, the target automatically fails the saving throw to maintain its concentration.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "concentration-smash"
+    },
+    "casting": {
+      "type": "bonus",
+      "condition": ""
+    },
+    "circle": {
+      "base": 1
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "round"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "abjuration",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "1",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPconcentrations"
+}

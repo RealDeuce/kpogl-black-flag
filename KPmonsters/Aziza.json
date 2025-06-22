@@ -1,0 +1,1001 @@
+{
+  "_id": "KPaziza000000000",
+  "name": "Aziza",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Aziza",
+    "width": 1,
+    "height": 1,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 0,
+      "brightness": 0,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Speak with Frogs and Toads",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The aziza can communicate with frogs and toads as if they shared a language.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "speak-with-frogs-and-toads"
+        }
+      },
+      "_key": "!actors.items!KPaziza000000000.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Thorn Dagger",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/weapon.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "dexterity",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "60"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage.",
+          "source": {
+            "book": "ToB3",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [
+          "finesse"
+        ],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 4,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "piercing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": "20",
+          "long": "60",
+          "reach": "5",
+          "units": "foot",
+          "value": "20"
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPaziza000000000.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Shortbow",
+      "type": "weapon",
+      "img": "icons/weapons/bows/shortbow-leather.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "dexterity",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "ranged",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "320"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "11"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "320"
+            },
+            "sort": 1,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 7 (1d6 + 4) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or become poisoned for 1 minute.",
+          "source": {
+            "book": "ToB3",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "shortbow"
+        },
+        "container": null,
+        "price": {
+          "value": 25,
+          "denomination": "gp"
+        },
+        "rarity": "",
+        "weight": {
+          "value": 2,
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 6,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "piercing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": "80",
+          "long": "320",
+          "reach": null,
+          "units": "foot",
+          "value": "80"
+        },
+        "type": {
+          "value": "ranged",
+          "category": "simple",
+          "base": "shortbow"
+        }
+      },
+      "_key": "!actors.items!KPaziza000000000.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Befuddle",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "",
+                "formula": "12"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The aziza magically confuses one creature it can see within 30 feet of it. The target must succeed on a DC 12 Wisdom saving throw or be affected as though it failed a saving throw against the confusion spell until the end of its next turn.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "befuddle"
+        }
+      },
+      "_key": "!actors.items!KPaziza000000000.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Spellcasting",
+      "type": "feature",
+      "img": "icons/magic/light/projectiles-star-purple.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The aziza casts one of the following spells, requiring no material components and using Wisdom as the spellcasting ability (spell save DC 12):<br>At will: @UUID[Compendium.black-flag.spells.Item.rwGcFyilX3avbA5E]{druidcraft}, @UUID[Compendium.black-flag.spells.Item.LGHPueVAi4bMnmFc]{guidance}<br>1/day each: @UUID[Compendium.black-flag.spells.Item.YbQt9YCQ8iiG78nm]{animal messenger}, @UUID[Compendium.black-flag.spells.Item.Gnxh5w9pE08ZGF9S]{bless}",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "spellcasting"
+        }
+      },
+      "_key": "!actors.items!KPaziza000000000.0000000000000005"
+    },
+    {
+      "_id": "0000000000000006",
+      "name": "Dazzling Glow",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "reaction",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>When a creature the aziza can see targets it with a melee attack, its skin briefly glows brightly, causing the attacker to have disadvantage on the attack roll.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "dazzling-glow"
+        }
+      },
+      "_key": "!actors.items!KPaziza000000000.0000000000000006"
+    },
+    {
+      "_id": "WwdpHLXGX5r8uZu5",
+      "name": "Leather Armor",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-scale-leather.webp",
+      "effects": [],
+      "folder": "JqTP017wj3uxDJ8g",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": false
+          }
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "leather-armor"
+        },
+        "container": null,
+        "price": {
+          "value": 10,
+          "denomination": "gp"
+        },
+        "quantity": 1,
+        "rarity": "",
+        "weight": {
+          "value": 10,
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "armor": {
+          "value": 11,
+          "requiredStrength": null
+        },
+        "magicalBonus": null,
+        "type": {
+          "category": "light",
+          "base": "leather"
+        }
+      },
+      "_key": "!actors.items!KPaziza000000000.WwdpHLXGX5r8uZu5"
+    }
+  ],
+  "sort": 144,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": -1,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 4,
+        "proficient": false
+      },
+      "constitution": {
+        "mod": 1,
+        "proficient": false
+      },
+      "intelligence": {
+        "mod": 0,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 2,
+        "proficient": false
+      },
+      "charisma": {
+        "mod": 1,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 15
+      },
+      "hp": {
+        "max": 21,
+        "temp": null,
+        "tempmax": 0,
+        "value": 21
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 0.5,
+      "legendary": {
+        "max": 0
+      },
+      "perception": 13,
+      "stealth": 15
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [
+          "sylvan"
+        ],
+        "communication": {},
+        "custom": [],
+        "tags": []
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        },
+        "resistances": {
+          "value": [],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 30,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "climb": 30,
+          "fly": 30
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {},
+        "units": "foot"
+      },
+      "size": "tiny",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "Fey"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "ToB3",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "intelligence"
+    },
+    "biography": {
+      "value": "<p><em>Tiny fey peer down through the jungle foliage. Standing just over one foot tall, they have dark brown skin, slim builds, pointed ears, and big hair.</em><br>Aziza are diminutive rainforest fey who make their homes inside the trunks of tall trees or in abandoned giant anthills. Female aziza have delicate iridescent butterfly wings, and the wingless males travel on the backs of gliding frogs. All aziza have an affinity with the frogs, using them not only for transportation but also for the poison produced from the frogs' sweat.<br><em><strong>Rainforest Teachers.</strong></em> The aziza first taught the human tribes of the jungles how to make fire and which plants were good to eat or for use as medicine or poison. These days, encounters with the reclusive aziza are rare, but the fey still have a reputation for helping those in need. An aziza might send an animal to warn a traveler away from a monster’s lair or use magic to aid a hunter in taking down its prey.<br><em><strong>Intolerant of Bullies.</strong></em> Aziza hate bullies and brutes and enjoy playing tricks on rainforest ogres and any cruel creatures bigger than themselves. If a rainforest ogre takes up residence near a village friendly to the aziza, the fey often do everything in their power to protect the humanoids.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPaziza000000000"
+}

@@ -1,0 +1,1867 @@
+{
+  "_id": "KPcavesovereign0",
+  "name": "Cave Sovereign",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Cave Sovereign",
+    "width": 3,
+    "height": 3,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 120,
+      "brightness": 0,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Deathlights",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "",
+                "formula": "18"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>When a creature that can see the cave sovereign’s glowing antennae starts its turn within 30 feet of the cave sovereign, the cave sovereign can force it to make a DC 18 Wisdom saving throw if the cave sovereign isn’t incapacitated and can see the creature. If the saving throw fails by 5 or more, the creature is stunned until the start of its next turn. Otherwise, a creature that fails the save is incapacitated and its speed is reduced to 0 until the start of its next turn as it remains transfixed in place by the lights.<br>Unless surprised, a creature can avert its eyes to avoid the saving throw at the start of its turn. If the creature does so, it can’t see the cave sovereign until the start of its next turn, when it can avert its eyes again. If the creature looks at the cave sovereign in the meantime, it must immediately make the save.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "deathlights"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Illumination",
+      "type": "feature",
+      "img": "icons/magic/light/explosion-star-glow-blue-purple.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cave sovereign’s antennae shed dim light in a 5-foot radius. This radius increases to 20 feet while at least one creature is incapacitated or stunned by Deathlights. At the start of its turn if no creatures are incapacitated or stunned by Deathlights, the cave sovereign can suppress this light until the start of its next turn.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "illumination"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Inscrutable",
+      "type": "feature",
+      "img": "icons/magic/perception/third-eye-blue-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cave sovereign is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the cave sovereign's intentions or sincerity have disadvantage.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "inscrutable"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Legendary Resistance",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "longRest",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "3"
+        },
+        "description": {
+          "value": "<p>If the cave sovereign fails a saving throw, it can choose to succeed instead.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "legendary-resistance"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Magic Resistance",
+      "type": "feature",
+      "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cave sovereign has advantage on saving throws against spells and other magical effects.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "magic-resistance"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000005"
+    },
+    {
+      "_id": "0000000000000006",
+      "name": "Sinuous Form",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Provided there is suitable room to accommodate its bulk, the cave sovereign can squeeze through any opening large enough for a Small creature.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "sinuous-form"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000006"
+    },
+    {
+      "_id": "0000000000000007",
+      "name": "Spider Climb",
+      "type": "feature",
+      "img": "icons/creatures/invertebrates/spider-beetle-runed-green.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 7,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cave sovereign can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "spider-climb"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000007"
+    },
+    {
+      "_id": "0000000000000008",
+      "name": "Multiattack",
+      "type": "feature",
+      "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 8,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cave sovereign makes one Bite attack and two Slam attacks. It can make one Tail attack in place of its Bite attack.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "multiattack"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000008"
+    },
+    {
+      "_id": "0000000000000009",
+      "name": "Bite",
+      "type": "weapon",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 9,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": [
+                  {
+                    "number": 2,
+                    "denomination": 10,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "poison"
+                  }
+                ]
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 25 (4d8 + 7) piercing damage plus 11 (2d10) poison damage.",
+          "source": {
+            "book": "ToB3",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 4,
+            "denomination": 8,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "piercing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000009"
+    },
+    {
+      "_id": "0000000000000010",
+      "name": "Slam",
+      "type": "weapon",
+      "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 10,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "10"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 23 (3d10 + 7) bludgeoning damage.",
+          "source": {
+            "book": "ToB3",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 3,
+            "denomination": 10,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "bludgeoning"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "10",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000010"
+    },
+    {
+      "_id": "0000000000000011",
+      "name": "Tail",
+      "type": "weapon",
+      "img": "icons/skills/wounds/injury-pain-impaled-hand-blood.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 11,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "10"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 26 (3d12 + 7) slashing damage. If the target is a Large or smaller creature, it is grappled (escape DC 18). Until this grapple ends, the target is restrained, and the cave sovereign can’t use its tail on another target.",
+          "source": {
+            "book": "ToB3",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 3,
+            "denomination": 12,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "slashing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "10",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000011"
+    },
+    {
+      "_id": "0000000000000012",
+      "name": "Consume Soul",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 12,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": [
+                  {
+                    "number": 10,
+                    "denomination": 10,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "psychic"
+                  }
+                ]
+              },
+              "effects": [],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "",
+                "formula": "18"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cave sovereign chooses up to three creatures it can see within 60 feet of it that are incapacitated or stunned by Deathlights. Each target must make a DC 18 Wisdom saving throw, taking 55 (10d10) psychic damage on a failed save, or half as much damage on a successful one. A creature stunned by Deathlights has disadvantage on this saving throw. The cave sovereign then regains hit points equal to half the total psychic damage dealt.<br>A Humanoid slain by this attack rises 1d4 rounds later as a zombie under the cave sovereign’s control, unless the Humanoid is restored to life or its body is destroyed. The cave sovereign can have no more than thirty zombies under its control at one time.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "consume-soul"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000012"
+    },
+    {
+      "_id": "0000000000000013",
+      "name": "Spellcasting",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 13,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cave sovereign casts one of the following spells, requiring no spell components and using Charisma as the spellcasting ability (spell save DC 18):<br>At will: @UUID[Compendium.black-flag.spells.Item.q3ggx5aH69iqrcL3]{detect thoughts}, @UUID[Compendium.black-flag.spells.Item.z0bwd75DutQ7TOcY]{mage hand} (the hand is invisible)<br>3/day each: @UUID[Compendium.black-flag.spells.Item.a79cPbF5G33jiDBa]{dimension door}, @UUID[Compendium.black-flag.spells.Item.jlDdoNUWTP3Gc1rX]{telekinesis}<br>1/day: @UUID[Compendium.black-flag.spells.Item.r4Yc0FrcBvwvx8fF]{hallucinatory terrain} (as an action)",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "spellcasting"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000013"
+    },
+    {
+      "_id": "0000000000000014",
+      "name": "Move",
+      "type": "feature",
+      "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 14,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "legendary",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cave sovereign moves up to its speed without provoking opportunity attacks.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "move"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000014"
+    },
+    {
+      "_id": "0000000000000015",
+      "name": "Telekinetic Reel",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 15,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "legendary",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cave sovereign magically pulls a creature it can see that is incapacitated or stunned by its Deathlights up to 20 feet straight toward it.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "telekinetic-reel"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000015"
+    },
+    {
+      "_id": "0000000000000016",
+      "name": "Cast a Spell",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 16,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "legendary",
+              "value": 2
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cave sovereign uses Spellcasting.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "cast-a-spell"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000016"
+    },
+    {
+      "_id": "0000000000000017",
+      "name": "Tail Attack",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 17,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "legendary",
+              "value": 2
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cave sovereign makes one Tail attack.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "tail-attack"
+        }
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000017"
+    },
+    {
+      "_id": "0000000000000018",
+      "name": "Natural Armor",
+      "permission": {
+        "default": 0,
+        "OtBWCJNgwo0VVuQx": 3
+      },
+      "type": "gear",
+      "data": {
+        "description": {
+          "value": "",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": null,
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 18,
+          "type": "natural",
+          "dex": null
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "speed": {
+          "value": null,
+          "conditions": ""
+        },
+        "strength": 0,
+        "stealth": false,
+        "proficient": true
+      },
+      "folder": "",
+      "sort": 100001,
+      "flags": {
+        "black-flag": {
+          "relationship": {}
+        }
+      },
+      "img": "icons/svg/mystery-man.svg",
+      "effects": [],
+      "system": {
+        "activities": {},
+        "uses": {},
+        "description": {
+          "source": {}
+        },
+        "identifier": {},
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {},
+        "type": {}
+      },
+      "_key": "!actors.items!KPcavesovereign0.0000000000000018"
+    }
+  ],
+  "sort": 289,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": 7,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": -1,
+        "proficient": false
+      },
+      "constitution": {
+        "mod": 10,
+        "proficient": true
+      },
+      "intelligence": {
+        "mod": 8,
+        "proficient": true
+      },
+      "wisdom": {
+        "mod": 6,
+        "proficient": true
+      },
+      "charisma": {
+        "mod": 5,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 18
+      },
+      "hp": {
+        "max": 253,
+        "temp": null,
+        "tempmax": 0,
+        "value": 253
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 16,
+      "legendary": {
+        "max": 3
+      },
+      "perception": 21
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [
+          "custom"
+        ],
+        "communication": {},
+        "custom": [
+          "understands all but can’t speak, telepathy 120 ft."
+        ],
+        "tags": []
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [
+            "charmed",
+            "frightened"
+          ],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [
+            "psychic"
+          ],
+          "custom": []
+        },
+        "resistances": {
+          "value": [
+            "poison",
+            "radiant",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 40,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "climb": 30
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "darkvision": 120,
+          "tremorsense": 60
+        },
+        "units": "foot"
+      },
+      "size": "huge",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "Aberration"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "ToB3",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "intelligence"
+    },
+    "biography": {
+      "value": "<p><em>Soft luminance twinkles in the darkness. A hulking creature scuttles forth suddenly on massive insectoid limbs, a huge serpentine horror that is some aberrant hybrid of crustacean, arachnid, and eel. The soft radiance of its numerous antennae intensifies as its deadly maw opens to reveal multiple rows of semi-translucent teeth, large and sharp as swords.</em><br><em><strong>The Scourge of Subterranea.</strong></em> The creature colloquially known as the cave sovereign is a hideous subterranean hunter that preys upon the spiritual essence of every living being it encounters. Six tentacular antennae surround its eight pale eyes and prodigiously fanged mouth, all of which radiate a dim and unsettling light. Its long, somewhat ophidian body is covered in a pale gray‑green segmented carapace that ends in a two-pronged tail tipped with scissor‑like pincers. The sovereign winds its way through eponymous caves and caverns using six articulated legs like those of a spider.<br><em><strong>Eldritch Origins.</strong></em> The cave sovereign’s size and squamous features belie its cruel alien intelligence. Despite their disparity, all of the sovereign’s abhorrent features result in one rather inscrutable underworld predator. The ancestry of this loathsome aberration is otherworldly, and according to the most learned of sages, the first cave sovereign was spawned from the chaos-fueled core of a long‑forgotten plane. They say it is never summoned; rather, it seeks. The immortal and relentless cave sovereign subsists on the souls of those who happen upon it.<br><em><strong>Harvester of Souls.</strong></em> The eyes and antennae of the cave sovereign shed an eerie light. The sovereign can affix this luminance upon a living creature to draw forth its mortal essence, effectively ripping the soul from the still-living wretch. The poor creatures who suffer this strange spiritual damnation at the hands of a cave sovereign are doomed to wander in its wake as hollow-minded thralls, semi-undead servitors who prowl the caverns in search of new souls for their undead master. Attempts to revive these soulless creatures are unfruitful, suggesting the cave sovereign either consumes or conglomerates the living spirits it collects.<br><h2>Cave Sovereign’s Lair</h2><br>Somewhere in the depths of the world, the cave sovereign makes its lair. The tales of what few survivors there are to that terrible place can provide no concrete description of it, for no two stories can agree. The cave sovereign’s mental prowess is unmatched in its lair. Its mind seeps unbidden into intruders’ minds, shaping their perceptions of the place to its whim and causing the intruders to wander confused and aimless until it devours them.<br><h3>Lair Actions</h3><br>On initiative count 20 (losing initiative ties), the cave sovereign takes a lair action to cause one of the following magical effects; the cave sovereign can’t use the same effect two rounds in a row:<ul><li><strong>Disorienting Topography.</strong> The cave sovereign alters the awareness of up to three creatures it can see within 60 feet of it, causing each creature to see the cavern’s structure differently. Each target must succeed on a DC 18 Wisdom saving throw or treat all areas within 120 feet of the cave sovereign as difficult terrain until initiative count 20 on the next round. This effect alters a target’s understanding of its surroundings and isn’t an illusion or illusory effect.</li><li><strong>Disrupt Light.</strong> The cave sovereign alters the awareness of up to three creatures it can see within 60 feet of it, reducing each creature’s perception of light. Each target must succeed on a DC 18 Wisdom saving throw or treat all areas of bright light as dim light, areas of dim light as darkness, and areas of darkness as magical darkness until initiative count 20 on the next round. This doesn’t affect the light shed by the cave sovereign’s Deathlights. This effect alters a target’s understanding of its surroundings and isn’t an illusion or illusory effect.</li><li><strong>Maddening Landscape.</strong> The mentally disorienting nature of the cave sovereign’s lair assaults the minds of up to three creatures the cave sovereign can see within 60 feet of it. Each target must succeed on a DC 18 Wisdom saving throw or suffer a random short-term madness for 1d4 rounds.</li><br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPcavesovereign0"
+}

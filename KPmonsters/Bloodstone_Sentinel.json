@@ -1,0 +1,804 @@
+{
+  "_id": "KPbloodstonesent",
+  "name": "Bloodstone Sentinel",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Bloodstone Sentinel",
+    "width": 2,
+    "height": 2,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 60,
+      "brightness": 0,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Blood Lure",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "15"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>When a creature within 10 feet of the sentinel that isn’t an undead or a construct takes piercing or slashing damage, it must succeed on a DC 15 Constitution saving throw or take an extra 7 (2d6) damage of that type. The sentinel’s Blood Reservoir increases by an amount equal to the extra damage dealt.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "blood-lure"
+        }
+      },
+      "_key": "!actors.items!KPbloodstonesent.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Blood Reservoir",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "charisma",
+              "dc": {
+                "ability": "",
+                "formula": "15"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The bloodstone sentinel absorbs blood that is spilled nearby into itself. This reservoir of blood grows when a creature takes extra damage from the sentinel’s Blood Lure trait. The Blood Reservoir can’t exceed the sentinel’s hp maximum. As a bonus action, the sentinel can reduce the Blood Reservoir by 10 to cause one of the following effects:<ul><li>Empower Blood. A friendly creature within 30 feet of the sentinel that isn’t an undead or a construct has advantage on its next weapon attack roll.</li><li>Inspire Fury. A creature of the sentinel’s choice within 30 feet of the sentinel must succeed on a DC 15 Charisma saving throw or immediately use its reaction to move up to its speed and make one melee weapon attack against its nearest ally. If no ally is near enough to move to and attack, the target attacks the nearest creature that isn’t the bloodstone sentinel. If no creature other than the sentinel is near enough to move to and attack, the target stalks off in a random direction, seeking a target for its fury.</li><li>Sustain. A nonhostile undead creature within 30 feet of the sentinel that must eat or drink, such as a @UUID[Compendium.black-flag.npcs.Actor.ZbOSkmu1Vo1l6UyP]{ghoul} or @UUID[Compendium.black-flag.npcs.Actor.cSgTzu79oKyZAOLG]{vampire}, regains 10 hit points.</li>",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "blood-reservoir"
+        }
+      },
+      "_key": "!actors.items!KPbloodstonesent.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Multiattack",
+      "type": "feature",
+      "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The bloodstone sentinel makes two claw attacks.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "multiattack"
+        }
+      },
+      "_key": "!actors.items!KPbloodstonesent.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Claw",
+      "type": "weapon",
+      "img": "icons/skills/melee/strike-slashes-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage.",
+          "source": {
+            "book": "ToB2",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 2,
+            "denomination": 8,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "slashing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPbloodstonesent.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Natural Armor",
+      "permission": {
+        "default": 0,
+        "OtBWCJNgwo0VVuQx": 3
+      },
+      "type": "gear",
+      "data": {
+        "description": {
+          "value": "",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": null,
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 15,
+          "type": "natural",
+          "dex": null
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "speed": {
+          "value": null,
+          "conditions": ""
+        },
+        "strength": 0,
+        "stealth": false,
+        "proficient": true
+      },
+      "folder": "",
+      "sort": 100001,
+      "flags": {
+        "black-flag": {
+          "relationship": {}
+        }
+      },
+      "img": "icons/svg/mystery-man.svg",
+      "effects": [],
+      "system": {
+        "activities": {},
+        "uses": {},
+        "description": {
+          "source": {}
+        },
+        "identifier": {},
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {},
+        "type": {}
+      },
+      "_key": "!actors.items!KPbloodstonesent.0000000000000005"
+    }
+  ],
+  "sort": 211,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": 4,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": -2,
+        "proficient": false
+      },
+      "constitution": {
+        "mod": 4,
+        "proficient": false
+      },
+      "intelligence": {
+        "mod": -1,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 0,
+        "proficient": false
+      },
+      "charisma": {
+        "mod": 3,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 15
+      },
+      "hp": {
+        "max": 114,
+        "temp": null,
+        "tempmax": 0,
+        "value": 114
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 8,
+      "legendary": {
+        "max": 0
+      }
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [
+          "custom"
+        ],
+        "communication": {},
+        "custom": [
+          "the languages of its creators"
+        ],
+        "tags": [
+          "cantSpeak"
+        ]
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned"
+          ],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [
+            "poison",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "custom": []
+        },
+        "resistances": {
+          "value": [],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 30,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base"
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "darkvision": 60
+        },
+        "units": "foot"
+      },
+      "size": "large",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "construct"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "ToB2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "intelligence"
+    },
+    "biography": {
+      "value": "<p><em>A humanoid statue made of green stone streaked with red steps forward, its long, curved claws reaching out. Its face is blank of features except two deep eye sockets that drip fresh blood like tears.</em><br>Evil cults exsanguinate sacrifices over specially prepared bloodstone statues, infusing the life force of the victims into the rock and granting it life. These sentinels are driven to see more blood spilled, whether by their own hands, those of their masters, or even those of their enemies.<br><strong>Blood Calls Blood.</strong> The blood infused into the sentinel perpetually leaks out, a representation of the agony that created the construct. This agony pulls on nearby creatures, drawing out vital fluids and ripping minor wounds into great injuries. The sentinel stores this blood inside itself, and the red veins in its stone become more prevalent the more blood it stores.<br><strong>Mindless Fury.</strong> Those who create bloodstone sentinels invariably see power through the spilling of blood and utilize the construct to spread their faith. Some blood cults use the sentinels as mobile containers for the primary component of their profane rituals.<br><strong>Construct Nature.</strong> A bloodstone sentinel doesn’t require air, food, drink, or sleep.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPbloodstonesent"
+}

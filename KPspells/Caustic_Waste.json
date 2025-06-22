@@ -1,0 +1,165 @@
+{
+  "_id": "KPcausticwaste00",
+  "name": "Caustic Waste",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 294,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 4,
+                "denomination": 10,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "acid"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "dexterity",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "120"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You create either a rectangular pool of acid 50 feet long, 10 feet wide, and 5 feet deep, or a circular pool of acid 20 feet in diameter and 3 feet deep, in an open space you can see within range. Each creature in the spell’s area when the spell is cast takes 4d10 acid damage, or half as much damage with a successful Dexterity saving throw. A creature that enters the area on its turn or ends its turn in the area takes 4d10 acid damage, or half as much damage with a successful Dexterity saving throw. A creature can take this damage only once per turn.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d10 for each slot level above 4th.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "caustic-waste"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 4
+    },
+    "components": {
+      "material": {
+        "description": "a vial of poison, acid, or other caustic substance",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "120",
+      "units": "foot"
+    },
+    "school": "evocation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "line",
+        "size": "50",
+        "width": "",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPcausticwaste00"
+}

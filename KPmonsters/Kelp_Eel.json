@@ -1,0 +1,855 @@
+{
+  "_id": "KPkelpeel0000000",
+  "name": "Kelp Eel",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Kelp Eel",
+    "width": 3,
+    "height": 3,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 0,
+      "brightness": 0,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Disperse",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>When the kelp eel is reduced to 0 hp, it disperses into its component kelp in a 30-foot cube. The area is difficult terrain for 1 hour. At the end of that hour, the kelp eel reforms, regaining half its hp and becoming active again. If more than half the kelp that comprises the dispersed kelp eel is removed from the water and dried, it can’t reform and the creature is destroyed.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "disperse"
+        }
+      },
+      "_key": "!actors.items!KPkelpeel0000000.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "False Appearance",
+      "type": "feature",
+      "img": "icons/magic/nature/stealth-hide-eyes-green.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>While the kelp eel remains motionless, it is indistinguishable from ordinary kelp.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "false-appearance"
+        }
+      },
+      "_key": "!actors.items!KPkelpeel0000000.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Multiattack",
+      "type": "feature",
+      "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The kelp eel makes two attacks with its kelp tendrils, uses Reel, and makes two attacks with its slam.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "multiattack"
+        }
+      },
+      "_key": "!actors.items!KPkelpeel0000000.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Slam",
+      "type": "weapon",
+      "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "10"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 31 (6d8 + 4) bludgeoning damage.",
+          "source": {
+            "book": "ToB2",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 6,
+            "denomination": 8,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "bludgeoning"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "10",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPkelpeel0000000.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Kelp Tendril",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +8 to hit, reach 50 ft., one creature. Hit: The target is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the kelp eel can’t use the same kelp tendril on another target. In addition, at the start of the target’s next turn, it begins to suffocate as the eel’s grip crushes the breath out of it.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "kelp-tendril"
+        }
+      },
+      "_key": "!actors.items!KPkelpeel0000000.0000000000000005"
+    },
+    {
+      "_id": "0000000000000006",
+      "name": "Reel",
+      "type": "feature",
+      "img": "icons/magic/control/sihouette-hold-beam-green.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The kelp eel pulls each creature grappled by it up to 25 feet straight toward it.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "reel"
+        }
+      },
+      "_key": "!actors.items!KPkelpeel0000000.0000000000000006"
+    },
+    {
+      "_id": "0000000000000007",
+      "name": "Natural Armor",
+      "permission": {
+        "default": 0,
+        "OtBWCJNgwo0VVuQx": 3
+      },
+      "type": "gear",
+      "data": {
+        "description": {
+          "value": "",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": null,
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 17,
+          "type": "natural",
+          "dex": null
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "speed": {
+          "value": null,
+          "conditions": ""
+        },
+        "strength": 0,
+        "stealth": false,
+        "proficient": true
+      },
+      "folder": "",
+      "sort": 100001,
+      "flags": {
+        "black-flag": {
+          "relationship": {}
+        }
+      },
+      "img": "icons/svg/mystery-man.svg",
+      "effects": [],
+      "system": {
+        "activities": {},
+        "uses": {},
+        "description": {
+          "source": {}
+        },
+        "identifier": {},
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {},
+        "type": {}
+      },
+      "_key": "!actors.items!KPkelpeel0000000.0000000000000007"
+    }
+  ],
+  "sort": 835,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": 4,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 2,
+        "proficient": false
+      },
+      "constitution": {
+        "mod": 4,
+        "proficient": false
+      },
+      "intelligence": {
+        "mod": -4,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 2,
+        "proficient": false
+      },
+      "charisma": {
+        "mod": -3,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 17
+      },
+      "hp": {
+        "max": 157,
+        "temp": null,
+        "tempmax": 0,
+        "value": 157
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 10,
+      "legendary": {
+        "max": 0
+      }
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [],
+        "communication": {},
+        "custom": [],
+        "tags": []
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [
+            "blinded",
+            "deafened",
+            "unconscious"
+          ],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        },
+        "resistances": {
+          "value": [
+            "acid",
+            "bludgeoning",
+            "piercing"
+          ],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 10,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "swim": 50
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "keensense": 90
+        },
+        "units": "foot"
+      },
+      "size": "huge",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "plant"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "ToB2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "intelligence"
+    },
+    "biography": {
+      "value": "<p><em>A thick, snakelike creature made of thousands of blades of kelp rises above the water’s surface. Flyaway blades swirl from the primary mass as the creature winds itself around its hapless prey.</em><br>Kelp eels were accidentally created by merfolk arcanists who desired to protect their community from the myriad threats facing them. They attempted to bring the kelp forests near their settlement to life to entangle attackers, slowing them long enough to allow the merfolk to repel them. Instead, the first kelp eels were born as the blades of kelp wove themselves into massive eely forms that ravaged the very community they were created to protect.<br><strong>Serpents of the Shallows.</strong> Since their creation, kelp eels have spread across the ocean. Forests of sentient kelp grow in ocean shallows, scarcely different to the casual observer from any other marine jungle. As the kelp matures, the blades wind around the thallus and eventually detach from its holdfast as a full-grown kelp eel. The kelp eel then moves on to an unclaimed shallow and attempts to create a new forest.<br><strong>Mariners’ Nightmares.</strong> The presence of a kelp eel is a blight upon people whose livelihoods depend on the ocean. The voracious eels are known to overturn boats and to drag their occupants to a watery grave. Kelp-entwined humanoid remains are common on the floor of kelp eel forests. Experienced sailors sometimes chum the waters as they approach a kelp forest, hoping to attract other large ocean predators to distract the local kelp eels.<br><strong>Deep Hunters.</strong> While kelp eels live and breed in shallower waters, it isn’t uncommon for them to hunt the ocean deeps if fertilizer is proving scarce near their forest. Knowledgeable mariners know that the presence of dead whales, sharks, and giant squid in shallow waters could be an indicator of kelp eel activity.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPkelpeel0000000"
+}

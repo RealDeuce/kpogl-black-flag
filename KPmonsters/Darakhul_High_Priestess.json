@@ -1,0 +1,4983 @@
+{
+  "_id": "KPdarakhulhighpr",
+  "name": "Darakhul High Priestess",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Darakhul High Priestess",
+    "width": 1,
+    "height": 1,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 60,
+      "brightness": 0,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Frenzy",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The darakhul high priestess can make three extra bite attacks on her turn as a bonus action. If any of these attacks miss, all attacks against her have advantage until the end of her next turn.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "frenzy"
+        }
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Master of Disguise",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>A darakhul in a prepared disguise has advantage on Charisma (Deception) checks made to pass as a living creature. While using this ability, the darakhul loses her stench.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "master-of-disguise"
+        }
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Stench",
+      "type": "feature",
+      "img": "icons/magic/acid/projectile-glowing-bubbles.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "15"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Any creature that starts its turn within 5 feet of the darakhul must succeed on a DC 15 Constitution saving throw or be poisoned until the start of its next turn. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the darakhul’s Stench for the next 24 hours. A darakhul high priestess using this ability can’t also benefit from Master of Disguise.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "stench"
+        }
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Sunlight Sensitivity",
+      "type": "feature",
+      "img": "icons/magic/light/explosion-star-glow-blue-purple.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>While in sunlight, the darakhul has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "sunlight-sensitivity"
+        }
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Turning Defiance",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The darakhul high priestess and any ghouls within 30 feet of her have advantage on saving throws against effects that turn undead.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "turning-defiance"
+        }
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.0000000000000005"
+    },
+    {
+      "_id": "0000000000000006",
+      "name": "Spellcasting",
+      "type": "feature",
+      "img": "icons/magic/light/projectiles-star-purple.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The darakhul high priestess is a 15th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). She has the following cleric spells prepared:<br>Cantrips (at will): @UUID[Compendium.black-flag.spells.Item.LGHPueVAi4bMnmFc]{guidance}, @UUID[Compendium.black-flag.spells.Item.QxIWdfDm7GSrxYBE]{mending}, @UUID[Compendium.black-flag.spells.Item.KD0WeQfEhqqvQ8cY]{resistance}, @UUID[Compendium.black-flag.spells.Item.zMaRCDRC1wZSLerG]{sacred flame}, @UUID[Compendium.black-flag.spells.Item.agXA8jkodlH79XGg]{spare the dying}, @UUID[Compendium.black-flag.spells.Item.J9zLZYHvTHwzB98C]{thaumaturgy}<br>1st level (4 slots): @UUID[Compendium.black-flag.spells.Item.HorNiol8kDK0QGIo]{bane}, @UUID[Compendium.black-flag.spells.Item.lkBDXbx2O78UA8gz]{command}, @UUID[Compendium.black-flag.spells.Item.8WxYpeoDwKFLim3D]{inflict wounds}, @UUID[Compendium.black-flag.spells.Item.gBis1QK0mfhwc26a]{protection from evil and good}, @UUID[Compendium.black-flag.spells.Item.zqls78yW5JLJWzSN]{shield of faith}<br>2nd level (3 slots): @UUID[Compendium.black-flag.spells.Item.lrFTz4noYfSeOD7u]{blindness/deafness}, @UUID[Compendium.black-flag.spells.Item.kVXub5YGKOSXv8ix]{hold person}, @UUID[Compendium.black-flag.spells.Item.gw9njoo5Aolp6uMz]{spiritual weapon}<br>3rd level (3 slots): @UUID[Compendium.black-flag.spells.Item.qFg34HYHnA4Qlxvd]{animate dead}, @UUID[Compendium.black-flag.spells.Item.f1ovNdb57AhbmDUn]{bestow curse}, @UUID[Compendium.black-flag.spells.Item.0jczEDug7EyPsHGu]{protection from energy}, @UUID[Compendium.black-flag.spells.Item.SiUSPKtQCHfy7Hwi]{spirit guardians}<br>4th level (3 slots): @UUID[Compendium.black-flag.spells.Item.skEh2fs5eZlzAdJ1]{banishment}, @UUID[Compendium.black-flag.spells.Item.1VMSLD8d4J34E3bs]{stone shape}<br>5th level (2 slot): @UUID[Compendium.black-flag.spells.Item.BmdIVMXTMLCp6Nu7]{contagion}, @UUID[Compendium.black-flag.spells.Item.lGmxkutPlXsgyzRd]{insect plague}<br>6th level (1 slot): @UUID[Compendium.black-flag.spells.Item.R1SUsXBHIrhyoX13]{create undead}<br>7th level (1 slot): @UUID[Compendium.black-flag.spells.Item.xh1UQL21umN4ZRsE]{regenerate}<br>8th level (1 slot): @UUID[Compendium.black-flag.spells.Item.ChqgW59lFxjXHF9s]{antimagic field}",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "spellcasting"
+        }
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.0000000000000006"
+    },
+    {
+      "_id": "0000000000000007",
+      "name": "Multiattack",
+      "type": "feature",
+      "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 7,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The darakhul high priestess makes two claw attacks and one bite attack.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "multiattack"
+        }
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.0000000000000007"
+    },
+    {
+      "_id": "0000000000000008",
+      "name": "Bite",
+      "type": "weapon",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 8,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": [
+                  {
+                    "number": 2,
+                    "denomination": 8,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "necrotic"
+                  }
+                ]
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "16"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 1,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) piercing damage plus 9 (2d8) necrotic damage and, if the target is a humanoid, it must succeed on a DC 16 Constitution saving throw or contract darakhul fever.",
+          "source": {
+            "book": "CC",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 6,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "piercing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.0000000000000008"
+    },
+    {
+      "_id": "0000000000000009",
+      "name": "Claw",
+      "type": "weapon",
+      "img": "icons/skills/melee/strike-slashes-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 9,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "16"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 1,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage. If the target is a creature other than an undead, it must succeed on a DC 16 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a humanoid is paralyzed for more than 2 rounds, it contracts darakhul fever.",
+          "source": {
+            "book": "CC",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 2,
+            "denomination": 6,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "slashing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.0000000000000009"
+    },
+    {
+      "_id": "P7mF2MxSuVJwHRRY",
+      "name": "Guidance",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "effects": [],
+      "folder": "Z8kZlnggh1PtuF3Y",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "1d4",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one ability check of its choice. It can roll the die before or after making the ability check. The spell then ends.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "guidance"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 0
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "divination",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.P7mF2MxSuVJwHRRY"
+    },
+    {
+      "_id": "kjmjY0zlE6IEiQVL",
+      "name": "Mending",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/air/wind-stream-purple-blue.webp",
+      "effects": [],
+      "folder": "Z8kZlnggh1PtuF3Y",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>This spell repairs a single break or tear in an object you touch, such as a broken chain link, two halves of a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no larger than 1 foot in any dimension, you mend it, leaving no trace of the former damage.</p><p>This spell can physically repair a magic item or construct, but the spell can't restore magic to such an object.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "mending"
+        },
+        "casting": {
+          "type": "minute",
+          "condition": ""
+        },
+        "circle": {
+          "base": 0
+        },
+        "components": {
+          "material": {
+            "description": "Two lodestones",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "",
+          "units": "instantaneous"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "transmutation",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "object"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.kjmjY0zlE6IEiQVL"
+    },
+    {
+      "_id": "dl8YwvMboBqX2OC4",
+      "name": "Resistance",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/defensive/shield-barrier-glowing-triangle-orange.webp",
+      "effects": [],
+      "folder": "Z8kZlnggh1PtuF3Y",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "1d4",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You touch one willing creature. Once before the spell ends, the target can roll a d4 and add the number rolled to one saving throw of its choice. It can roll the die before or after making the saving throw. The spell then ends.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "resistance"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 0
+        },
+        "components": {
+          "material": {
+            "description": "A miniature clock",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "abjuration",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.dl8YwvMboBqX2OC4"
+    },
+    {
+      "_id": "n9pJzTDsAwQxJVRl",
+      "name": "Sacred Flame",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/light/beam-rays-orange.webp",
+      "effects": [],
+      "folder": "Z8kZlnggh1PtuF3Y",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": [
+                  {
+                    "number": 1,
+                    "denomination": 8,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "whole",
+                      "number": 1,
+                      "formula": ""
+                    },
+                    "type": "radiant"
+                  }
+                ]
+              },
+              "effects": [],
+              "ability": "dexterity",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Flame-like radiance descends on a creature that you can see within range. The target must succeed on a Dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.</p><p>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "sacred-flame"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 0
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "",
+          "units": "instantaneous"
+        },
+        "range": {
+          "value": "60",
+          "units": "foot"
+        },
+        "school": "evocation",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.n9pJzTDsAwQxJVRl"
+    },
+    {
+      "_id": "8zT7njvqbpXs4Cel",
+      "name": "Spare the Dying",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/life/heart-cross-blue.webp",
+      "effects": [],
+      "folder": "Z8kZlnggh1PtuF3Y",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": [],
+              "healing": {
+                "number": null,
+                "denomination": null,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                }
+              }
+            },
+            "type": "heal",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You touch a living creature that has 0 hit points. The creature becomes stable. This spell has no effect on undead or constructs.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "spare-the-dying"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 0
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "",
+          "units": "instantaneous"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "nec",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.8zT7njvqbpXs4Cel"
+    },
+    {
+      "_id": "MUO1uYN7JR1hm4dR",
+      "name": "Thaumaturgy",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/fire/explosion-fireball-small-purple-orange.webp",
+      "effects": [],
+      "folder": "Z8kZlnggh1PtuF3Y",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You create one of the following magical effects within range:</p>\n<ul>\n<li>Your voice booms up to three times as loud as normal for 1 minute.</li>\n<li>You cause flames to flicker, brighten, dim, or change color for 1 minute.</li>\n<li>You cause harmless tremors in the ground for 1 minute.</li>\n<li>You create a sound that originates from a point of your choice within range.</li>\n<li>You cause an unlocked door or window to fly open or slam shut.</li>\n<li>You alter the appearance of your eyes for 1 minute.</li>\n</ul>\n<p>If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "thaumaturgy"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 0
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "value": "30",
+          "units": "foot"
+        },
+        "school": "transmutation",
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.MUO1uYN7JR1hm4dR"
+    },
+    {
+      "_id": "95K2aUhAGV9qXjnf",
+      "name": "Bane",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/unholy/strike-beam-blood-red-purple.webp",
+      "effects": [
+        {
+          "_id": "potjmpJPeUA1U4oe",
+          "flags": {},
+          "changes": [
+            {
+              "key": "system.bonuses.abilities.save",
+              "mode": 2,
+              "value": "-1d4",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.mwak.attack",
+              "mode": 2,
+              "value": "-1d4",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.msak.attack",
+              "mode": 2,
+              "value": "-1d4",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.rsak.attack",
+              "mode": 2,
+              "value": "-1d4",
+              "priority": null
+            },
+            {
+              "key": "system.bonuses.rwak.attack",
+              "mode": 2,
+              "value": "-1d4",
+              "priority": null
+            }
+          ],
+          "disabled": true,
+          "duration": {
+            "startTime": null,
+            "seconds": 60,
+            "rounds": 10,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null,
+            "combat": null
+          },
+          "origin": "Item.KkaQm4OQJxc6z3to",
+          "tint": "#ffffff",
+          "transfer": false,
+          "name": "Bane",
+          "description": "<p>Whenever the target makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>",
+          "statuses": [],
+          "img": "icons/magic/unholy/strike-beam-blood-red-purple.webp",
+          "type": "base",
+          "sort": 0,
+          "_key": "!actors.items.effects!KPdarakhulhighpr.95K2aUhAGV9qXjnf.potjmpJPeUA1U4oe"
+        }
+      ],
+      "folder": "ERuXllkhTQF51rDJ",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [
+                {
+                  "_id": "potjmpJPeUA1U4oe",
+                  "onSave": false
+                }
+              ],
+              "ability": "charisma",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Up to three creatures of your choice that you can see within range must make Charisma saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</p>\n<p><strong>Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "bane"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "A drop of blood",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "value": "30",
+          "units": "foot"
+        },
+        "school": "necromancy",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "3",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.95K2aUhAGV9qXjnf"
+    },
+    {
+      "_id": "arzCrMRgcNiQuh43",
+      "name": "Command",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/fire/explosion-fireball-small-purple.webp",
+      "effects": [],
+      "folder": "ERuXllkhTQF51rDJ",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p><p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</p><p><strong>Approach.</strong> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p><p><strong>Drop.</strong> The target drops whatever it is holding and then ends its turn.</p><p><strong>Flee.</strong> The target spends its turn moving away from you by the fastest available means.</p><p><strong>Grovel.</strong> The target falls prone and then ends its turn.</p><p><strong>Halt.</strong> The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p><p><strong>Higher Levels.Â </strong>When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "command"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "round"
+        },
+        "range": {
+          "value": "60",
+          "units": "foot"
+        },
+        "school": "necromancy",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.arzCrMRgcNiQuh43"
+    },
+    {
+      "_id": "ksaaTxIbKx2sJfia",
+      "name": "Inflict Wounds",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/unholy/strike-beam-blood-red-teal.webp",
+      "effects": [],
+      "folder": "ERuXllkhTQF51rDJ",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "attack": {
+                "ability": "",
+                "bonus": "",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "spell"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": [
+                  {
+                    "number": 3,
+                    "denomination": 10,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "whole",
+                      "number": 1,
+                      "formula": ""
+                    },
+                    "type": "necrotic"
+                  }
+                ]
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Make a melee spell Attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "inflict-wounds"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "",
+          "units": "instantaneous"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "nec",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.ksaaTxIbKx2sJfia"
+    },
+    {
+      "_id": "xmDBqZhRVrtLP8h2",
+      "name": "Protection from Evil and Good",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/defensive/shield-barrier-flaming-diamond-blue-yellow.webp",
+      "effects": [],
+      "folder": "ERuXllkhTQF51rDJ",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.</p><p>The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "protection-from-evil-and-good"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "Holy water or powdered silver and iron, which the spell consumes",
+            "consumed": true,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "abjuration",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.xmDBqZhRVrtLP8h2"
+    },
+    {
+      "_id": "0000000000000020",
+      "name": "Shield Of Faith",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 19,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/items/spell.svg",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "bonus",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": null
+        },
+        "description": {
+          "value": "<p>A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "shield-of-faith"
+        },
+        "casting": {
+          "type": "bonus",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "a small parchment with a bit of holy text written on it",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": 10,
+          "units": "minute"
+        },
+        "range": {
+          "value": "60",
+          "units": "foot"
+        },
+        "school": "abjuration",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.0000000000000020"
+    },
+    {
+      "_id": "zwGsAv6kmwzYGhh3",
+      "name": "Blindness/Deafness",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+      "effects": [
+        {
+          "name": "Blindness",
+          "origin": "Compendium.dnd5e.spells.Item.zwGsAv6kmwzYGhh3",
+          "duration": {
+            "startTime": null,
+            "seconds": 60,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": true,
+          "_id": "59WpbiZFULwixyvC",
+          "changes": [],
+          "description": "<p>The target is Blinded for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.</p>",
+          "transfer": false,
+          "statuses": [
+            "blinded"
+          ],
+          "flags": {},
+          "tint": "#ffffff",
+          "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+          "type": "base",
+          "sort": 0,
+          "_key": "!actors.items.effects!KPdarakhulhighpr.zwGsAv6kmwzYGhh3.59WpbiZFULwixyvC"
+        },
+        {
+          "name": "Deafness",
+          "origin": "Compendium.dnd5e.spells.Item.zwGsAv6kmwzYGhh3",
+          "duration": {
+            "startTime": null,
+            "seconds": 60,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": true,
+          "_id": "H0SG0oq3VfiCxBOQ",
+          "changes": [],
+          "description": "<p>The target is Deafened for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.</p>",
+          "transfer": false,
+          "statuses": [
+            "deafened"
+          ],
+          "flags": {},
+          "tint": "#ffffff",
+          "img": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
+          "type": "base",
+          "sort": 0,
+          "_key": "!actors.items.effects!KPdarakhulhighpr.zwGsAv6kmwzYGhh3.H0SG0oq3VfiCxBOQ"
+        }
+      ],
+      "folder": "Qi4Se3we69ukl2V9",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [
+                {
+                  "_id": "59WpbiZFULwixyvC",
+                  "onSave": false
+                },
+                {
+                  "_id": "H0SG0oq3VfiCxBOQ",
+                  "onSave": false
+                }
+              ],
+              "ability": "constitution",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You can blind or deafen a foe. Choose one creature that you can see within range to make a Constitution saving throw. If it fails, the target is either &amp;Reference[blinded] or &amp;Reference[deafened] (your choice) for the duration. At the end of each of its turns, the target can make a Constitution saving throw. On a success, the spell ends.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "blindness-deafness"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 2
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "value": "30",
+          "units": "foot"
+        },
+        "school": "nec",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.zwGsAv6kmwzYGhh3"
+    },
+    {
+      "_id": "3Lo9boi7P2ro6QV4",
+      "name": "Hold Person",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/control/debuff-chains-ropes-purple.webp",
+      "effects": [
+        {
+          "name": "Hold Person",
+          "origin": "Compendium.dnd5e.spells.Item.3Lo9boi7P2ro6QV4",
+          "duration": {
+            "startTime": null,
+            "seconds": 60,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": true,
+          "_id": "HH5YVjzxkwXpDZS0",
+          "changes": [],
+          "description": "<p>The target is Paralyzed for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p>",
+          "transfer": false,
+          "statuses": [
+            "paralyzed",
+            "incapacitated"
+          ],
+          "flags": {},
+          "tint": "#ffffff",
+          "img": "icons/magic/control/debuff-chains-ropes-purple.webp",
+          "type": "base",
+          "sort": 0,
+          "_key": "!actors.items.effects!KPdarakhulhighpr.3Lo9boi7P2ro6QV4.HH5YVjzxkwXpDZS0"
+        }
+      ],
+      "folder": "Qi4Se3we69ukl2V9",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [
+                {
+                  "_id": "HH5YVjzxkwXpDZS0",
+                  "onSave": false
+                }
+              ],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Choose a humanoid that you can see within range. The target must succeed on a Wisdom saving throw or be &amp;Reference[paralyzed] for the duration. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target.</p><p><strong>Higher Levels.Â </strong>When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "hold-person"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 2
+        },
+        "components": {
+          "material": {
+            "description": "A small, straight piece of iron",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "value": "60",
+          "units": "foot"
+        },
+        "school": "necromancy",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.3Lo9boi7P2ro6QV4"
+    },
+    {
+      "_id": "JbxsYXxSOTZbf9I0",
+      "name": "Spiritual Weapon",
+      "type": "spell",
+      "img": "icons/magic/fire/dagger-rune-enchant-flame-purple.webp",
+      "effects": [],
+      "folder": "Qi4Se3we69ukl2V9",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "attack": {
+                "ability": "",
+                "bonus": "",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "spell"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": [
+                  {
+                    "number": null,
+                    "denomination": null,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": true,
+                      "formula": "(floor(@item.level / 2))d8 + @mod"
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "force"
+                  }
+                ]
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You create a floating, spectral weapon within range that lasts for the duration or until you cast this spell again. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the weapon. On a hit, the target takes force damage equal to 1d8 + your spellcasting ability modifier.</p><p>As a bonus action on your turn, you can move the weapon up to 20 feet and repeat the attack against a creature within 5 feet of it.</p><p>The weapon can take whatever form you choose. Clerics of deities who are associated with a particular weapon (as St. Cuthbert is known for his mace and Thor for his hammer) make this spell's effect resemble that weapon.</p><p><strong>Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for every two slot levels above the 2nd.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "spiritual-weapon"
+        },
+        "casting": {
+          "type": "bonus",
+          "condition": ""
+        },
+        "circle": {
+          "base": 2
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "value": "60",
+          "units": "foot"
+        },
+        "school": "evocation",
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "connected": false,
+            "type": "square",
+            "size": "5",
+            "units": "foot"
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.JbxsYXxSOTZbf9I0"
+    },
+    {
+      "_id": "oyE5nVppa5mde5gT",
+      "name": "Animate Dead",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/control/fear-fright-monster-red.webp",
+      "effects": [],
+      "folder": "5Si35RRLLaaoWvC3",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the DM has the creature's game statistics).</p><p>On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.</p><p>The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, you animate or reassert control over two additional undead creatures for each slot level above 3rd. Each of the creatures must come from a different corpse or pile of bones.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "animate-dead"
+        },
+        "casting": {
+          "type": "minute",
+          "condition": ""
+        },
+        "circle": {
+          "base": 3
+        },
+        "components": {
+          "material": {
+            "description": "A drop of blood, a piece of flesh, and a pinch of bone dust",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "",
+          "units": "instantaneous"
+        },
+        "range": {
+          "value": "10",
+          "units": "foot"
+        },
+        "school": "nec",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "object"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.oyE5nVppa5mde5gT"
+    },
+    {
+      "_id": "pO4zGe5LmFIYqJiL",
+      "name": "Bestow Curse",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/control/buff-flight-wings-runes-red.webp",
+      "effects": [],
+      "folder": "5Si35RRLLaaoWvC3",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You touch a creature, and that creature must succeed on a Wisdom saving throw or become cursed for the duration of the spell. When you cast this spell, choose the nature of the curse from the following options:</p>\n<ul>\n<li>Choose one ability score. While cursed, the target has disadvantage on ability checks and saving throws made with that ability score.</li>\n<li>While cursed, the target has disadvantage on attack rolls against you.</li>\n<li>While cursed, the target must make a Wisdom saving throw at the start of each of its turns. If it fails, it wastes its action that turn doing nothing.</li>\n<li>While the target is cursed, your attacks and spells deal an extra 1d8 necrotic damage to the target.</li>\n</ul>\n<p>A remove curse spell ends this effect. At the DM's option, you may choose an alternative curse effect, but it should be no more powerful than those described above. The DM has final say on such a curse's effect.</p><p><strong>At Higher Levels.</strong> If you cast this spell using a spell slot of 4th level or higher, the duration is concentration, up to 10 minutes. If you use a spell slot of 5th level or higher, the duration is 8 hours. If you use a spell slot of 7th level or higher, the duration is 24 hours. If you use a 9th level spell slot, the spell lasts until it is dispelled. Using a spell slot of 5th level or higher grants a duration that doesn't require concentration.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "bestow-curse"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 3
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "nec",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.pO4zGe5LmFIYqJiL"
+    },
+    {
+      "_id": "0000000000000026",
+      "name": "Protection From Energy",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 20,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/items/spell.svg",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": null
+        },
+        "description": {
+          "value": "<p>For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "protection-from-energy"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 3
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": 1,
+          "units": "hour"
+        },
+        "range": {
+          "value": "0",
+          "units": "touch"
+        },
+        "school": "abjuration",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.0000000000000026"
+    },
+    {
+      "_id": "uCud2s4TjMfjiXUb",
+      "name": "Spirit Guardians",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/light/projectile-bolts-salvo-white.webp",
+      "effects": [],
+      "folder": "5Si35RRLLaaoWvC3",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": [
+                  {
+                    "number": 3,
+                    "denomination": 8,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "whole",
+                      "number": 1,
+                      "formula": ""
+                    },
+                    "type": "radiant"
+                  }
+                ]
+              },
+              "effects": [],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You call forth spirits to protect you. They flit around you to a distance of 15 feet for the duration. If you are good or neutral, their spectral form appears angelic or fey (your choice). If you are evil, they appear fiendish.</p><p>When you cast this spell, you can designate any number of creatures you can see to be unaffected by it. An affected creature's speed is halved in the area, and when the creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw. On a failed save, the creature takes 3d8 radiant damage (if you are good or neutral) or 3d8 necrotic damage (if you are evil). On a successful save, the creature takes half as much damage.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "spirit-guardians"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 3
+        },
+        "components": {
+          "material": {
+            "description": "A holy symbol",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "range": {
+          "units": "self"
+        },
+        "school": "conjuration",
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "connected": false,
+            "type": "radius",
+            "size": "15",
+            "units": "foot"
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.uCud2s4TjMfjiXUb"
+    },
+    {
+      "_id": "pxpb2eOB6bv4phAf",
+      "name": "Banishment",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/control/energy-stream-link-spiral-teal.webp",
+      "effects": [
+        {
+          "name": "Banishment",
+          "origin": "Compendium.dnd5e.spells.Item.pxpb2eOB6bv4phAf",
+          "duration": {
+            "startTime": null,
+            "seconds": 60,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": true,
+          "_id": "bckYDthT7sAOQBNO",
+          "changes": [],
+          "description": "<p>The target native to this plane is banished to a harmless demiplane plane and is Incapacitated for the duration.</p>",
+          "transfer": false,
+          "statuses": [
+            "incapacitated"
+          ],
+          "flags": {},
+          "tint": "#ffffff",
+          "img": "icons/magic/control/energy-stream-link-spiral-teal.webp",
+          "type": "base",
+          "sort": 0,
+          "_key": "!actors.items.effects!KPdarakhulhighpr.pxpb2eOB6bv4phAf.bckYDthT7sAOQBNO"
+        }
+      ],
+      "folder": "5auWSClKMDUIV5Ni",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [
+                {
+                  "_id": "bckYDthT7sAOQBNO",
+                  "onSave": false
+                }
+              ],
+              "ability": "charisma",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a Charisma saving throw or be banished.</p><p>If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is &amp;Reference[incapacitated]. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.</p><p>If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "banishment"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 4
+        },
+        "components": {
+          "material": {
+            "description": "An item distasteful to the target",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "value": "60",
+          "units": "foot"
+        },
+        "school": "abjuration",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.pxpb2eOB6bv4phAf"
+    },
+    {
+      "_id": "QvGcdRUSNRKEQJlK",
+      "name": "Stone Shape",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/earth/projectile-spiked-stone-boulder-blue.webp",
+      "effects": [],
+      "folder": "5auWSClKMDUIV5Ni",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You touch a stone object of Medium size or smaller or a section of stone no more than 5 feet in any dimension and form it into any shape that suits your purpose. So, for example, you could shape a large rock into a weapon, idol, or coffer, or make a small passage through a wall, as long as the wall is less than 5 feet thick. You could also shape a stone door or its frame to seal the door shut. The object you create can have up to two hinges and a latch, but finer mechanical detail isn't possible.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "stone-shape"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 4
+        },
+        "components": {
+          "material": {
+            "description": "Soft clay, which must be worked into roughly the desired shape of the stone object",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "",
+          "units": "instantaneous"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "transmutation",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "object"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.QvGcdRUSNRKEQJlK"
+    },
+    {
+      "_id": "CjIq8Ed7bu3vVwT1",
+      "name": "Contagion",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/unholy/strike-beam-blood-large-red-purple.webp",
+      "effects": [],
+      "folder": "bG9QTayc46rfNkv2",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "attack": {
+                "ability": "",
+                "bonus": "",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "spell"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "dnd5eactivity100": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity100",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Your touch inflicts disease. Make a melee spell attack against a creature within your reach. On a hit, you afflict the creature with a disease of your choice from any of the ones described below.</p><p>At the end of each of the target's turns, it must make a Constitution saving throw. After failing three of these saving throws, the disease's effects last for the duration, and the creature stops making these saves. After succeeding on three of these saving throws, the creature recovers from the disease, and the spell ends.</p><p>Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it.</p><p><strong>Blinding Sickness.Â </strong>Pain grips the creature's mind, and its eyes turn milky white. The creature has disadvantage on Wisdom checks and Wisdom saving throws and is blinded.</p><p><strong>Filth Fever.</strong>Â A raging fever sweeps through the creature's body. The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength.</p><p><strong>Flesh Rot.Â </strong>The creature's flesh decays. The creature has disadvantage on Charisma checks and vulnerability to all damage.</p><p><strong>Mindfire.</strong>Â The creature's mind becomes feverish. The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the confusion spell during combat.</p><p><strong>Seizure.Â </strong>The creature is overcome with shaking. The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity.</p><p><strong>Slimy Doom.</strong>Â The creature begins to bleed uncontrollably. The creature has disadvantage on Constitution checks and Constitution saving throws. In addition, whenever the creature takes damage, it is stunned until the end of its next turn.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "contagion"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 5
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "7",
+          "units": "day"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "nec",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.CjIq8Ed7bu3vVwT1"
+    },
+    {
+      "_id": "OVikYmSdHliAG2YD",
+      "name": "Insect Plague",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/nature/leaf-glow-maple-teal.webp",
+      "effects": [],
+      "folder": "bG9QTayc46rfNkv2",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": [
+                  {
+                    "number": 4,
+                    "denomination": 10,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "whole",
+                      "number": 1,
+                      "formula": ""
+                    },
+                    "type": "piercing"
+                  }
+                ]
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Swarming, biting locusts fill a 20-foot-radius Sphere centered on a point you choose within range. The sphere spreads around corners. The sphere remains for the Duration, and its area is lightly obscured. The sphere's area is difficult terrain.</p><p>When the area appears, each creature in it must make a Constitution saving throw. A creature takes 4d10 piercing damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "insect-plague"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 5
+        },
+        "components": {
+          "material": {
+            "description": "A few grains of sugar, some kernels of grain, and a smear of fat",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "range": {
+          "value": "300",
+          "units": "foot"
+        },
+        "school": "conjuration",
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "connected": false,
+            "type": "sphere",
+            "size": "20",
+            "units": "foot"
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.OVikYmSdHliAG2YD"
+    },
+    {
+      "_id": "E4NXux0RHvME1XgP",
+      "name": "Create Undead",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+      "effects": [],
+      "folder": "0pdesvXqKd55VOh2",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "bonuses": {
+                "ac": "",
+                "hp": "",
+                "attackDamage": "",
+                "saveDamage": "",
+                "healing": ""
+              },
+              "creatureSizes": [],
+              "creatureTypes": [],
+              "match": {
+                "attacks": false,
+                "proficiency": false,
+                "saves": false
+              },
+              "profiles": [
+                {
+                  "count": "@item.level - 6",
+                  "name": "",
+                  "_id": "GGQa2fXx4sJFOhCv",
+                  "uuid": "Compendium.dnd5e.monsters.Actor.IyIybE5t2adMEVUM",
+                  "level": {
+                    "min": 8,
+                    "max": null
+                  },
+                  "types": []
+                },
+                {
+                  "count": "@item.level - 3",
+                  "name": "",
+                  "_id": "439tNP7qngefOmVd",
+                  "uuid": "Compendium.dnd5e.monsters.Actor.OBujQLLPSmlJiZnL",
+                  "level": {
+                    "min": null,
+                    "max": null
+                  },
+                  "types": []
+                },
+                {
+                  "count": "@item.level - 7",
+                  "name": "",
+                  "_id": "8377f4szK4aEYLqD",
+                  "uuid": "Compendium.dnd5e.monsters.Actor.t8WYD7ak07X7xpx8",
+                  "level": {
+                    "min": 9,
+                    "max": null
+                  },
+                  "types": []
+                },
+                {
+                  "count": "@item.level - 6",
+                  "name": "",
+                  "_id": "1wXs9fpxffiMlT1j",
+                  "uuid": "Compendium.dnd5e.monsters.Actor.rbyp54px2D0ql4QK",
+                  "level": {
+                    "min": 8,
+                    "max": null
+                  },
+                  "types": []
+                }
+              ],
+              "summon": {
+                "identifier": "",
+                "mode": "",
+                "prompt": true
+              }
+            },
+            "type": "summon",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You can cast this spell only at night. Choose up to three corpses of Medium or Small humanoids within range. Each corpse becomes a ghoul under your control. (The DM has game statistics for these creatures.)</p><p>As a bonus action on each of your turns, you can mentally command any creature you animated with this spell if the creature is within 120 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.</p><p>The creature is under your control for 24 hours, after which it stops obeying any command you have given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature before the current 24-hour period ends. This use of the spell reasserts your control over up to three creatures you have animated with this spell, rather than animating new ones.</p><p><strong>Higher Levels.Â </strong>When you cast this spell using a 7th-level spell slot, you can animate or reassert control over four ghouls. When you cast this spell using an 8th-level spell slot, you can animate or reassert control over five ghouls or two ghasts or wights. When you cast this spell using a 9th-level spell slot, you can animate or reassert control over six ghouls, three ghasts or wights, or two mummies.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "create-undead"
+        },
+        "casting": {
+          "type": "minute",
+          "condition": "You can cast this spell only at night."
+        },
+        "circle": {
+          "base": 6
+        },
+        "components": {
+          "material": {
+            "description": "One clay pot filled with grave dirt, one clay pot filled with brackish water, and one 150 gp black onyx stone for each corpse.",
+            "consumed": false,
+            "cost": 150
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "",
+          "units": "instantaneous"
+        },
+        "range": {
+          "value": "10",
+          "units": "foot"
+        },
+        "school": "nec",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "3",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": "spec"
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.E4NXux0RHvME1XgP"
+    },
+    {
+      "_id": "9kGrFXnLiRg3Xnbo",
+      "name": "Regenerate",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/life/heart-cross-strong-flame-green.webp",
+      "effects": [],
+      "folder": "irCSpQWIMtp978TA",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": [],
+              "healing": {
+                "number": 4,
+                "denomination": 8,
+                "bonus": "15",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "healing"
+              }
+            },
+            "type": "heal",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "dnd5eactivity200": {
+            "system": {
+              "damage": {
+                "critical": {
+                  "allow": false,
+                  "bonus": ""
+                },
+                "parts": [
+                  {
+                    "number": null,
+                    "denomination": null,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": true,
+                      "formula": "1"
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    }
+                  }
+                ]
+              },
+              "effects": []
+            },
+            "type": "damage",
+            "_id": "dnd5eactivity200",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You touch a creature and stimulate its natural Healing ability. The target regains 4d8 + 15 Hit Points. For the Duration of the spell, the target regains 1 hit point at the start of each of its turns (10 hit points each minute).</p><p>The target's severed body members (fingers, legs, tails, and so on), if any, are restored after 2 minutes. If you have the severed part and hold it to the stump, the spell instantaneously causes the limb to knit to the stump.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "regenerate"
+        },
+        "casting": {
+          "type": "minute",
+          "condition": ""
+        },
+        "circle": {
+          "base": 7
+        },
+        "components": {
+          "material": {
+            "description": "A prayer wheel and holy water",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "transmutation",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.9kGrFXnLiRg3Xnbo"
+    },
+    {
+      "_id": "Eon0jzGzQRNluTPQ",
+      "name": "Antimagic Field",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/control/debuff-chains-ropes-net-purple-blue.webp",
+      "effects": [],
+      "folder": "x1XTiOgx4DJ34wc5",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>A 10-foot-radius invisible sphere of antimagic surrounds you. This area is divorced from the magical energy that suffuses the multiverse. Within the sphere, spells can't be cast, summoned creatures disappear, and even magic items become mundane. Until the spell ends, the sphere moves with you, centered on you.</p><p>Spells and other magical effects, except those created by an artifact or a deity, are suppressed in the sphere and can't protrude into it. A slot expended to cast a suppressed spell is consumed. While an effect is suppressed, it doesn't function, but the time it spends suppressed counts against its duration.</p><p><strong>Targeted Effects.</strong> Spells and other magical effects, such as magic missile and charm person, that target a creature or an object in the sphere have no effect on that target.</p><p><strong>Areas of Magic.</strong> The area of another spell or magical effect, such as fireball, can't extend into the sphere. If the sphere overlaps an area of magic, the part of the area that is covered by the sphere is suppressed. For example, the flames created by a wall of fire are suppressed within the sphere, creating a gap in the wall if the overlap is large enough.</p><p><strong>Spells.</strong> Any active spell or other magical effect on a creature or an object in the sphere is suppressed while the creature or object is in it.</p><p><strong>Magic Items.</strong> The properties and powers of magic items are suppressed in the sphere. For example, a +1 longsword in the sphere functions as a nonmagical longsword.</p><p>A magic weapon's properties and powers are suppressed if it is used against a target in the sphere or wielded by an attacker in the sphere. If a magic weapon or a piece of magic ammunition fully leaves the sphere (for example, if you fire a magic arrow or throw a magic spear at a target outside the sphere), the magic of the item ceases to be suppressed as soon as it exits.</p><p><strong>Magical Travel.</strong> Teleportation and planar travel fail to work in the sphere, whether the sphere is the destination or the departure point for such magical travel. A portal to another location, world, or plane of existence, as well as an opening to an extradimensional space such as that created by the rope trick spell, temporarily closes while in the sphere.</p><p><strong>Creatures and Objects.</strong> A creature or object summoned or created by magic temporarily winks out of existence in the sphere. Such a creature instantly reappears once the space the creature occupied is no longer within the sphere.</p><p><strong>Dispel Magic.</strong> Spells and magical effects such as dispel magic have no effect on the sphere. Likewise, the spheres created by different antimagic field spells don't nullify each other.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "antimagic-field"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 8
+        },
+        "components": {
+          "material": {
+            "description": "A pinch of powdered iron or iron filings",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "range": {
+          "units": "self"
+        },
+        "school": "abjuration",
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "connected": false,
+            "type": "sphere",
+            "size": "10",
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.Eon0jzGzQRNluTPQ"
+    },
+    {
+      "_id": "vsgmACFYINloIdPm",
+      "name": "Half Plate Armor",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp",
+      "effects": [],
+      "folder": "JqTP017wj3uxDJ8g",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": false
+          }
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "half-plate-armor"
+        },
+        "container": null,
+        "price": {
+          "value": 750,
+          "denomination": "gp"
+        },
+        "quantity": 1,
+        "rarity": "",
+        "weight": {
+          "value": 40,
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [
+          "noisy"
+        ],
+        "armor": {
+          "value": 15,
+          "requiredStrength": null
+        },
+        "magicalBonus": null,
+        "type": {
+          "category": "medium",
+          "base": "halfPlate"
+        }
+      },
+      "_key": "!actors.items!KPdarakhulhighpr.vsgmACFYINloIdPm"
+    }
+  ],
+  "sort": 396,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": 3,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 2,
+        "proficient": false
+      },
+      "constitution": {
+        "mod": 3,
+        "proficient": false
+      },
+      "intelligence": {
+        "mod": 1,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 8,
+        "proficient": true
+      },
+      "charisma": {
+        "mod": 6,
+        "proficient": true
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 17
+      },
+      "hp": {
+        "max": 112,
+        "temp": null,
+        "tempmax": 0,
+        "value": 112
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 9,
+      "legendary": {
+        "max": 0
+      }
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [
+          "common",
+          "custom"
+        ],
+        "communication": {},
+        "custom": [
+          "Darakhul"
+        ],
+        "tags": []
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [
+            "charmed",
+            "exhaustion",
+            "poisoned"
+          ],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [
+            "poison"
+          ],
+          "custom": []
+        },
+        "resistances": {
+          "value": [
+            "necrotic"
+          ],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 30,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base"
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "darkvision": 60
+        },
+        "units": "foot"
+      },
+      "size": "medium",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "undead"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "CC",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "wisdom"
+    },
+    "biography": {
+      "value": "<p><em>An emissary of the Hunger God, the darakhul high priestess summons her ever-ravenous people to the feast. Leading rites of slaughter and gluttony or handing out punishments and oaths of deprivation, she exercises a great deal of control over her charges.</em><br><strong>Bone Cracking.</strong> The marrow is considered a delicacy among the darakhul—difficult to reach, rich in flavor. The high priestess traditionally awards the first marrow bone to the altar or cracks it herself on a battlefield, shouting a note of praise (literally, “blessed marrow”) during this ritual.<br><strong>Vestments and Knives.</strong> The unholy garments of a darakhul priestess vary wildly in style, from formal robes stitched with black thread and set with garnet and rubies, to the more practical sacrificial robes of tooled leather, which resemble a butcher’s apron. A priestess of the darakhul always carries a ritual flensing knife; it is never used in combat, only in the aftermath.<br><strong>Hungry Dead Nature.</strong> The darakhul doesn’t require air or sleep.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPdarakhulhighpr"
+}

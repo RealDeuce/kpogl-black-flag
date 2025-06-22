@@ -1,0 +1,164 @@
+{
+  "_id": "KPmagmaspray0000",
+  "name": "Magma Spray",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 793,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 3,
+                "denomination": 8,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "fire"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "dexterity",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "40"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>A 5-foot-diameter, 5-foot-tall cylindrical fountain of magma erupts from the ground in a space of your choice within range. A creature in that space takes 3d8 fire damage, or half as much damage with a successful Dexterity saving throw. A creature that enters the area on its turn or ends its turn there also takes 3d8 fire damage, or half as much damage with a successful Dexterity saving throw. A creature can take this damage only once per turn.<br>A creature whose hit points are reduced to 0 by this damage is killed immediately, and its body burns to ash.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "magma-spray"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 2
+    },
+    "components": {
+      "material": {
+        "description": "a pinch of sulfur or a piece of brimstone",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "40",
+      "units": "foot"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "2.5",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPmagmaspray0000"
+}

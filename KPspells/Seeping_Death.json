@@ -1,0 +1,224 @@
+{
+  "_id": "KPseepingdeath00",
+  "name": "Seeping Death",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 1007,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityAtk": {
+        "system": {
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "spell"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "effects": []
+        },
+        "type": "attack",
+        "_id": "KPOGLactivityAtk",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      },
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 1,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>Your touch inflicts a virulent, flesh-eating disease. Make a melee spell attack against a creature within your reach. On a hit, the creature’s Dexterity score is reduced by 1d4, and it is afflicted with the seeping death disease for the duration.<br>Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease’s effects applies to it and can end the spell early.<br><em><strong>Seeping Death.</strong></em> The creature’s flesh is slowly liquefied by a lingering necrotic pestilence. At the end of each long rest, the diseased creature must succeed on a Constitution saving throw or its Dexterity score is reduced by 1d4. The reduction lasts until the target finishes a long rest after the disease is cured. If the disease reduces the creature’s Dexterity to 0, the creature dies.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "seeping-death"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": 3,
+      "units": "day"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "nec",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "1",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPseepingdeath00"
+}

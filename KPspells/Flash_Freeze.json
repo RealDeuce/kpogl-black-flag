@@ -1,0 +1,161 @@
+{
+  "_id": "KPflashfreeze000",
+  "name": "Flash Freeze",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 567,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 2,
+                "denomination": 6,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "necrotic"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "dexterity",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "60"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p><em><strong>Deep Magic: </strong>Void</em><br>You expose all the creatures within 10 feet of a point you choose that you can see within range to the frigid heart of the Void. A creature in the area must make a Dexterity saving throw, taking 3d6 cold and 2d6 necrotic damage on a successful save. On a failed save, the creature takes the same amount of damage and is restrained in a block of slimy black ice. A creature that is restrained in ice cannot breathe and must hold its breath or begin to suffocate. It can make a Strength check against your spell save DC to break free of the ice, or it can be broken out. An ice block has AC 13, 27 hit points, is vulnerable to fire damage, and immune to cold, necrotic, poison, and psychic damage.<br><em><strong>At Higher Levels.</strong></em> If cast using a 7th-level or higher slot, you deal an extra 2d6 cold damage for each slot level above 6th.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "WG4",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "flash-freeze"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 6
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Instantaneous"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "evocation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "10",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPflashfreeze000"
+}

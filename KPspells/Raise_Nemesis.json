@@ -1,0 +1,140 @@
+{
+  "_id": "KPraisenemesis00",
+  "name": "Raise Nemesis",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 939,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "hour",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>This spell is identical to <em>@UUID[Compendium.black-flag.spells.Item.ouNMLJDujgys94qk]{raise dead}</em>, except it simultaneously raises two creatures with opposite alignments. For example, if you raise a Lawful Good paladin, then somewhere nearby, a Chaotic Evil warrior of similar power also returns to life. The second corpse must be within 100 miles. The two raised creatures have a vague sense of the direction and distance to their nemesis. They aren’t compelled to battle one another or even to seek each other out. Their lives are, however, inextricably bound together in such a way that if either of them dies, the other also drops dead instantly.<br>Evil NPCs brought back with raise nemesis typically see it as an opportunity to create every sort of trouble imaginable.<br>If the spell is cast on a creature of true Neutral alignment, only that creature is restored to life.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "raise-nemesis"
+    },
+    "casting": {
+      "type": "hour",
+      "condition": ""
+    },
+    "circle": {
+      "base": 5
+    },
+    "components": {
+      "material": {
+        "description": "a diamond worth at least 500 gp, which the spell consumes",
+        "consumed": false,
+        "cost": 500
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Instantaneous"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "nec",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "100",
+        "units": "mile"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPraisenemesis00"
+}

@@ -1,0 +1,142 @@
+{
+  "_id": "KPacidgate000000",
+  "name": "Acid Gate",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 120,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You create a portal of swirling, acidic green vapor in an unoccupied space you can see. This portal connects with a target destination within 100 miles that you are personally familiar with and have seen with your own eyes, such as your wizard’s tower or an inn you have stayed at. You and up to three creatures of your choice can enter the portal and pass through it, arriving at the target destination (or within 10 feet of it, if it is currently occupied). If the target destination doesn’t exist or is inaccessible, the spell automatically fails and the gate doesn’t form.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "acid-gate"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 7
+    },
+    "components": {
+      "material": {
+        "description": "a vial of acid and a polished silver mirror worth 125 gp",
+        "consumed": false,
+        "cost": 125
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "100",
+        "units": "mile"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPacidgate000000"
+}

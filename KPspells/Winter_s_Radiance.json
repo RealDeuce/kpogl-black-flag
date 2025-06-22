@@ -1,0 +1,165 @@
+{
+  "_id": "KPwintersradianc",
+  "name": "Winter’s Radiance",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 1266,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 4,
+                "denomination": 8,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "cold"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "400"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>When you cast this spell, the piercing rays of a day’s worth of sunlight reflecting off fresh snow blankets the area, and the temperature drops precipitously. A creature in the area must make a Constitution saving throw, taking 4d8 cold damage and being blinded for the duration on a failed save or half as much damage with no additional effect on a successful one. Creatures possessing Sunlight Sensitivity have disadvantage on their save.<br>If any of this spell’s area overlaps with an area of darkness created by a spell of 6th level or lower, the spell that created the darkness is dispelled.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "winters-radiance"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 6
+    },
+    "components": {
+      "material": {
+        "description": "a piece of polished glass",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "400",
+      "units": "foot"
+    },
+    "school": "evocation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "cube",
+        "size": "30",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPwintersradianc"
+}

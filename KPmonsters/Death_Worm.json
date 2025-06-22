@@ -1,0 +1,1074 @@
+{
+  "_id": "KPdeathworm00000",
+  "name": "Death Worm",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Death Worm",
+    "width": 1,
+    "height": 1,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 0,
+      "brightness": 0,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Detect Life",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The death worm can sense the general direction of creatures that aren’t Constructs or Undead within 1 mile of it.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "detect-life"
+        }
+      },
+      "_key": "!actors.items!KPdeathworm00000.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Discharge",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>When a creature ends its turn within 5 feet of a death worm, the creature takes 2 (1d4) lightning damage.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "discharge"
+        }
+      },
+      "_key": "!actors.items!KPdeathworm00000.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Dreaming Venom",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The death worm’s poison influences the dreams of those poisoned by it. A creature that succumbs to this poison has disadvantage on Wisdom saving throws and suffers strange dreams. Every 24 hours that elapse, it must repeat the saving throw, reducing its hp maximum by 2 (1d4) on a failure. The poison is neutralized on a success. The target dies if dreaming venom reduces its hp maximum to 0. This reduction lasts until the poison is neutralized.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "dreaming-venom"
+        }
+      },
+      "_key": "!actors.items!KPdeathworm00000.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Lightning Arc",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": [
+                  {
+                    "number": 2,
+                    "denomination": 4,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "lightning"
+                  }
+                ]
+              },
+              "effects": [],
+              "ability": "dexterity",
+              "dc": {
+                "ability": "",
+                "formula": "14"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>When a creature starts its turn within 15 feet of at least two death worms, the creature must succeed on a DC 14 Dexterity saving throw or take 5 (2d4) lightning damage. The creature has disadvantage on the saving throw if it is within 15 feet of three or more death worms.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "lightning-arc"
+        }
+      },
+      "_key": "!actors.items!KPdeathworm00000.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Regeneration",
+      "type": "feature",
+      "img": "icons/skills/wounds/anatomy-organ-heart-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The death worm regains 3 hp at the start of its turn if it has at least 1 hp.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "regeneration"
+        }
+      },
+      "_key": "!actors.items!KPdeathworm00000.0000000000000005"
+    },
+    {
+      "_id": "0000000000000006",
+      "name": "Bite",
+      "type": "weapon",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "dexterity",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": [
+                  {
+                    "number": 1,
+                    "denomination": 4,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "lightning"
+                  }
+                ]
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "12"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 1,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage plus 2 (1d4) lightning damage and 4 (1d8) poison damage, and the target must succeed on a DC 12 Constitution saving throw or succumb to the worm’s venom (see the Dreaming Venom trait).",
+          "source": {
+            "book": "ToB3",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [
+          "finesse"
+        ],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 4,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "piercing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPdeathworm00000.0000000000000006"
+    },
+    {
+      "_id": "0000000000000007",
+      "name": "Spit Poison",
+      "type": "weapon",
+      "img": "icons/magic/acid/dissolve-drip-droplet-smoke.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 7,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "dexterity",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "ranged",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": [
+                  {
+                    "number": 2,
+                    "denomination": 8,
+                    "bonus": "0",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "poison"
+                  }
+                ]
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "30"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "12"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "30"
+            },
+            "sort": 1,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Ranged Weapon Attack: +4 to hit, range 15/30 ft., one creature. Hit: 9 (2d8) poison damage, and the target must succeed on a DC 12 Constitution saving throw or succumb to the worm’s venom (see the Dreaming Venom trait).",
+          "source": {
+            "book": "ToB3",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": null,
+            "denomination": null,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            }
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": "15",
+          "long": "30",
+          "reach": null,
+          "units": "foot",
+          "value": "15"
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPdeathworm00000.0000000000000007"
+    },
+    {
+      "_id": "0000000000000008",
+      "name": "Natural Armor",
+      "permission": {
+        "default": 0,
+        "OtBWCJNgwo0VVuQx": 3
+      },
+      "type": "gear",
+      "data": {
+        "description": {
+          "value": "",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": null,
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 13,
+          "type": "natural",
+          "dex": null
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "speed": {
+          "value": null,
+          "conditions": ""
+        },
+        "strength": 0,
+        "stealth": false,
+        "proficient": true
+      },
+      "folder": "",
+      "sort": 100001,
+      "flags": {
+        "black-flag": {
+          "relationship": {}
+        }
+      },
+      "img": "icons/svg/mystery-man.svg",
+      "effects": [],
+      "system": {
+        "activities": {},
+        "uses": {},
+        "description": {
+          "source": {}
+        },
+        "identifier": {},
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {},
+        "type": {}
+      },
+      "_key": "!actors.items!KPdeathworm00000.0000000000000008"
+    }
+  ],
+  "sort": 413,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": -1,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 2,
+        "proficient": false
+      },
+      "constitution": {
+        "mod": 2,
+        "proficient": false
+      },
+      "intelligence": {
+        "mod": -5,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 0,
+        "proficient": false
+      },
+      "charisma": {
+        "mod": -4,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 13
+      },
+      "hp": {
+        "max": 44,
+        "temp": null,
+        "tempmax": 0,
+        "value": 44
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 1,
+      "legendary": {
+        "max": 0
+      }
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [],
+        "communication": {},
+        "custom": [],
+        "tags": []
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [
+            "lightning"
+          ],
+          "custom": []
+        },
+        "resistances": {
+          "value": [],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 20,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "burrow": 20
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "tremorsense": 60
+        },
+        "units": "foot"
+      },
+      "size": "small",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "Monstrosity"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "ToB3",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "intelligence"
+    },
+    "biography": {
+      "value": "<p><em>A large red worm pops out of the dirt nearby, crackling with energy.</em><br>Death worms are found in high-altitude deserts and scrublands where they can be a deadly hazard to the unwary.<br><em><strong>The Worm Electric.</strong></em> Death worms gather lightning within their bodies and discharge it to kill foes. This discharge is especially deadly when death worms gather in squirms. Death worms are attracted to the miniscule bits of lightning contained in living creatures, and a living creature simply walking through a region containing death worms on a particularly dry day is often enough to attract a worm attack. The first sign of the worms’ presence is small, random arcs of lightning skittering across the surface of the ground. Wise travelers quickly leave the area.<br><em><strong>Mysterious Origins.</strong></em> Some scholars suggest the death worm is the larval form of the behir, but none have found proof. However, death worms separated from their kind may grow to immense sizes.<br><em><strong>From the Gods.</strong></em> Humanoids living near death worms treat them with respect and, in some cases, even mystical reverence. To them, the worms are the messengers of the gods, and surviving for days in regions filled with the creatures is often a mark of adulthood.<br><em><strong>Alchemical Uses.</strong></em> Many seek out death worms for alchemical research, using their poison or conductive flesh for lucid-dreaming elixirs, deadly poisons, and various lightning-based spell components. Locals also use death worm venom as a food preservative, especially in the fermentation of animal’s milk and vegetables, allowing for increased food stores through the harshest seasons.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPdeathworm00000"
+}

@@ -1,0 +1,240 @@
+{
+  "_id": "KPhandofdoom0000",
+  "name": "Hand of Doom",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 643,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityAtk": {
+        "system": {
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "spell"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": [
+              {
+                "number": 1,
+                "denomination": 4,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "necrotic"
+              }
+            ]
+          },
+          "effects": []
+        },
+        "type": "attack",
+        "_id": "KPOGLactivityAtk",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      },
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 1,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>Your outstretched hand glows with sinister power that hastens the demise of a creature you touch. Make a melee spell attack against the creature. On a hit, the target takes 1d4 necrotic damage and must make a successful Constitution saving throw or become poisoned until the end of your next turn. If the target was already poisoned when you hit it with hand of doom, it takes 1d12 poison damage instead of 1d4 necrotic damage on a failed save.<br>This spell’s damage increases by one die at 5th level (2d4 necrotic or 2d12 poison), 11th level (3d4 or 3d12), and 17th level (4d4 or 4d12).<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "hand-of-doom"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 0
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Instantaneous"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "nec",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "null",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPhandofdoom0000"
+}

@@ -1,0 +1,147 @@
+{
+  "_id": "KPsymbolofsorcer",
+  "name": "Symbol of Sorcery",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 1142,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You draw an arcane symbol on an object, wall, or other surface at least 5 feet wide. When a creature other than you approaches within 5 feet of the symbol, that act triggers an arcane explosion. Each creature in a 60-foot cone must succeed on a Wisdom saving throw or be stunned for 8 hours. A stunned creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a successful save. Once the symbol is triggered, the spell ends.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "symbol-of-sorcery"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 7
+    },
+    "components": {
+      "material": {
+        "description": "a stick of incense worth 20 gp",
+        "consumed": false,
+        "cost": 20
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Until dispelled or triggered"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "evocation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "cone",
+        "size": "60",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPsymbolofsorcer"
+}

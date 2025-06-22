@@ -1,0 +1,1114 @@
+{
+  "_id": "KPclockworkassas",
+  "name": "Clockwork Assassin",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Clockwork Assassin",
+    "width": 1,
+    "height": 1,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 60,
+      "brightness": 0,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Assassinate",
+      "type": "feature",
+      "img": "icons/weapons/swords/sword-broad-crystal-paired.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>During its first turn, the assassin has advantage on attack rolls against any creature that hasn’t taken a turn. Any hit the assassin scores against a surprised creature is a critical hit.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "assassinate"
+        }
+      },
+      "_key": "!actors.items!KPclockworkassas.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Explosive Core",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": [
+                  {
+                    "number": 3,
+                    "denomination": 6,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "fire"
+                  }
+                ]
+              },
+              "effects": [],
+              "ability": "dexterity",
+              "dc": {
+                "ability": "",
+                "formula": "13"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>When the assassin is destroyed, its core explodes, projecting superheated steam and shrapnel. Each creature within 5 feet of the construct must make a DC 13 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save, or half as much damage on a successful one.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "explosive-core"
+        }
+      },
+      "_key": "!actors.items!KPclockworkassas.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Immutable Form",
+      "type": "feature",
+      "img": "icons/magic/unholy/orb-beam-pink.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The assassin is immune to any spell or effect, other than its disassembly trait, that would alter its form.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "immutable-form"
+        }
+      },
+      "_key": "!actors.items!KPclockworkassas.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Magic Resistance",
+      "type": "feature",
+      "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The assassin has advantage on saving throws against spells and other magical effects.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "magic-resistance"
+        }
+      },
+      "_key": "!actors.items!KPclockworkassas.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Psychic Susceptibility",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>If the assassin takes psychic damage, it has disadvantage on attack rolls, saving throws, and ability checks until the end of its next turn.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "psychic-susceptibility"
+        }
+      },
+      "_key": "!actors.items!KPclockworkassas.0000000000000005"
+    },
+    {
+      "_id": "0000000000000006",
+      "name": "Sneak Attack",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "turn",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "1"
+        },
+        "description": {
+          "value": "<p>The assassin deals an extra 10 (3d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn’t incapacitated and the assassin doesn’t have disadvantage on the attack roll.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "sneak-attack"
+        }
+      },
+      "_key": "!actors.items!KPclockworkassas.0000000000000006"
+    },
+    {
+      "_id": "0000000000000007",
+      "name": "Standing Leap",
+      "type": "feature",
+      "img": "icons/environment/creatures/frog-spotted-green.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 7,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The assassin’s long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "standing-leap"
+        }
+      },
+      "_key": "!actors.items!KPclockworkassas.0000000000000007"
+    },
+    {
+      "_id": "0000000000000008",
+      "name": "Multiattack",
+      "type": "feature",
+      "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 8,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The clockwork assassin makes two rapier attacks.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "multiattack"
+        }
+      },
+      "_key": "!actors.items!KPclockworkassas.0000000000000008"
+    },
+    {
+      "_id": "0000000000000009",
+      "name": "Rapier",
+      "type": "weapon",
+      "img": "icons/weapons/swords/sword-guard-bronze.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 9,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "dexterity",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "15"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 1,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage and the target must succeed on a DC 15 Constitution saving throw or take 11 (2d10) poison damage and be poisoned for 1 minute.",
+          "source": {
+            "book": "CC",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "rapier"
+        },
+        "container": null,
+        "price": {
+          "value": 25,
+          "denomination": "gp"
+        },
+        "rarity": "",
+        "weight": {
+          "value": 2,
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [
+          "finesse"
+        ],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "piercing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "melee",
+          "category": "martial",
+          "base": "rapier"
+        }
+      },
+      "_key": "!actors.items!KPclockworkassas.0000000000000009"
+    },
+    {
+      "_id": "0000000000000010",
+      "name": "Disassembly",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 10,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The assassin breaks its body down into a snakelike, segmented cylinder, which allows it to move through a space as narrow as 6 inches wide. It can reassemble itself into its true form by using this action again. While disassembled into its snake form, the assassin can’t attack and attack rolls against it have advantage.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "disassembly"
+        }
+      },
+      "_key": "!actors.items!KPclockworkassas.0000000000000010"
+    },
+    {
+      "_id": "0000000000000011",
+      "name": "Natural Armor",
+      "permission": {
+        "default": 0,
+        "OtBWCJNgwo0VVuQx": 3
+      },
+      "type": "gear",
+      "data": {
+        "description": {
+          "value": "",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": null,
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 16,
+          "type": "natural",
+          "dex": null
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "speed": {
+          "value": null,
+          "conditions": ""
+        },
+        "strength": 0,
+        "stealth": false,
+        "proficient": true
+      },
+      "folder": "",
+      "sort": 100001,
+      "flags": {
+        "black-flag": {
+          "relationship": {}
+        }
+      },
+      "img": "icons/svg/mystery-man.svg",
+      "effects": [],
+      "system": {
+        "activities": {},
+        "uses": {},
+        "description": {
+          "source": {}
+        },
+        "identifier": {},
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {},
+        "type": {}
+      },
+      "_key": "!actors.items!KPclockworkassas.0000000000000011"
+    }
+  ],
+  "sort": 328,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": 2,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 6,
+        "proficient": true
+      },
+      "constitution": {
+        "mod": 4,
+        "proficient": true
+      },
+      "intelligence": {
+        "mod": 1,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 1,
+        "proficient": false
+      },
+      "charisma": {
+        "mod": -2,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 16
+      },
+      "hp": {
+        "max": 99,
+        "temp": null,
+        "tempmax": 0,
+        "value": 99
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 6,
+      "legendary": {
+        "max": 0
+      },
+      "perception": 14,
+      "stealth": 22
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [
+          "custom",
+          "common"
+        ],
+        "communication": {},
+        "custom": [],
+        "tags": [
+          "cantSpeak"
+        ]
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [
+            "charmed",
+            "exhaustion",
+            "frightened",
+            "paralyzed",
+            "petrified",
+            "poisoned"
+          ],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [
+            "lightning",
+            "poison"
+          ],
+          "custom": []
+        },
+        "resistances": {
+          "value": [],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 30,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "climb": 30
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "darkvision": 60
+        },
+        "units": "foot"
+      },
+      "size": "medium",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "construct"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "CC",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "intelligence"
+    },
+    "biography": {
+      "value": "<p><em>The ticking of their gears is all the warning some victims ever hear.</em><br><strong>Single-minded Killers.</strong> A deadly, sentient tool and a lucrative investment for those who would hire them out, a clockwork assassin is a cold and efficient killer with no concern for its own well being.<br>Clockwork servants, soldiers, and even killers exist in societies with sufficiently advanced metallurgy and schools of clockwork magic.<br><strong>Construct Nature.</strong> A clockwork creature doesn’t require air, food, drink, or sleep.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPclockworkassas"
+}

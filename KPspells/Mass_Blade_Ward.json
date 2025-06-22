@@ -1,0 +1,139 @@
+{
+  "_id": "KPmassbladeward0",
+  "name": "Mass Blade Ward",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 806,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You make a protective gesture toward your allies. Choose three creatures that you can see within range. Until the end of your next turn, the targets have resistance against bludgeoning, piercing, and slashing damage from weapon attacks. If a target moves farther than 30 feet from you, the effect ends for that creature.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "HH",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "mass-blade-ward"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 2
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "round"
+    },
+    "range": {
+      "value": "30",
+      "units": "foot"
+    },
+    "school": "abjuration",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "3",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPmassbladeward0"
+}

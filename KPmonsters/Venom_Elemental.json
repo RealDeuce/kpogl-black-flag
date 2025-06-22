@@ -1,0 +1,754 @@
+{
+  "_id": "KPvenomelemental",
+  "name": "Venom Elemental",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Venom Elemental",
+    "width": 2,
+    "height": 2,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 60,
+      "brightness": 0,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Liquid Form",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The elemental can enter a hostile creature’s space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "liquid-form"
+        }
+      },
+      "_key": "!actors.items!KPvenomelemental.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Underwater Camouflage",
+      "type": "feature",
+      "img": "icons/magic/water/orb-ice-web.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The elemental has advantage on Dexterity (Stealth) checks made while underwater.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "underwater-camouflage"
+        }
+      },
+      "_key": "!actors.items!KPvenomelemental.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Multiattack",
+      "type": "feature",
+      "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The venom elemental makes two bite attacks.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "multiattack"
+        }
+      },
+      "_key": "!actors.items!KPvenomelemental.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Bite",
+      "type": "weapon",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": [
+                  {
+                    "number": 2,
+                    "denomination": 6,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "poison"
+                  }
+                ]
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "10"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "13"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "10"
+            },
+            "sort": 1,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) poison damage, and the creature must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its next turn.",
+          "source": {
+            "book": "CC",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 6,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "piercing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "10",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPvenomelemental.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Natural Armor",
+      "permission": {
+        "default": 0,
+        "OtBWCJNgwo0VVuQx": 3
+      },
+      "type": "gear",
+      "data": {
+        "description": {
+          "value": "",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": null,
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 14,
+          "type": "natural",
+          "dex": null
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "speed": {
+          "value": null,
+          "conditions": ""
+        },
+        "strength": 0,
+        "stealth": false,
+        "proficient": true
+      },
+      "folder": "",
+      "sort": 100001,
+      "flags": {
+        "black-flag": {
+          "relationship": {}
+        }
+      },
+      "img": "icons/svg/mystery-man.svg",
+      "effects": [],
+      "system": {
+        "activities": {},
+        "uses": {},
+        "description": {
+          "source": {}
+        },
+        "identifier": {},
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {},
+        "type": {}
+      },
+      "_key": "!actors.items!KPvenomelemental.0000000000000005"
+    }
+  ],
+  "sort": 1572,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": 3,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 2,
+        "proficient": false
+      },
+      "constitution": {
+        "mod": 3,
+        "proficient": false
+      },
+      "intelligence": {
+        "mod": -2,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 0,
+        "proficient": false
+      },
+      "charisma": {
+        "mod": -1,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 14
+      },
+      "hp": {
+        "max": 93,
+        "temp": null,
+        "tempmax": 0,
+        "value": 93
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 4,
+      "legendary": {
+        "max": 0
+      }
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [
+          "custom",
+          "primordial"
+        ],
+        "communication": {},
+        "custom": [],
+        "tags": [
+          "cantSpeak"
+        ]
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [
+            "exhaustion",
+            "grappled",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "prone",
+            "restrained",
+            "unconscious"
+          ],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [
+            "poison"
+          ],
+          "custom": []
+        },
+        "resistances": {
+          "value": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 40,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "swim": 50
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "darkvision": 60
+        },
+        "units": "foot"
+      },
+      "size": "large",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "elemental"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "CC",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "intelligence"
+    },
+    "biography": {
+      "value": "<p><em>An enormous viper formed of green liquid curls upward, its dripping fangs ready to strike.</em><br>Venom elementals resemble water elementals but almost always take the form of a snake with prominent fangs.<br><strong>Willing Visitors.</strong> Unlike other elementals, these creatures crave summoning to the Material Plane, where they can observe the effects of their bites on living creatures.<br><strong>Elemental Nature.</strong> The venom elemental doesn’t require air, food, drink, or sleep.<br><h2>Alternate Traits and Actions</h2><br>The following changes allow GMs to alter a venom elemental without modifying its challenge rating.<br><em><strong>Air Form.</strong></em> Aerosolized versions of the venom elemental are rarer than their liquid cousins on the demiplane of poisons. The venom elemental can enter a hostile creature’s space and stop there. It can move through a space as narrow as 1 inch wide without squeezing. The elemental gains a flying speed of 60 feet.<br>The venom elemental also gains the Aerial Camouflage trait.<br>The venom elemental loses its swimming speed and its Liquid Form and Underwater Camouflage traits.<br>• <em><strong>Aerial Camouflage.</strong></em> While the elemental is flying it has advantage on Dexterity (Stealth) checks.<br><em><strong>Engulf.</strong></em> Each creature in the venom elemental’s space must make a DC 13 Strength saving throw. On a failure, the target takes 6 (1d6 + 3) bludgeoning damage plus 3 (1d6) poison damage, and the creature must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its next turn. If the target is Large or smaller, it is also grappled (escape DC 13). Until the grapple ends, the target is restrained and unable to breathe unless it can breathe water. If the saving throw is successful, the target is pushed out of the elemental’s space.<br>The venom elemental can grapple one Large creature or up to two Medium or smaller creatures at one time. At the start of the elemental’s turn, each target grappled by it takes 7 (2d6) poison damage and must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its next turn. A creature within 5 feet of the elemental can pull a creature out of it by taking an action to make a DC 13 Strength check and succeeding.<br>The venom elemental loses its Multiattack action.<br><em><strong>Envenom Liquid.</strong></em> As an action, the venom elemental divests a portion of its body into a pint of liquid. The elemental’s hit point maximum is reduced by 1d6 hit points, and this reduction lasts until the elemental finishes a short rest. The venom retains its potency for 1 hour before dissolution. A creature drinking the envenomed liquid must make a DC 13 Constitution saving throw or take 7 (2d6) poison damage and gain the poisoned condition for 1 minute.<br>The venom elemental gains the Vulnerability to Antitoxin trait:<ul><li>Vulnerability to Antitoxin. When the venom elemental is struck by a vial of antitoxin (thrown as an improvised weapon), it takes 2d6 acid damage. Additionally, until the end of its next turn, creatures gain resistance to poison damage dealt by the elemental and have advantage on Constitution saving throws to avoid becoming poisoned by the elemental.</li><br><em><strong>Spit Venom.</strong> Ranged Weapon Attack:</em> +5 to hit, range 15/30 ft., one target. <em>Hit:</em> The target must make a DC 13 Constitution saving throw, taking 14 (4d6) poison damage on a failed save or half as much on a successful one. On a failed save, the creature gains the poisoned condition until the end of its next turn.<br>The venom elemental modifies its Multiattack action to make two attacks: one with its bite and one with its spit venom.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPvenomelemental"
+}

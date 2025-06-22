@@ -1,0 +1,240 @@
+{
+  "_id": "KPheavensspear00",
+  "name": "Heaven’s Spear",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 661,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityAtk": {
+        "system": {
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "spell"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": [
+              {
+                "number": 4,
+                "denomination": 8,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "piercing"
+              }
+            ]
+          },
+          "effects": []
+        },
+        "type": "attack",
+        "_id": "KPOGLactivityAtk",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "150"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      },
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "dexterity",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "150"
+        },
+        "sort": 1,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You hurl a spear of radiant light toward a creature you can see within range. Make a ranged spell attack against the target. On a hit, the target takes 4d8 piercing damage.<br>When the spear reaches the target, regardless if it hits, it explodes in a wave of holy light. Each creature within 30 feet of the target, including the target, must make a Dexterity saving throw, taking 10d6 radiant damage on a failed save, or half as much damage on a successful one. Undead and creatures with the Sunlight Sensitivity trait have disadvantage on the saving throw.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 8th level or higher, the radiant damage increases by 1d6 for each slot level above 7th.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "heavens-spear"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 7
+    },
+    "components": {
+      "material": {
+        "description": "a tiny replica spear fashioned out of solid gold worth at least 250 gp",
+        "consumed": false,
+        "cost": 250
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Instantaneous"
+    },
+    "range": {
+      "value": "150",
+      "units": "foot"
+    },
+    "school": "evocation",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "1",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPheavensspear00"
+}

@@ -1,0 +1,165 @@
+{
+  "_id": "KPsaltlash000000",
+  "name": "Salt Lash",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 985,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 2,
+                "denomination": 8,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "slashing"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "self",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You create a long, thin blade of razor-sharp salt crystals. You can wield it as a longsword, using your spellcasting ability to modify your weapon attack rolls. The sword deals 2d8 slashing damage on a hit, and any creature struck by the blade must make a successful Constitution saving throw or be stunned by searing pain until the start of your next turn. Constructs and undead are immune to the blade’s secondary (stun) effect; plants and creatures composed mostly of water, such as water elementals, also take an additional 2d8 necrotic damage if they fail the saving throw.<br>The spell lasts until you stop concentrating on it, the duration expires, or you let go of the blade for any reason.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "salt-lash"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "a pinch of salt worth 1 sp",
+        "consumed": true,
+        "cost": 1
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "null",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPsaltlash000000"
+}

@@ -1,0 +1,148 @@
+{
+  "_id": "KPsanguinehorror",
+  "name": "Sanguine Horror",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 987,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>When you cast this spell, you prick yourself with the material component, taking 1 piercing damage. The spell fails if this damage is prevented or negated in any way. From the drop of blood, you conjure a @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPbloodelemental]{blood elemental}. The blood elemental is friendly to you and your companions for the duration. It disappears when it’s reduced to 0 hit points or when the spell ends.<br>Roll initiative for the elemental, which has its own turns. It obeys verbal commands from you (no action required by you). If you don’t issue any commands to the blood elemental, it defends itself but otherwise takes no actions. If your concentration is broken, the blood elemental doesn’t disappear, but you lose control of it and it becomes hostile to you and your companions. An uncontrolled blood elemental cannot be dismissed by you, and it disappears 1 hour after you summoned it.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "sanguine-horror"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 5
+    },
+    "components": {
+      "material": {
+        "description": "a miniature dagger",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": "5",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "",
+        "special": "",
+        "type": ""
+      },
+      "template": {
+        "count": "",
+        "connected": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPsanguinehorror"
+}

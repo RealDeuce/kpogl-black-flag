@@ -1,0 +1,178 @@
+{
+  "_id": "KPdeathgodstouch",
+  "name": "Death God’S Touch",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 411,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityAtk": {
+        "system": {
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "spell"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": [
+              {
+                "number": 10,
+                "denomination": 10,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "necrotic"
+              }
+            ]
+          },
+          "effects": []
+        },
+        "type": "attack",
+        "_id": "KPOGLactivityAtk",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>This spell allows you to shred the life force of a creature you touch. You become invisible and make a melee spell attack against the target. On a hit, the target takes 10d10 necrotic damage. If this damage reduces the target to 0 hit points, the target dies. Whether the attack hits or misses, you remain invisible until the start of your next turn.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 8th level or higher, the damage increases by 2d10 for each slot level above 7th.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "death-gods-touch"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 7
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Instantaneous"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "nec",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "",
+        "special": "",
+        "type": ""
+      },
+      "template": {
+        "count": "",
+        "connected": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPdeathgodstouch"
+}

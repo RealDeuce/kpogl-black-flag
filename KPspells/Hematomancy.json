@@ -1,0 +1,147 @@
+{
+  "_id": "KPhematomancy000",
+  "name": "Hematomancy",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 668,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You can learn information about a creature whose blood you possess. The target must make a Wisdom saving throw. If the target knows you’re casting the spell, it can fail the saving throw voluntarily if it wants you to learn the information. On a successful save, the target isn’t affected, and you can’t use this spell against it again for 24 hours. On a failed save, or if the blood belongs to a dead creature, you learn the following information:<ul><li>The target’s most common name (if any).</li><li>The target’s creature type (and subtype, if any), gender, and which of its ability scores is highest (though not the exact numerical score).</li><li>The target’s current status (alive, dead, sick, wounded, healthy, etc. ).</li><li>The circumstances of the target shedding the blood you’re holding (bleeding wound, splatter from an attack, how long ago it was shed, etc. ).</li><br>Alternatively, you can forgo all of the above information and instead use the blood as a beacon to track the target. For 1 hour, as long as you are on the same plane of existence as the creature, you know the direction and distance to the target’s location at the time you cast this spell. While moving toward the location, if you are presented with a choice of paths, the spell automatically indicates which path provides the shortest and most direct route to the location.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "hematomancy"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "a drop of a creature’s blood",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Instantaneous"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "divination",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "null",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPhematomancy000"
+}

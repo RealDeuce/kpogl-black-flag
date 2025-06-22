@@ -1,0 +1,140 @@
+{
+  "_id": "KPicefortress000",
+  "name": "Ice Fortress",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 688,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>A gleaming fortress of ice springs from a square area of ground that you can see within range. It is a 10-foot cube (including floor and roof). The fortress can’t overlap any other structures, but any creatures in its space are harmlessly lifted up as the ice rises into position. The walls are made of ice (AC 13), have 120 hit points each, and are immune to cold, necrotic, poison, and psychic damage. Reducing a wall to 0 hit points destroys it and has a 50 percent chance to cause the roof to collapse. A damaged wall can be repaired by casting a spell that deals cold damage on it, on a point-for-point basis.<br>Each wall has two arrow slits. One wall also includes an ice door with an <em>@UUID[Compendium.black-flag.spells.Item.JVimVp4IvmQTO52h]{arcane lock}</em>. You designate at the time of the fort’s creation which creatures can enter the fortification. The door has AC 18 and 60 hit points, or it can be broken open with a successful DC 25 Strength (Athletics) check (DC 15 if the <em>arcane lock</em> is dispelled).<br>The fortress catches and reflects light, so that creatures outside the fortress who rely on sight have disadvantage on Perception checks and attack rolls made against those within the fortress if it’s in an area of bright sunlight.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 6th level or higher, you can increase the length or width of the fortification by 5 feet for every slot level above 5th. You can make a different choice (width or length) for each slot level above 5th.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "ice-fortress"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 5
+    },
+    "components": {
+      "material": {
+        "description": "a miniature keep carved from ice or glass",
+        "consumed": true,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Until dispelled or destroyed"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "cube",
+        "size": "10",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPicefortress000"
+}

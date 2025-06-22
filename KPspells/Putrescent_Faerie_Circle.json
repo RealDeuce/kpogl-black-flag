@@ -1,0 +1,165 @@
+{
+  "_id": "KPputrescentfaer",
+  "name": "Putrescent Faerie Circle",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 925,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 4,
+                "denomination": 8,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "necrotic"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "60"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You create a 20-foot-diameter circle of loosely-packed toadstools that spew sickly white spores and ooze a tarry substance. At the start of each of your turns, each creature within the circle must make a Constitution saving throw. A creature takes 4d8 necrotic damage on a failed save, or half as much damage on a successful one.<br>If a creature attempts to pass through the ring of toadstools, the toadstools release a cloud of spores, and the creature must make a Constitution saving throw. On a failure, the creature takes 8d8 poison damage and is poisoned for 1 minute. On a success, the creature takes half as much damage and isn’t poisoned. While a creature is poisoned, it is paralyzed. It can attempt a new Constitution saving throw at the end of each of its turns to remove the paralyzed condition (but not the poisoned condition).<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "WL:ItW",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "putrescent-faerie-circle"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 5
+    },
+    "components": {
+      "material": {
+        "description": "a piece of poisonous fungus",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "10",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPputrescentfaer"
+}

@@ -1,0 +1,170 @@
+{
+  "_id": "KPplaguewalk0000",
+  "name": "Plague Walk",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 892,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 2,
+                "denomination": 8,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "poison"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "self",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You conjure a trail of sickly, yellowish-green miasma that follows in your footsteps and lingers on your trail. This miasma is visible as a mist hovering in each space you leave. The mist remains in each of those spaces, forming a trail behind you, for 10 minutes before fading. The mist forms only along the ground and doesn’t form in spaces you left by flying, swimming, or similarly not in contact with the ground.<br>A creature that enters the miasma for the first time on a turn or starts its turn there must succeed a Constitution saving throw or take 2d8 poison damage and be poisoned for 1 minute. At the end of each of its turns, a poisoned creature can make another Constitution saving throw, ending the poisoned condition on itself on a success. Nonmagical plants that aren’t creatures, such as trees and shrubs, wither and die in the miasma in your wake.<br><em><strong>At Higher Levels.</strong></em> If you cast this spell using a spell slot of 4th level or higher, the miasma lasts for an additional 10 minutes for each slot level above 3rd.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "plague-walk"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "a vial of pus",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "nec",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "",
+        "special": "",
+        "type": ""
+      },
+      "template": {
+        "count": "",
+        "connected": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPplaguewalk0000"
+}

@@ -1,0 +1,145 @@
+{
+  "_id": "KPspellhuntstep0",
+  "name": "Spellhunt Step",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 1081,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "intelligence",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "which you take when you are hit by a spell attack or when you fail a saving throw against a spell",
+          "override": false,
+          "primary": true,
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "30"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>As the spell strikes you, you teleport yourself to the spellcaster, provided the spellcaster is within range and the triggering spell didn’t leave you incapacitated. If you can see the spellcaster, you appear in an unoccupied space of your choice within 5 feet of the spellcaster. If you can’t see the spellcaster, the spellcaster must succeed on an Intelligence saving throw or you appear in the nearest unoccupied space within 5 feet of the spellcaster.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 3rd level or higher, the range of the spell increases by 10 feet for each slot level above 2nd.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "spellhunt-step"
+    },
+    "casting": {
+      "type": "reaction",
+      "condition": "which you take when you are hit by a spell attack or when you fail a saving throw against a spell"
+    },
+    "circle": {
+      "base": 2
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Instantaneous"
+    },
+    "range": {
+      "value": "30",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "5",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPspellhuntstep0"
+}

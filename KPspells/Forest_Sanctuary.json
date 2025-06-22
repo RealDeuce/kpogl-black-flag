@@ -1,0 +1,140 @@
+{
+  "_id": "KPforestsanctuar",
+  "name": "Forest Sanctuary",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 579,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>While in a forest, you create a protective, 200-foot cube centered on a point you can see within range. The atmosphere inside the cube has the lighting, temperature, and moisture that is most ideal for the forest, regardless of the lighting or weather outside the area. The cube is transparent, and creatures and objects can move freely through it. The cube protects the area inside it from storms, strong winds, and floods, including those created by magic such as control weather, control water, or meteor swarm. Such spells can’t be cast while the spellcaster is in the cube.<br>You can create a permanently protected area by casting this spell at the same location every day for one year.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "forest-sanctuary"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 9
+    },
+    "components": {
+      "material": {
+        "description": "a bowl of fresh rainwater and a tree branch",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 24,
+      "units": "hour"
+    },
+    "range": {
+      "value": "300",
+      "units": "foot"
+    },
+    "school": "abjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "cube",
+        "size": "200",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPforestsanctuar"
+}

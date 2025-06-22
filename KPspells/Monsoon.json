@@ -1,0 +1,163 @@
+{
+  "_id": "KPmonsoon0000000",
+  "name": "Monsoon",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 830,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 2,
+                "denomination": 10,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "bludgeoning"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "dexterity",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "self",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You create a dark rain cloud in the shape of a cylinder that is 10 feet tall with a 40-foot radius, centered on the point you can see 100 feet in the sky directly above you. The spell fails if you can’t see a point in the air where the rain cloud could appear (for example, if you are in a room that can’t accommodate the cloud). The cloud remains centered on you in the sky above you, and moving to a place where you don’t have a clear path to the sky ends the spell early.<br>Until the spell ends, heavy rain and hailstones fall in the area within 40 feet of you, pummeling creatures and objects and loosening the ground. Nonmagical fires in the area are extinguished, the area is lightly obscured, and the ground in the area is difficult terrain. Any creature other than you that starts its turn in the area must make a Dexterity saving throw, taking 2d10 bludgeoning damage on a failed save, or half as much damage on a successful one. When you cast this spell, you can designate any number of creatures you can see to be unaffected by it.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d10 for each slot level above 6th.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "monsoon"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 6
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "40",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPmonsoon0000000"
+}

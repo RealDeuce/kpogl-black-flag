@@ -1,0 +1,147 @@
+{
+  "_id": "KPtoxicpollen000",
+  "name": "Toxic Pollen",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 1182,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "30"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>Upon casting this spell, one type of plant within range gains the ability to puff a cloud of pollen based on conditions you supply during casting. If the conditions are met, an affected plant sprays a pollen cloud in a 10-foot-radius sphere centered on it. Creatures in the area must succeed on a Constitution saving throw or become poisoned for 1 minute. At the end of a poisoned creature’s turn, it can make a Constitution saving throw. On a success, it is no longer poisoned. A plant can only release this pollen once within the duration.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "WG3",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "toxic-pollen"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 2
+    },
+    "components": {
+      "material": {
+        "description": "allergenic or poisonous pollen",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "year"
+    },
+    "range": {
+      "value": "30",
+      "units": "foot"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "sphere",
+        "size": "10",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPtoxicpollen000"
+}

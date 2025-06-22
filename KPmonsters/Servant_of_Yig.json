@@ -1,0 +1,1520 @@
+{
+  "_id": "KPservantofyig00",
+  "name": "Servant of Yig",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Servant of Yig",
+    "width": 1,
+    "height": 1,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 60,
+      "brightness": 0,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Magic Resistance",
+      "type": "feature",
+      "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The Servant of Yig has advantage on saving throws against spells and other magical effects.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "magic-resistance"
+        }
+      },
+      "_key": "!actors.items!KPservantofyig00.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Innate Spellcasting",
+      "type": "feature",
+      "img": "icons/magic/light/projectiles-star-purple.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The Servant of Yig’s innate spellcasting ability is Charisma (spell save DC 12). The servant can innately cast the following spells, requiring no material components:<br>3/day each: @UUID[Compendium.black-flag.spells.Item.pw72u0bgcIKLtSBM]{charm person}, @UUID[Compendium.black-flag.spells.Item.moUAyN0JUuMvoY6U]{fear}<br>1/day: @UUID[Compendium.black-flag.spells.Item.Bcm0RKcg5os0dDhC]{confusion}",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "innate-spellcasting"
+        }
+      },
+      "_key": "!actors.items!KPservantofyig00.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Multiattack",
+      "type": "feature",
+      "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The servant of Yig makes two attacks: one with its bite and one with its glaive.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "multiattack"
+        }
+      },
+      "_key": "!actors.items!KPservantofyig00.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Bite",
+      "type": "weapon",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": [
+                  {
+                    "number": 3,
+                    "denomination": 6,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "poison"
+                  }
+                ]
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "13"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 1,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage plus 10 (3d6) poison damage. The target must succeed on a DC 13 Constitution saving throw or become poisoned. While poisoned this way, the target is incapacitated and takes 7 (2d6) poison damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+          "source": {
+            "book": "CC",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 4,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "piercing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPservantofyig00.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Glaive",
+      "type": "weapon",
+      "img": "icons/weapons/polearms/glaive-simple.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "10"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +4 to hit, reach 10 ft., one creature. Hit: 7 (1d10 + 2) slashing damage.",
+          "source": {
+            "book": "CC",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "glaive"
+        },
+        "container": null,
+        "price": {
+          "value": 20,
+          "denomination": "gp"
+        },
+        "rarity": "",
+        "weight": {
+          "value": 6,
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 10,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "slashing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "10",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "melee",
+          "category": "martial",
+          "base": "glaive"
+        }
+      },
+      "_key": "!actors.items!KPservantofyig00.0000000000000005"
+    },
+    {
+      "_id": "0000000000000006",
+      "name": "Constrict",
+      "type": "weapon",
+      "img": "icons/creatures/reptiles/serpent-horned-green.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the Servant of Yig can’t constrict another target.",
+          "source": {
+            "book": "CC",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "bludgeoning"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPservantofyig00.0000000000000006"
+    },
+    {
+      "_id": "eS7XnnApoxRxYXPs",
+      "name": "Charm Person",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "innate",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/fire/explosion-fireball-medium-purple-pink.webp",
+      "effects": [
+        {
+          "name": "Charm Person",
+          "origin": "Compendium.dnd5e.spells.Item.eS7XnnApoxRxYXPs",
+          "duration": {
+            "startTime": null,
+            "seconds": 3600,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": true,
+          "_id": "1QhUB3231btaCO0b",
+          "changes": [],
+          "description": "<p>The target is Charmed by the caster until the spell ends. The charmed creature regards the caster as a friendly acquaintance. When the spell ends, the creature knows it was charmed.</p>",
+          "transfer": false,
+          "statuses": [
+            "charmed"
+          ],
+          "flags": {},
+          "tint": "#ffffff",
+          "img": "icons/magic/fire/explosion-fireball-medium-purple-pink.webp",
+          "type": "base",
+          "sort": 0,
+          "_key": "!actors.items.effects!KPservantofyig00.eS7XnnApoxRxYXPs.1QhUB3231btaCO0b"
+        }
+      ],
+      "folder": "ERuXllkhTQF51rDJ",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [
+                {
+                  "_id": "1QhUB3231btaCO0b",
+                  "onSave": false
+                }
+              ],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": [
+                {
+                  "type": "item",
+                  "value": "1",
+                  "scaling": {
+                    "mode": ""
+                  }
+                }
+              ]
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "longRest",
+              "type": "recoverAll"
+            }
+          ],
+          "max": 3
+        },
+        "description": {
+          "value": "<p>You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is &amp;Reference[charmed] by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "charm-person"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "range": {
+          "value": "30",
+          "units": "foot"
+        },
+        "school": "necromancy",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPservantofyig00.eS7XnnApoxRxYXPs"
+    },
+    {
+      "_id": "XXUDGFELgoskdOD0",
+      "name": "Fear",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "innate",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "effects": [
+        {
+          "name": "Fear",
+          "origin": "Compendium.dnd5e.spells.Item.XXUDGFELgoskdOD0",
+          "duration": {
+            "startTime": null,
+            "seconds": 60,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": true,
+          "_id": "4QpReACTSQTg2KTw",
+          "changes": [],
+          "description": "<p>The target drops whatever it is holding and become Frightened for the duration. While Frightened by this spell, a creature must take the Dash action and move away from the caster by the safest available route on each of its turns, unless there is nowhere to move.</p>",
+          "transfer": false,
+          "statuses": [
+            "frightened"
+          ],
+          "flags": {},
+          "tint": "#ffffff",
+          "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+          "type": "base",
+          "sort": 0,
+          "_key": "!actors.items.effects!KPservantofyig00.XXUDGFELgoskdOD0.4QpReACTSQTg2KTw"
+        }
+      ],
+      "folder": "5Si35RRLLaaoWvC3",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [
+                {
+                  "_id": "4QpReACTSQTg2KTw",
+                  "onSave": false
+                }
+              ],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": [
+                {
+                  "type": "item",
+                  "value": "1",
+                  "scaling": {
+                    "mode": ""
+                  }
+                }
+              ]
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "longRest",
+              "type": "recoverAll"
+            }
+          ],
+          "max": 3
+        },
+        "description": {
+          "value": "<p>You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a Wisdom saving throw or drop whatever it is holding and become &amp;Reference[Frightened] for the duration.</p><p>While Frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight to you, the creature can make a Wisdom saving throw. On a successful save, the spell ends for that creature.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "fear"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 3
+        },
+        "components": {
+          "material": {
+            "description": "A white feather or the heart of a hen.",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "units": "self"
+        },
+        "school": "illusion",
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "connected": false,
+            "type": "cone",
+            "size": "30",
+            "units": "foot"
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPservantofyig00.XXUDGFELgoskdOD0"
+    },
+    {
+      "_id": "9hQXdMSmerkTsHDe",
+      "name": "Confusion",
+      "type": "spell",
+      "img": "icons/magic/air/wind-tornado-cyclone-purple-pink.webp",
+      "effects": [],
+      "folder": "5auWSClKMDUIV5Ni",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "innate",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": [
+                {
+                  "type": "item",
+                  "value": "1",
+                  "scaling": {
+                    "mode": ""
+                  }
+                }
+              ]
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "dnd5eactivity300": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity300",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "1d10",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "longRest",
+              "type": "recoverAll"
+            }
+          ],
+          "max": 1
+        },
+        "description": {
+          "value": "<p>This spell assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action. Each creature in a 10-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.</p>\n<p>An affected target can't take reactions and must roll from the @UUID[Compendium.black-flag.tables.RollTable.9jJuPmkPOrFBfzu8]{Confusion} table at the start of each of its turns to determine its behavior for that turn.</p>\n<p><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 5th level or higher, the radius of the sphere increases by 5 feet for each slot level above 4th.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "confusion"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 4
+        },
+        "components": {
+          "material": {
+            "description": "Three walnut shells.",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "value": "90",
+          "units": "foot"
+        },
+        "school": "necromancy",
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "connected": false,
+            "type": "sphere",
+            "size": "10",
+            "units": "foot"
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPservantofyig00.9hQXdMSmerkTsHDe"
+    }
+  ],
+  "sort": 1295,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": 2,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 4,
+        "proficient": true
+      },
+      "constitution": {
+        "mod": 5,
+        "proficient": true
+      },
+      "intelligence": {
+        "mod": 2,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 3,
+        "proficient": true
+      },
+      "charisma": {
+        "mod": 4,
+        "proficient": true
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 12
+      },
+      "hp": {
+        "max": 90,
+        "temp": null,
+        "tempmax": 0,
+        "value": 90
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 4,
+      "legendary": {
+        "max": 0
+      },
+      "perception": 17,
+      "stealth": 18
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [
+          "abyssal",
+          "common",
+          "draconic",
+          "infernal",
+          "custom"
+        ],
+        "communication": {},
+        "custom": [
+          "Void Speech"
+        ],
+        "tags": []
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [
+            "poisoned"
+          ],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [
+            "poison"
+          ],
+          "custom": []
+        },
+        "resistances": {
+          "value": [],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 30,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "swim": 30
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "darkvision": 60,
+          "keensense": 10
+        },
+        "units": "foot"
+      },
+      "size": "medium",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "aberration"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "CC",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "charisma"
+    },
+    "biography": {
+      "value": "<p><em>This massive ophidian is a hideous amalgam of man and snake—a fanged humanoid head with expressionless features sits atop the shimmering coils of a large, squamous body. As the creature hisses, its full lips open to speak in the rich, vibrant tone of an unknown tongue, forgotten long before the kingdoms of man arose.</em><br><strong>Progeny of the Serpent God.</strong> Servants of Yig are monstrous humanoid-serpent hybrids that often serve as sentinels and assassins for the dreadful Old One Yig and his horrid devotees. The speckled, brownish hide and obscene stench of these long, scaly creatures contrasts the cold and otherworldly beauty of their emotionless countenance.<br><strong>Abhorrent Executioners.</strong> Legends speak of a curse that dooms anyone foolish enough to betray Yig or raise his ire. Indeed, those condemned by the Great Old One are visited by these odious servants to meet an unpleasant end. When these unnerving creatures aren’t engaged as masterfully covert hunters, they serve as the duly deranging guardians of dark, forbidden places.<br><strong>The Swollen Death.</strong> The Servants of Yig are the Old One’s children and were created in his horrible image. Their unholy venom causes the body of a creature slain by the poison to swell until its plump flesh ruptures with a repulsive “pop.”<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPservantofyig00"
+}

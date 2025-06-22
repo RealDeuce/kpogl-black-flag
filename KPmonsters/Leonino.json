@@ -1,0 +1,556 @@
+{
+  "_id": "KPleonino0000000",
+  "name": "Leonino",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Leonino",
+    "width": 1,
+    "height": 1,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 30,
+      "brightness": 0,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Flyby",
+      "type": "feature",
+      "img": "icons/creatures/mammals/bats-movement-flying-purple.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The leonino doesn’t provoke opportunity attacks when it flies out of an enemy’s reach.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "flyby"
+        }
+      },
+      "_key": "!actors.items!KPleonino0000000.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Evasion",
+      "type": "feature",
+      "img": "icons/magic/water/pseudopod-teal.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>If the leonino is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the leonino instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "evasion"
+        }
+      },
+      "_key": "!actors.items!KPleonino0000000.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Silent Wings",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The flight of a leonine is especially silent and difficult to notice in forests and urban settings. It has advantage on Dexterity (Stealth) checks made while flying in these areas.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "silent-wings"
+        }
+      },
+      "_key": "!actors.items!KPleonino0000000.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Bite",
+      "type": "weapon",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "dexterity",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "",
+                "formula": "10"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 1,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage. If this is the first time the leonino has hit the target within the past 24 hours, the target must succeed on a DC 10 Wisdom saving throw or be charmed by the leonino for 1 hour.",
+          "source": {
+            "book": "CC",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [
+          "finesse"
+        ],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 4,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "slashing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPleonino0000000.0000000000000004"
+    }
+  ],
+  "sort": 887,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": 0,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 4,
+        "proficient": true
+      },
+      "constitution": {
+        "mod": 2,
+        "proficient": false
+      },
+      "intelligence": {
+        "mod": -1,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 0,
+        "proficient": true
+      },
+      "charisma": {
+        "mod": 1,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 13
+      },
+      "hp": {
+        "max": 13,
+        "temp": null,
+        "tempmax": 0,
+        "value": 13
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 0.125,
+      "legendary": {
+        "max": 0
+      },
+      "perception": 11,
+      "stealth": 15
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [
+          "elvish"
+        ],
+        "communication": {},
+        "custom": [],
+        "tags": []
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        },
+        "resistances": {
+          "value": [],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 30,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "fly": 40
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "darkvision": 30
+        },
+        "units": "foot"
+      },
+      "size": "tiny",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "beast"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "CC",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "intelligence"
+    },
+    "biography": {
+      "value": "<p><em>Slightly larger than a housecat and sporting the wings of an owl, the leonino are beloved and rare pets in elvish courts and palaces, where they are kept as companion animals to royal children, courtesans, and gigolos.</em><br>The leonino are sometimes found as messengers for powerful elven enchanters, nobles, and rogues. While they can be tamed, most leonino are feral and live on the fringes of halfling settlements, along tropical and temperate coastlines, or in temperate forests, where they devour rodents, frogs, salamanders, and small birds.<br><strong>Listen and Rarely Speak.</strong> The leonino who live in elvish or halfling settlements invariably learn the language around them and are capable of speaking it. However, their innate hauteur and sense of superiority means that they rarely comment or converse; when they do, they are known for their wit and often quite deadpan humor.<br><strong>Water Couriers.</strong> The leonino are fond of harborfronts, ships, and fisherfolk of all kinds. They sometimes serve as messengers between elven ships and various harbormasters, other ship’s captains, and even pirates and aquatic creatures such as merfolk or deep ones.<br><h2>Alternate Traits and Actions</h2><br>The following changes allow GMs to alter a leonino without modifying its challenge rating.<br><em><strong>Bite.</strong> Melee Weapon Attack.</em> +5 to hit, reach 5 ft., on target. <em>Hit:</em> 5 (1d4 + 3) slashing damage. The leonino grabs the target. If the target is a Tiny or smaller creature, it is grappled (escape DC 10). Until this grapple ends, the target is restrained. A larger creature is not grappled, and it can use an action to remove the leonino with a Strength (Athletics) or Dexterity (Acrobatics) check at the same DC. While the leonino has its target grabbed, it deals 5 (1d4 + 3) slashing damage with its rear claws.<br>This attack replaces the leonino’s normal bite attack.<br><em><strong>Favored Messenger.</strong></em> While the leonino is delivering a message, it has advantage on saving throws against spells and other magical effects.<br>The leonino doesn’t possess the Evasion trait.<br><em><strong>Resplendent Wings.</strong></em> The leonino’s wings are vibrantly colored, and it has advantage on Charisma (Persuasion) checks against creatures that can see its wings. The leonino doesn’t possess the Silent Wings trait.<br><em><strong>Rodentsense.</strong></em> The leonino can detect the presence of rats and other rodents within 30 feet. This allows it to sense a shapeshifting creature that has at least one rodent-like form (such as a wererat), even if the creature is not in that form. Additionally, the leonino has advantage on Wisdom (Survival) checks to track rodents.<br>The leonino does not possess darkvision.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPleonino0000000"
+}

@@ -1,0 +1,881 @@
+{
+  "_id": "KParcanaphage000",
+  "name": "Arcanaphage",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Arcanaphage",
+    "width": 1,
+    "height": 1,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 0,
+      "brightness": 0,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Arcane Discharge",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": [
+                  {
+                    "number": 1,
+                    "denomination": 6,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "force"
+                  }
+                ]
+              },
+              "effects": [],
+              "ability": "dexterity",
+              "dc": {
+                "ability": "",
+                "formula": "14"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>When an arcanaphage dies, it explodes in a surge of partially-digested magical energy. Each creature within 5 feet per Feed score must make a DC 14 Dexterity saving throw, taking 3 (1d6) force damage per Feed score on a failed save, or half as much damage on a successful one. For 1 minute afterward, the affected area is awash with volatile magic. A creature that starts its turn in the affected area takes 7 (2d6) force damage.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "arcane-discharge"
+        }
+      },
+      "_key": "!actors.items!KParcanaphage000.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Hunger",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Each time it feeds in combat, it regains hp equal to twice the level of the spell it ate and increases its Feed score by 1. The arcanaphage can’t have a Feed score higher than 8, and its Feed score reduces by 1 each time it finishes a long rest.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "hunger"
+        }
+      },
+      "_key": "!actors.items!KParcanaphage000.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Ingest Magic",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "14"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>At the start of each of the arcanaphage’s turns, each creature within 30 feet of it that is currently maintaining concentration on a spell must make a DC 14 Constitution saving throw. On a failure, the creature’s spell ends and the arcanaphage feeds.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "ingest-magic"
+        }
+      },
+      "_key": "!actors.items!KParcanaphage000.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Magic Immunity",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The arcanaphage is immune to damage from spells. It has advantage on saving throws against all other magical effects.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "magic-immunity"
+        }
+      },
+      "_key": "!actors.items!KParcanaphage000.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Multiattack",
+      "type": "feature",
+      "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The arcanaphage makes two tentacle attacks.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "multiattack"
+        }
+      },
+      "_key": "!actors.items!KParcanaphage000.0000000000000005"
+    },
+    {
+      "_id": "0000000000000006",
+      "name": "Tentacle",
+      "type": "weapon",
+      "img": "icons/creatures/tentacles/tentacles-thing-green.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "dexterity",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
+          "source": {
+            "book": "CC",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [
+          "finesse"
+        ],
+        "damage": {
+          "base": {
+            "number": 2,
+            "denomination": 8,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "bludgeoning"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KParcanaphage000.0000000000000006"
+    },
+    {
+      "_id": "0000000000000007",
+      "name": "Voracious",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 7,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "reaction",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The arcanaphage’s tentacles glow when a spell is cast within 30 feet of it, countering the spell. This reaction works like the counterspell spell, except the arcanaphage must always make a spellcasting ability check, no matter the spell level. Its ability check for this is +5. If it successfully counters the spell, the arcanaphage feeds.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "voracious"
+        }
+      },
+      "_key": "!actors.items!KParcanaphage000.0000000000000007"
+    }
+  ],
+  "sort": 112,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": 0,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 4,
+        "proficient": false
+      },
+      "constitution": {
+        "mod": 3,
+        "proficient": false
+      },
+      "intelligence": {
+        "mod": -4,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 0,
+        "proficient": false
+      },
+      "charisma": {
+        "mod": -1,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 14
+      },
+      "hp": {
+        "max": 60,
+        "temp": null,
+        "tempmax": 0,
+        "value": 60
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 4,
+      "legendary": {
+        "max": 0
+      },
+      "perception": 12
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [],
+        "communication": {},
+        "custom": [],
+        "tags": []
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [
+            "blinded",
+            "charmed",
+            "deafened",
+            "frightened",
+            "prone"
+          ],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        },
+        "resistances": {
+          "value": [
+            "custom"
+          ],
+          "custom": [
+            "bludgeoning, piercing, and slashing from magical weapons"
+          ]
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 0,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "fly": 30
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "keensense": 60
+        },
+        "units": "foot"
+      },
+      "size": "medium",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "monstrosity"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "CC",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "intelligence"
+    },
+    "biography": {
+      "value": "<p><em>A soft-bodied, iridescent creature floats by, tentacles rippling along its back as it quests for its next meal.</em><br>Arcanaphage are commonly found in places imbued with magic, their colorful skin rhythmically pulsating as they graze on arcane energies.<br><strong>Magivore.</strong> The arcanaphage diet consists exclusively of magic. It has no mouth; it feeds by absorbing nearby magical energy into a series of ropy tentacles that run the length of its body. With enough time, an arcanaphage can slowly slurp all of the power out of magical objects, traps, or spells permanently imbuing an area. Most arcanaphage are about the size of a large dog, though especially well-fed specimens the size of draft horses have been reported.<br><strong>Docile Unless Angered.</strong> If left to feed undisturbed, an arcanaphage typically ignores its surroundings. However, when it feels threatened or when food is scarce and it senses magic nearby, it viciously attacks.<br><strong>Unwitting Guardians.</strong> Its ability to neutralize magic in its immediate area, combined with its calm demeanor, makes an arcanaphage an excellent guardian against a wizard’s ire. Some warlords even bring pet arcanaphage to battle as protection from spellcasters, although this is a gamble since the creatures like to sit on and absorb power from unattended magical objects, like a warlord’s heirloom weapon, and can release a torrent of magical energy when slain.<br><h2>Alternate Traits and Actions</h2><br>The following changes allow GMs to alter an arcanaphage without modifying its challenge rating.<br><em><strong>Diviniphage.</strong></em> A diviniphage feeds solely on divine magic but still interacts with all types of magic. It is immune to damage from divine spells. It has advantage on saving throws against other spells and magical effects. Its Hunger trait regains hp equal to three times the level of the spell and increases its Feed score by 2 each time it feeds in combat. Additionally, when it applies its Ingest Magic trait or uses its Voracious reaction, it can only feed on divine spells it ends or counters. Finally, when it dies and applies its Arcane Discharge trait, the force damage dealt by this trait is replaced with either radiant or necrotic damage.<br>The diviniphage loses the arcanaphage’s Magic Immunity trait, and other traits and reactions are modified as indicated above.<br><em><strong>Magic Sight.</strong></em> The arcanaphage senses magic within 90 feet of it at will. This trait otherwise works like the <em>detect magic</em> spell but isn’t itself magical.<br>The arcanaphage’s blindsight is reduced to 30 ft.<br><em><strong>Selective Eater.</strong></em> The arcanaphage is predominantly exposed to one school of magic (abjuration, conjuration, and so on), so it has adapted its feeding to better consume such magic. It is immune to spells and magical effects from its chosen school and has advantage on saving throws against other spells and magical effects. Its Hunger trait regains hp equal to four times the level of the spell and increases its Feed score by 2 for the selected school, but it regains hp equal to the level of the spell and increases its Feed score by 1/2 for all other schools. For purposes of its Arcane Discharge trait, ignore fractional values. Additionally, when its Ingest Magic trait applies, a creature maintaining concentration on a spell from the arcanaphage’s selected school has disadvantage on its Constitution saving throw. Finally, when the arcanaphage uses its Voracious reaction, it has advantage on its spellcasting ability check when countering a spell from its chosen school.<br>The arcanaphage loses its Magic Immunity trait, and other traits and reactions are modified as indicated above.<br><em><strong>True Arcanaphage.</strong></em> A true arcanaphage feeds solely on arcane magic but still interacts with all types of magic. It is immune to damage from arcane spells. It has advantage on saving throws against other spells and magical effects. Its Hunger trait regains hp equal to three times the level of the spell and increases its Feed score by 2 each time it feeds in combat. Additionally, when it applies its Ingest Magic trait or uses its Voracious reaction, it can only feed on arcane spells it ends or counters. Finally, its Arcane Discharge trait deals 4 (1d8) force damage per Feed score to a creature that fails its Dexterity saving throw and deals 9 (2d8) force damage to a creature that starts its turn in the affected area.<br>The true arcanaphage loses the arcanaphage’s Magic Immunity trait, and other traits and reactions are modified as indicated above.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KParcanaphage000"
+}

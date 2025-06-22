@@ -1,0 +1,1785 @@
+{
+  "_id": "KPstormmaiden000",
+  "name": "Storm Maiden",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Storm Maiden",
+    "width": 1,
+    "height": 1,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 60,
+      "brightness": 0,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Innate Spellcasting",
+      "type": "feature",
+      "img": "icons/magic/light/projectiles-star-purple.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The storm maiden’s innate spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). She can innately cast the following spells, requiring no material components:<br>At will: @UUID[Compendium.black-flag.spells.Item.JKOLGDy9N2dMsnDp]{create or destroy water}, @UUID[Compendium.black-flag.spells.Item.qCQ8MTaMrNXb5E7c]{ray of frost}, @UUID[Compendium.black-flag.spells.Item.xhRzHohXcal3iFYK]{misty step}, @UUID[Compendium.black-flag.spells.Item.46QP4gtGhM6YXqQN]{thunderwave}<br>1/day each: @UUID[Compendium.black-flag.spells.Item.UfwtYcFkww3Vx8rd]{sleet storm}, @UUID[Compendium.black-flag.spells.Item.Da87GUcewHK17Z2z]{wind wall}",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "innate-spellcasting"
+        }
+      },
+      "_key": "!actors.items!KPstormmaiden000.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Multiattack",
+      "type": "feature",
+      "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The storm maiden makes two thunderous slam attacks.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "multiattack"
+        }
+      },
+      "_key": "!actors.items!KPstormmaiden000.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Thunderous Slam",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/weapon.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": [
+                  {
+                    "number": 2,
+                    "denomination": 6,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "thunder"
+                  }
+                ]
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 7 (2d6) thunder damage.",
+          "source": {
+            "book": "ToB2",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 6,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "bludgeoning"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPstormmaiden000.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Throw Lightning",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/weapon.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "dexterity",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "ranged",
+                  "classification": "spell"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "120"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "13"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "120"
+            },
+            "sort": 1,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Ranged Spell Attack: +5 to hit, range 120 ft., one target. Hit: 14 (4d6) lightning damage, and the target must succeed on a DC 13 Constitution saving throw or be incapacitated until the end of its next turn.",
+          "source": {
+            "book": "ToB2",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 4,
+            "denomination": 6,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "lightning"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": "120",
+          "long": null,
+          "reach": null,
+          "units": "foot",
+          "value": "120"
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPstormmaiden000.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Create Or Destroy Water",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 85,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "innate",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/items/spell.svg",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": null
+        },
+        "description": {
+          "value": "<p>You either create or destroy water.<br><em><strong>Create Water.</strong></em> You create up to 10 gallons of clean water within range in an open container. Alternatively, the water falls as rain in a 30-foot cube within range, extinguishing exposed flames in the area.<br><em><strong>Destroy Water.</strong></em> You destroy up to 10 gallons of water in an open container within range. Alternatively, you destroy fog in a 30-foot cube within range.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 2nd level or higher, you create or destroy 10 additional gallons of water, or the size of the cube increases by 5 feet, for each slot level above 1st.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "create-or-destroy-water"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "a drop of water if creating water or a few grains of sand if destroying it",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": null,
+          "units": "Instantaneous"
+        },
+        "range": {
+          "value": "30",
+          "units": "foot"
+        },
+        "school": "transmutation",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPstormmaiden000.0000000000000005"
+    },
+    {
+      "_id": "0000000000000006",
+      "name": "Ray Of Frost",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 86,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "innate",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/items/spell.svg",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "",
+                "bonus": "",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "ranged",
+                  "classification": "spell"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": [
+                  {
+                    "number": 1,
+                    "denomination": 8,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "whole",
+                      "number": 1
+                    },
+                    "type": "cold"
+                  }
+                ]
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "60"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": null
+        },
+        "description": {
+          "value": "<p>A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.<br>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "ray-of-frost"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 0
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": null,
+          "units": "Instantaneous"
+        },
+        "range": {
+          "value": "60",
+          "units": "foot"
+        },
+        "school": "evocation",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPstormmaiden000.0000000000000006"
+    },
+    {
+      "_id": "wqfAVANuQonNBgnL",
+      "name": "Misty Step",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "atwill",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/control/debuff-energy-snare-brown.webp",
+      "effects": [],
+      "folder": "Qi4Se3we69ukl2V9",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "misty-step"
+        },
+        "casting": {
+          "type": "bonus",
+          "condition": ""
+        },
+        "circle": {
+          "base": 2
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal"
+          ]
+        },
+        "duration": {
+          "value": "",
+          "units": "instantaneous"
+        },
+        "range": {
+          "units": "self"
+        },
+        "school": "conjuration",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "30",
+            "type": ""
+          },
+          "template": {
+            "connected": false,
+            "units": "foot"
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPstormmaiden000.wqfAVANuQonNBgnL"
+    },
+    {
+      "_id": "WTbOQBsarsL1LuXJ",
+      "name": "Thunderwave",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "atwill",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/lightning/bolt-forked-teal.webp",
+      "effects": [],
+      "folder": "ERuXllkhTQF51rDJ",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": [
+                  {
+                    "number": 2,
+                    "denomination": 8,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "whole",
+                      "number": 1,
+                      "formula": ""
+                    },
+                    "type": "thunder"
+                  }
+                ]
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.</p><p>In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</p><p><strong>Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "thunderwave"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "",
+          "units": "instantaneous"
+        },
+        "range": {
+          "units": "self"
+        },
+        "school": "evocation",
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "connected": false,
+            "type": "cube",
+            "size": "15",
+            "units": "foot"
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPstormmaiden000.WTbOQBsarsL1LuXJ"
+    },
+    {
+      "_id": "dhqBY4TvVjxVmOZd",
+      "name": "Sleet Storm",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "innate",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/water/projectile-beams-salvo-blue.webp",
+      "effects": [],
+      "folder": "5Si35RRLLaaoWvC3",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "dexterity",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": [
+                {
+                  "type": "item",
+                  "value": "1",
+                  "scaling": {
+                    "mode": ""
+                  }
+                }
+              ]
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "longRest",
+              "type": "recoverAll"
+            }
+          ],
+          "max": 1
+        },
+        "description": {
+          "value": "<p>Until the spell ends, freezing rain and sleet fall in a 20-foot-tall cylinder with a 40-foot radius centered on a point you choose within range. The area is heavily obscured, and exposed flames in the area are doused.</p><p>The ground in the area is covered with slick ice, making it difficult terrain. When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. On a failed save, it falls Prone.</p><p>If a creature is concentrating in the spell's area, the creature must make a successful Constitution saving throw against your spell save DC or lose concentration.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "sleet-storm"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 3
+        },
+        "components": {
+          "material": {
+            "description": "A pinch of dust and a few drops of water.",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "value": "150",
+          "units": "foot"
+        },
+        "school": "conjuration",
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "connected": false,
+            "type": "cylinder",
+            "size": "40",
+            "units": "foot"
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPstormmaiden000.dhqBY4TvVjxVmOZd"
+    },
+    {
+      "_id": "ew6GA8dJy2spQmFW",
+      "name": "Wind Wall",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "innate",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/air/fog-gas-smoke-swirling-white.webp",
+      "effects": [],
+      "folder": "5Si35RRLLaaoWvC3",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": [
+                  {
+                    "number": 3,
+                    "denomination": 8,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "bludgeoning"
+                  }
+                ]
+              },
+              "effects": [],
+              "ability": "strength",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": [
+                {
+                  "type": "item",
+                  "value": "1",
+                  "scaling": {
+                    "mode": ""
+                  }
+                }
+              ]
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "longRest",
+              "type": "recoverAll"
+            }
+          ],
+          "max": 1
+        },
+        "description": {
+          "value": "<p>A wall of strong wind rises from the ground at a point you choose within range. You can make the wall up to 50 feet long, 15 feet high, and 1 foot thick. You can shape the wall in any way you choose so long as it makes one continuous path along the ground. The wall lasts for the Duration.</p>\n        <p>When the wall appears, each creature within its area must make a Strength saving throw. A creature takes 3d8 bludgeoning damage on a failed save, or half as much damage on a successful one.</p>\n        <p>The strong wind keeps fog, smoke, and other gases at bay. Small or smaller flying creatures or objects can't pass through the wall. Loose, lightweight materials brought into the wall fly upward. Arrows, bolts, and other ordinary projectiles launched at targets behind the wall are deflected upward and automatically miss. (Boulders hurled by Giants or siege engines, and similar projectiles, are unaffected.) Creatures in gaseous form can't pass through it.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "wind-wall"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 3
+        },
+        "components": {
+          "material": {
+            "description": "A tiny fan and a feather of exotic origin",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "value": "120",
+          "units": "foot"
+        },
+        "school": "evocation",
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "connected": false,
+            "type": "wall",
+            "size": "50",
+            "units": "foot"
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPstormmaiden000.ew6GA8dJy2spQmFW"
+    },
+    {
+      "_id": "0000000000000011",
+      "name": "Natural Armor",
+      "permission": {
+        "default": 0,
+        "OtBWCJNgwo0VVuQx": 3
+      },
+      "type": "gear",
+      "data": {
+        "description": {
+          "value": "",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": null,
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 15,
+          "type": "natural",
+          "dex": null
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "speed": {
+          "value": null,
+          "conditions": ""
+        },
+        "strength": 0,
+        "stealth": false,
+        "proficient": true
+      },
+      "folder": "",
+      "sort": 100001,
+      "flags": {
+        "black-flag": {
+          "relationship": {}
+        }
+      },
+      "img": "icons/svg/mystery-man.svg",
+      "effects": [],
+      "system": {
+        "activities": {},
+        "uses": {},
+        "description": {
+          "source": {}
+        },
+        "identifier": {},
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {},
+        "type": {}
+      },
+      "_key": "!actors.items!KPstormmaiden000.0000000000000011"
+    }
+  ],
+  "sort": 1434,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": 3,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 3,
+        "proficient": false
+      },
+      "constitution": {
+        "mod": 2,
+        "proficient": false
+      },
+      "intelligence": {
+        "mod": 0,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 0,
+        "proficient": false
+      },
+      "charisma": {
+        "mod": 3,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 15
+      },
+      "hp": {
+        "max": 78,
+        "temp": null,
+        "tempmax": 0,
+        "value": 78
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 4,
+      "legendary": {
+        "max": 0
+      }
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [
+          "common",
+          "primordial"
+        ],
+        "communication": {},
+        "custom": [],
+        "tags": []
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [
+            "exhaustion",
+            "paralyzed",
+            "petrified",
+            "poisoned",
+            "unconscious"
+          ],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [
+            "poison"
+          ],
+          "custom": []
+        },
+        "resistances": {
+          "value": [
+            "lightning",
+            "thunder",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 30,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "fly": 30,
+          "swim": 30
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "darkvision": 60
+        },
+        "units": "foot"
+      },
+      "size": "medium",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "elemental"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "ToB2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "charisma"
+    },
+    "biography": {
+      "value": "<p><em>At the heart of a violent storm, a young woman lies huddled in despair. Her skin is translucent as if made of water, and her tears float up from her face to join the storm above her.</em><br>A storm maiden is a spiteful elemental that pulls powerful storms into the world through a portal connected to her shrine. Blinded by anguish, she seeks to erase any trace of those who betrayed her.<br><strong>Primordial Sacrifice.</strong> Long ago, this woman was offered up to powerful spirits to ward off drought and famine. She served her role faithfully. Her shrine was maintained by a ritual of devotion performed by the descendants of those she loved, but it was eventually abandoned. Now, some transgression against her abandoned shrine has drawn the maiden back to the world.<br><strong>Abating the Storm.</strong> A region plagued by a storm maiden experiences regular flooding and random tornadoes and lightning strikes. A community may yet atone for their ancestral betrayal by performing a long-forgotten ritual at the maiden’s shrine. If appeased, the storms end, and the maiden’s alignment changes from evil to good. An appeased maiden may go on to protect the region for generations, as long as her shrine is maintained, or she might wander to other regions, seeking communities in need who understand the importance of maintaining her shrine.<br><strong>Elemental Nature.</strong> A storm maiden doesn’t require air, food, drink, or sleep.<br><h2>Alternate Traits and Actions</h2><br>The following changes allow GMs to alter a storm maiden without modifying its challenge rating.<br><em><strong>Elemental Ally (Recharge 5–6).</strong></em> The storm maiden can use an action to conjure an elemental of challenge rating 2 or lower, which appears within 10 feet of her. This otherwise functions as the conjure elemental spell.<br>The storm maiden loses the 3/day spells from her Innate Spellcasting.<br><em><strong>Ice Affinity.</strong></em> The storm maiden gains damage resistance to cold. She also can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost her extra movement.<br>The storm maiden loses her resistances to lightning and thunder.<br><em><strong>Icy Fist.</strong> Melee Weapon Attack:</em> +5 to hit, reach 5 ft., one target <em>Hit:</em> 6 (1d6 + 3) bludgeoning damage plus 7 (2d6) cold damage.<br>The storm maiden loses her Thunderous Slam attack. Her Multiattack consists of two icy fist attacks.<br><em><strong>Innate Spellcasting.</strong></em> The storm maiden’s innate spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). She can cast the following spells, requiring no material components.<br><strong>At will:</strong> <em>breathtaking wind, flurry, misty step, ray of frost</em><br><strong>3/day:</strong> <em>ice burn, sleet storm</em><br>This replaces the storm maiden’s Innate Spellcasting.<br><em><strong>Shattering Lance.</strong> Ranged Spell Attack:</em> +5 to hit, range 120 ft., one target <em>Hit:</em> 14 (4d6) cold damage, and the target must succeed on a DC 13 Constitution saving throw or be blinded until the end of its next turn.<br>The storm maiden loses her Throw Lightning attack.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPstormmaiden000"
+}

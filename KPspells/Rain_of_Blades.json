@@ -1,0 +1,168 @@
+{
+  "_id": "KPrainofblades00",
+  "name": "Rain of Blades",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 935,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 6,
+                "denomination": 6,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "slashing"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "dexterity",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "25"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You call down a rain of swords, spears, and axes. The blades fill 150 square feet (six 5-foot squares, a circle 15 feet in diameter, or any other pattern you want as long as it forms one contiguous space at least 5 feet wide in all places. The blades deal 6d6 slashing damage to each creature in the area at the moment the spell is cast, or half as much damage on a successful Dexterity saving throw. An intelligent undead injured by the blades is frightened for 1d4 rounds if it fails a Charisma saving throw. Most of the blades break or are driven into the ground on impact, but enough survive intact that any single piercing or slashing melee weapon can be salvaged from the affected area and used normally if it is claimed before the spell ends. When the duration expires, all the blades (including the one that was salvaged) disappear.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 6th level or higher, an unbroken blade can be picked up and used as a magical +1 weapon until it disappears.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "rain-of-blades"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 5
+    },
+    "components": {
+      "material": {
+        "description": "shard of metal from a weapon",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 4,
+      "units": "round"
+    },
+    "range": {
+      "value": "25",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "",
+        "special": "",
+        "type": ""
+      },
+      "template": {
+        "count": "",
+        "connected": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPrainofblades00"
+}

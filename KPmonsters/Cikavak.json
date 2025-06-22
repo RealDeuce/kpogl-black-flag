@@ -1,0 +1,556 @@
+{
+  "_id": "KPcikavak0000000",
+  "name": "Cikavak",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Cikavak",
+    "width": 1,
+    "height": 1,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 60,
+      "brightness": 0,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Limited Telepathy",
+      "type": "feature",
+      "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cikavak can magically communicate simple ideas, emotions, and images telepathically with any creature that touches it and that can understand a language.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "limited-telepathy"
+        }
+      },
+      "_key": "!actors.items!KPcikavak0000000.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Speak with Beasts",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cikavak can communicate with Beasts as if they shared a language.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "speak-with-beasts"
+        }
+      },
+      "_key": "!actors.items!KPcikavak0000000.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Beak",
+      "type": "weapon",
+      "img": "icons/skills/wounds/bone-broken-tooth-fang-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "dexterity",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +4 to hit, range 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+          "source": {
+            "book": "ToB1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [
+          "finesse"
+        ],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 4,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "piercing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": "5",
+          "long": null,
+          "reach": null,
+          "units": "foot",
+          "value": "5"
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPcikavak0000000.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Silencing Squawk",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "11"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "type": "cone",
+                "size": "30",
+                "units": "foot"
+              }
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The cikavak lets out a magical squawk in a 30-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or be deafened and unable to speak for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "silencing-squawk"
+        }
+      },
+      "_key": "!actors.items!KPcikavak0000000.0000000000000004"
+    }
+  ],
+  "sort": 319,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": -3,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 2,
+        "proficient": false
+      },
+      "constitution": {
+        "mod": 0,
+        "proficient": false
+      },
+      "intelligence": {
+        "mod": 1,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 1,
+        "proficient": false
+      },
+      "charisma": {
+        "mod": -3,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 12
+      },
+      "hp": {
+        "max": 17,
+        "temp": null,
+        "tempmax": 0,
+        "value": 17
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 0.125,
+      "legendary": {
+        "max": 0
+      },
+      "perception": 13,
+      "stealth": 14
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [
+          "custom",
+          "common"
+        ],
+        "communication": {},
+        "custom": [],
+        "tags": [
+          "cantSpeak"
+        ]
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        },
+        "resistances": {
+          "value": [
+            "acid",
+            "fire",
+            "poison"
+          ],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 10,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "fly": 40
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "darkvision": 60
+        },
+        "units": "foot"
+      },
+      "size": "tiny",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "Fey"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "ToB1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "intelligence"
+    },
+    "biography": {
+      "value": "<p><em>A dark gray comb flops atop the head of this remarkably ugly bird, and shapeless wattles dangle from its throat.</em><br><em><strong>Dagger Beaks.</strong></em> Cikavaks use their elongated, dull-gray beaks to draw up nectar and other fluids—or to stab with the force of a dagger. Although it requires great effort to call up these homely birds, the magic is surprisingly common, known among peasants and townsfolk as well as mages. Once summoned, they remain faithful to their masters until death. While cikavaks don’t speak, they comprehend the Common tongue and can speak with animals to help their master. They often magically silence the cries of more melodious birds.<br><em><strong>Potion Pouches.</strong></em> Cikavaks possess another odd ability: when fully distended, their ventral pouches hold up to half a gallon of almost any liquid. These resilient pouches take little or no damage from their contents, holding potions without ingesting them or even carrying acid without injury. Thieves make use of this ability, directing the birds to siphon up liquids, stealing honey from neighbors’ beehives, as well as milk, beer, and wine. The most audacious thieves send their birds into magicians’ towers, alchemists’ shops, or the local apothecary to seize mercury, phlogiston, and more exotic substances. The cikavaks carry these stolen fluids back to their owners in their pouches. While normally strong flyers, when laden with liquids, their flight is clumsy at best.<br><em><strong>Folk Conjuration.</strong></em> To call a cikavak with folk magic rituals, a character must gather an egg from a black hen as well as 30 gp worth of herbs and colored chalks. Cast at sunset, the folk ritual requires half an hour and a successful DC 15 Intelligence (Arcana) check. The material components can be used multiple times, until the ritual succeeds. The hen’s egg must then be carried and kept warm for 40 days. During this time, the ritual’s caster must not bathe or be subject to any spell effects. The ritual’s feeble magic is immediately dispelled if the ritual’s caster uses any other sort of magic item or casts a spell while incubating the egg.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPcikavak0000000"
+}

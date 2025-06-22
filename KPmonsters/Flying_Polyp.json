@@ -1,0 +1,1752 @@
+{
+  "_id": "KPflyingpolyp000",
+  "name": "Flying Polyp",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Flying Polyp",
+    "width": 3,
+    "height": 3,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 0,
+      "brightness": 0,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Aura of Wind",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "strength",
+              "dc": {
+                "ability": "",
+                "formula": "17"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>A creature that starts its turn within 15 feet of the polyp must succeed on a DC 17 Strength saving throw or be pushed up to 15 feet away from the polyp.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "aura-of-wind"
+        }
+      },
+      "_key": "!actors.items!KPflyingpolyp000.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Incorporeal Movement",
+      "type": "feature",
+      "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The polyp can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "incorporeal-movement"
+        }
+      },
+      "_key": "!actors.items!KPflyingpolyp000.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Magic Resistance",
+      "type": "feature",
+      "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The polyp has advantage on saving throws against spells and other magical effects.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "magic-resistance"
+        }
+      },
+      "_key": "!actors.items!KPflyingpolyp000.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Innate Spellcasting",
+      "type": "feature",
+      "img": "icons/magic/light/projectiles-star-purple.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The polyp’s innate spellcasting ability is Intelligence (spell save DC 18). The polyp can innately cast the following spells, requiring no material components:<br>At will: @UUID[Compendium.black-flag.spells.Item.PKj2TSp0iwaPZulb]{invisibility} (self only)<br>3/day: @UUID[Compendium.black-flag.spells.Item.eXevf5sdtGjBdgQG]{wind walk}<br>1/day: @UUID[Compendium.black-flag.spells.Item.3OZsv5x1bOVcNFLy]{control weather}",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "innate-spellcasting"
+        }
+      },
+      "_key": "!actors.items!KPflyingpolyp000.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Multiattack",
+      "type": "feature",
+      "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The polyp makes two melee attacks.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "multiattack"
+        }
+      },
+      "_key": "!actors.items!KPflyingpolyp000.0000000000000005"
+    },
+    {
+      "_id": "0000000000000006",
+      "name": "Tentacle",
+      "type": "weapon",
+      "img": "icons/creatures/tentacles/tentacles-thing-green.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "15"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 15 (3d6 + 5) bludgeoning damage. If the target is a Large or smaller creature, it is grappled (escape DC 17). Until this grapple ends, the target is restrained and is not affected by the flying polyp’s Aura of Wind. The flying polyp can grapple up to two creatures at one time.",
+          "source": {
+            "book": "CC",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 3,
+            "denomination": 6,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "bludgeoning"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "15",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPflyingpolyp000.0000000000000006"
+    },
+    {
+      "_id": "0000000000000007",
+      "name": "Bite",
+      "type": "weapon",
+      "img": "icons/creatures/abilities/mouth-teeth-long-red.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 7,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +9 to hit, reach 5 ft., one target grappled by the polyp. Hit: 18 (3d8 + 5) piercing damage.",
+          "source": {
+            "book": "CC",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 3,
+            "denomination": 8,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "piercing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPflyingpolyp000.0000000000000007"
+    },
+    {
+      "_id": "0000000000000008",
+      "name": "Cyclone",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 8,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": [
+                  {
+                    "number": 5,
+                    "denomination": 10,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "bludgeoning"
+                  }
+                ]
+              },
+              "effects": [],
+              "ability": "strength",
+              "dc": {
+                "ability": "",
+                "formula": "17"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5"
+            }
+          ],
+          "max": 1
+        },
+        "description": {
+          "value": "<p>Each creature within 30 feet of the polyp must make a DC 17 Strength saving throw. On a failure, a creature takes 27 (5d10) bludgeoning damage and is knocked prone. On a success, a creature takes half the damage but isn’t knocked prone.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "cyclone"
+        }
+      },
+      "_key": "!actors.items!KPflyingpolyp000.0000000000000008"
+    },
+    {
+      "_id": "0000000000000009",
+      "name": "Etherealness",
+      "type": "feature",
+      "img": "icons/magic/unholy/barrier-shield-glowing-pink.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 9,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The flying polyp magically enters the Ethereal Plane from the Material Plane, or vice versa.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "etherealness"
+        }
+      },
+      "_key": "!actors.items!KPflyingpolyp000.0000000000000009"
+    },
+    {
+      "_id": "0000000000000010",
+      "name": "Fist of Wind",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 10,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "strength",
+              "dc": {
+                "ability": "",
+                "formula": "17"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "reaction",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "type": "line",
+                "size": "60",
+                "width": "",
+                "units": "foot"
+              }
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>When a creature the flying polyp can see targets it with an attack, the flying polyp can unleash a line of strong wind 60 feet long and 10 feet wide in the direction of the attacker. The wind lasts until the start of the flying polyp’s next turn. Each creature in the wind when it appears or that starts its turn in the wind must succeed on a DC 17 Strength saving throw or be pushed 15 feet away from the flying polyp in a direction following the line. Any creature in the line treats all movement as difficult terrain.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "fist-of-wind"
+        }
+      },
+      "_key": "!actors.items!KPflyingpolyp000.0000000000000010"
+    },
+    {
+      "_id": "1N8dDMMgZ1h1YJ3B",
+      "name": "Invisibility",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "atwill",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/air/fog-gas-smoke-dense-gray.webp",
+      "effects": [
+        {
+          "name": "Invisibility",
+          "origin": "Compendium.dnd5e.spells.Item.1N8dDMMgZ1h1YJ3B",
+          "duration": {
+            "startTime": null,
+            "seconds": 3600,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": true,
+          "_id": "TeFxBRKYKIXtg6pS",
+          "changes": [],
+          "description": "<p>The target becomes Invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p>",
+          "transfer": false,
+          "statuses": [
+            "invisible"
+          ],
+          "flags": {},
+          "tint": "#ffffff",
+          "img": "icons/magic/air/fog-gas-smoke-dense-gray.webp",
+          "type": "base",
+          "sort": 0,
+          "_key": "!actors.items.effects!KPflyingpolyp000.1N8dDMMgZ1h1YJ3B.TeFxBRKYKIXtg6pS"
+        }
+      ],
+      "folder": "Qi4Se3we69ukl2V9",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": [
+                {
+                  "_id": "TeFxBRKYKIXtg6pS"
+                }
+              ]
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "invisibility"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 2
+        },
+        "components": {
+          "material": {
+            "description": "An eyelash encased in gum arabic",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "illusion",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "special": "",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "type": "",
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPflyingpolyp000.1N8dDMMgZ1h1YJ3B"
+    },
+    {
+      "_id": "8PJAsHmbu6UgDHC0",
+      "name": "Wind Walk",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "innate",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/air/wind-swirl-gray-blue.webp",
+      "effects": [],
+      "folder": "0pdesvXqKd55VOh2",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": [
+                {
+                  "type": "item",
+                  "value": "1",
+                  "scaling": {
+                    "mode": ""
+                  }
+                }
+              ]
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "longRest",
+              "type": "recoverAll"
+            }
+          ],
+          "max": 3
+        },
+        "description": {
+          "value": "<p>You and up to ten willing creatures you can see within range assume a gaseous form for the Duration, appearing as wisps of cloud. While in this cloud form, a creature has a flying speed of 300 feet and has resistance to damage from nonmagical weapons. The only Actions a creature can take in this form are the Dash action or to revert to its normal form. Reverting takes 1 minute, during which time a creature is Incapacitated and can't move. Until the spell ends, a creature can revert to cloud form, which also requires the 1-minute transformation.</p>\n        <p>If a creature is in cloud form and flying when the effect ends, the creature descends 60 feet per round for 1 minute until it lands, which it does safely. If it can't land after 1 minute, the creature falls the remaining distance.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "wind-walk"
+        },
+        "casting": {
+          "type": "minute",
+          "condition": ""
+        },
+        "circle": {
+          "base": 6
+        },
+        "components": {
+          "material": {
+            "description": "Fire and holy water",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "8",
+          "units": "hour"
+        },
+        "range": {
+          "value": "30",
+          "units": "foot"
+        },
+        "school": "transmutation",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "11",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPflyingpolyp000.8PJAsHmbu6UgDHC0"
+    },
+    {
+      "_id": "ZPd73HtKF3At11jh",
+      "name": "Control Weather",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "innate",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/air/wind-tornado-cyclone-white.webp",
+      "effects": [],
+      "folder": "x1XTiOgx4DJ34wc5",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": [
+                {
+                  "type": "item",
+                  "value": "1",
+                  "scaling": {
+                    "mode": ""
+                  }
+                }
+              ]
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "longRest",
+              "type": "recoverAll"
+            }
+          ],
+          "max": 1
+        },
+        "description": {
+          "value": "<p>You take control of the weather within 5 miles of you for the duration. You must be outdoors to cast this spell. Moving to a place where you don't have a clear path to the sky ends the spell early.</p><p>When you cast the spell, you change the current weather conditions, which are determined by the DM based on the climate and season. You can change precipitation, temperature, and wind. It takes 1d4 x 10 minutes for the new conditions to take effect. Once they do so, you can change the conditions again. When the spell ends, the weather gradually returns to normal.</p><p>When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.</p><p><strong>Conditions</strong></p>\n<ol>\n<li>Clear</li>\n<li>Light clouds</li>\n<li>Overcast or ground fog</li>\n<li>Rain, hail, or snow</li>\n<li>Torrential rain, driving hail, or blizzard</li>\n</ol>\n<p><strong>Temperature</strong></p>\n<ol>\n<li>Unbearable heat</li>\n<li>Hot</li>\n<li>Warm</li>\n<li>Cool</li>\n<li>Cold</li>\n<li>Arctic cold</li>\n</ol>\n<p><strong>Wind</strong></p>\n<ol>\n<li>Calm</li>\n<li>Moderate wind</li>\n<li>Strong wind</li>\n<li>Gale</li>\n<li>Storm</li>\n</ol>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "control-weather"
+        },
+        "casting": {
+          "type": "minute",
+          "condition": ""
+        },
+        "circle": {
+          "base": 8
+        },
+        "components": {
+          "material": {
+            "description": "Burning incense and bits of earth and wood mixed in water.",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "8",
+          "units": "hour"
+        },
+        "range": {
+          "units": "self"
+        },
+        "school": "transmutation",
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "connected": false,
+            "type": "radius",
+            "size": "5",
+            "units": "mile"
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPflyingpolyp000.ZPd73HtKF3At11jh"
+    },
+    {
+      "_id": "0000000000000014",
+      "name": "Natural Armor",
+      "permission": {
+        "default": 0,
+        "OtBWCJNgwo0VVuQx": 3
+      },
+      "type": "gear",
+      "data": {
+        "description": {
+          "value": "",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": null,
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 17,
+          "type": "natural",
+          "dex": null
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "speed": {
+          "value": null,
+          "conditions": ""
+        },
+        "strength": 0,
+        "stealth": false,
+        "proficient": true
+      },
+      "folder": "",
+      "sort": 100001,
+      "flags": {
+        "black-flag": {
+          "relationship": {}
+        }
+      },
+      "img": "icons/svg/mystery-man.svg",
+      "effects": [],
+      "system": {
+        "activities": {},
+        "uses": {},
+        "description": {
+          "source": {}
+        },
+        "identifier": {},
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {},
+        "type": {}
+      },
+      "_key": "!actors.items!KPflyingpolyp000.0000000000000014"
+    }
+  ],
+  "sort": 574,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": 5,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 5,
+        "proficient": true
+      },
+      "constitution": {
+        "mod": 3,
+        "proficient": false
+      },
+      "intelligence": {
+        "mod": 6,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 6,
+        "proficient": true
+      },
+      "charisma": {
+        "mod": 3,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 17
+      },
+      "hp": {
+        "max": 171,
+        "temp": null,
+        "tempmax": 0,
+        "value": 171
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 11,
+      "legendary": {
+        "max": 0
+      },
+      "perception": 20
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [
+          "voidSpeech",
+          "custom"
+        ],
+        "communication": {
+          "telepathy": {
+            "range": "120",
+            "units": "foot"
+          }
+        },
+        "custom": [],
+        "tags": []
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [
+            "prone"
+          ],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        },
+        "resistances": {
+          "value": [
+            "acid",
+            "cold",
+            "fire",
+            "thunder",
+            "bludgeoning",
+            "piercing",
+            "slashing"
+          ],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [
+            "lightning"
+          ],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 0,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "fly": 60
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "keensense": 60
+        },
+        "units": "foot"
+      },
+      "size": "huge",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "aberration"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "CC",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "intelligence"
+    },
+    "biography": {
+      "value": "<p><em>A towering column of flesh, eyes, tentacles, and mouths wriggles in the air. Wild winds whip about the creature in all directions.</em><br>Flying polyps are ancient, wind-controlling aberrations that once dominated the Material Plane. They plot to take back what they believe is their rightful home.<br><strong>Former Rulers.</strong> Flying polyps once ruled from cities of towers. Other creatures bowed to them until dragons appeared and refused to serve. A blood-soaked conflict ended with dragons victorious. They bound the few surviving polyps in the<br><strong>Ethereal Plane.</strong><br><strong>Exist in Two Worlds.</strong> After centuries in exile, the polyps uncovered a ritual that allowed them to exist in the Material Plane while still being bound to the Ethereal Plane. This ancient secret allows them to manipulate objects in the Material Plane as they please, but the use of this magic makes them vulnerable to lightning.<br><strong>Masters of Weather and Distance.</strong> Flying polyps sometimes destroy crops, flood rivers, or call storms down on those who trouble their remote peaks and strongholds. Invisible and capable of covering vast distances in little time, they maintain a web of malign alliances from arctic regions to tropical peaks.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPflyingpolyp000"
+}

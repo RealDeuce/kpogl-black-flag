@@ -1,0 +1,164 @@
+{
+  "_id": "KPcreepingdarkne",
+  "name": "Creeping Darkness",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 376,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 6,
+                "denomination": 6,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "necrotic"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "60"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You create a great, writhing mass of shadows that moves slowly in a direction you choose. The grasping, shadowy tendrils occupy up to three 10-foot cubes within range. The mass has a speed of 20 feet, and it moves each round at the end of your turn, ignoring difficult terrain. The shadows can also move vertically or across a ceiling, as long as they can travel along a surface on which to cling.<br>All light in this area is reduced to dim light. The surface covered by the darkness is considered difficult terrain.<br>If the darkness moves into the space occupied by a living creature, that creature takes 6d6 necrotic damage and is restrained. The creature must make a Constitution saving throw. On a successful save, the creature takes half the damage and is not restrained. Any creature in the area of the spell at the start of its turn must make another Constitution saving throw, taking damage in each round that it remains in the area. Restrained creatures move with the darkness, dragged along by the shadowy tendrils. A creature can take an action on its turn to make a Strength check against your spell save DC to free itself from the tendrils.<br>Bright light can destroy portions of the spell. One 10-foot cube is destroyed if it takes 12 radiant damage. As long as at least one 10-foot cube occupies all or part of a creature’s space, the creature remains restrained.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "creeping-darkness"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 8
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "cube",
+        "size": "10",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPcreepingdarkne"
+}

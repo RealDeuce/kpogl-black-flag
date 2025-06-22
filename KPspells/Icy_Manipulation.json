@@ -1,0 +1,149 @@
+{
+  "_id": "KPicymanipulatio",
+  "name": "Icy Manipulation",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 693,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "60"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>One creature you can see within range must make a Constitution saving throw. On a failed save, the creature is petrified (frozen solid). A petrified creature can repeat the saving throw at the end of each of its turns, ending the effect on itself if it makes two successful saves. If a petrified creature gets two failures on the saving throw (not counting the original failure that caused the petrification), the petrification becomes permanent.<br>The petrification also becomes permanent if you maintain concentration on this spell for a full minute. A permanently petrified/frozen creature can be restored to normal with <em>@UUID[Compendium.black-flag.spells.Item.ZTVg00JolCuPkOOX]{greater restoration}</em> or comparable magic, or by casting this spell on the creature again and maintaining concentration for a full minute.<br>If the frozen creature is damaged or broken before it recovers from being petrified, the injury carries over to its normal state.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "icy-manipulation"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 6
+    },
+    "components": {
+      "material": {
+        "description": "a piece of ice preserved from the plane of elemental ice",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "1",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPicymanipulatio"
+}

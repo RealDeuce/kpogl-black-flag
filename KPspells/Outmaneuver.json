@@ -1,0 +1,145 @@
+{
+  "_id": "KPoutmaneuver000",
+  "name": "Outmaneuver",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 870,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "which you take when a creature within 30 feet of you provokes an opportunity attack",
+          "override": false,
+          "primary": true,
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "30"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>When a creature provokes an opportunity attack from an ally you can see within range, you can force the creature to make a Wisdom saving throw. On a failed save, the creature’s movement is reduced to 0 until the end of its next turn, and you can move up to your speed toward the creature without provoking opportunity attacks. This spell doesn’t interrupt the triggering opportunity attack, which happens before the effects of this spell.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "ToH",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "outmaneuver"
+    },
+    "casting": {
+      "type": "reaction",
+      "condition": "which you take when a creature within 30 feet of you provokes an opportunity attack"
+    },
+    "circle": {
+      "base": 1
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Instantaneous"
+    },
+    "range": {
+      "value": "30",
+      "units": "foot"
+    },
+    "school": "necromancy",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "null",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPoutmaneuver000"
+}

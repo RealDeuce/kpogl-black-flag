@@ -1,0 +1,142 @@
+{
+  "_id": "KPinstantfortifi",
+  "name": "Instant Fortification",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 713,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>Through this spell, you transform a miniature statuette of a keep into an actual fort. The fortification springs from the ground in an unoccupied space within range. It is a 10-foot cube (including floor and roof).<br>Each wall has two arrow slits. One wall also includes a metal door with an <em>@UUID[Compendium.black-flag.spells.Item.JVimVp4IvmQTO52h]{arcane lock}</em> effect on it. You designate at the time of the fort’s creation which creatures can ignore the lock and enter the fortification. The door has AC 20 and 60 hit points, and it can be broken open with a successful DC 25 Strength (Athletics) check. The walls are made of stone (AC 15) and are immune to necrotic, poison, and psychic damage. Each 5-foot-square section of wall has 90 hit points. Reducing a section of wall to 0 hit points destroys it, allowing access to the inside of the fortification.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 6th level or higher, you can increase the length or width of the fortification by 5 feet for each slot level above 5th. You can make a different choice (width or length) for each slot level above 5th.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "instant-fortification"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 5
+    },
+    "components": {
+      "material": {
+        "description": "a statuette of a keep worth 250 gp",
+        "consumed": true,
+        "cost": 250
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Permanent"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "cube",
+        "size": "10",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "ritual"
+    ]
+  },
+  "_key": "!items!KPinstantfortifi"
+}

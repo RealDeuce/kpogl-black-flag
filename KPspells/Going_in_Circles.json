@@ -1,0 +1,140 @@
+{
+  "_id": "KPgoingincircles",
+  "name": "Going in Circles",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 620,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You make natural terrain in a 1-mile cube difficult to traverse. A creature in the affected area has disadvantage on Wisdom (Survival) checks to follow tracks or travel safely through the area, as paths through the terrain seem to twist and turn nonsensically. The terrain itself isn’t changed, only the perception of those inside it. A creature that succeeds on two Wisdom (Survival) checks while in the terrain discerns the illusion for what it is and sees the illusory twists and turns superimposed on the terrain. A creature that reenters the area after exiting it before the spell ends is affected by the spell even if it previously succeeded in traversing the terrain. A creature with truesight can see through the illusion and is unaffected by the spell. A creature that casts <em>@UUID[Compendium.black-flag.spells.Item.OU9GfiAuXuO8KUhv]{find the path}</em> automatically succeeds in discovering a way out of the terrain.<br>When you cast this spell, you can designate a password. A creature that speaks the word as it enters the area automatically sees the illusion and is unaffected by the spell.<br>If you cast this spell on the same spot every day for one year, the illusion lasts until it is dispelled.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "going-in-circles"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "a piece of the target terrain",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 24,
+      "units": "hour"
+    },
+    "range": {
+      "value": "0",
+      "units": "special"
+    },
+    "school": "illusion",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "cube",
+        "size": "1",
+        "units": "mile"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPgoingincircles"
+}

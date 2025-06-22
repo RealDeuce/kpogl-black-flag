@@ -1,0 +1,142 @@
+{
+  "_id": "KPdesolation0000",
+  "name": "Desolation",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 427,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "hour",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You plant an obsidian acorn in solid ground and spend an hour chanting a litany of curses to the natural world, after which the land within 1 mile of the acorn becomes infertile, regardless of its previous state. Nothing will grow there, and all plant life in the area dies over the course of a day. Plant creatures are not affected. Spells that summon plants, such as <em>@UUID[Compendium.black-flag.spells.Item.CM2MI0J59OeCL7I4]{entangle}</em>, require an ability check using the caster’s spellcasting ability against your spell save DC. On a successful check, the spell functions normally; if the check fails, the spell is countered by <em>desolation</em>.<br>After one year, the land slowly reverts to its normal fertility, rejoining the march of nature.<br>A living creature that finishes a short rest within the area of a desolation spell halves the result of any Hit Dice it expends. <em>Desolation</em> counters the effects of a <em>@UUID[Compendium.koboldpressogl-bf.koboldpressspells.Item.KPbloom000000000]{bloom}</em> spell.<br><em><strong>Ritual Focus.</strong></em> If you expend your ritual focus, the duration becomes permanent.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "desolation"
+    },
+    "casting": {
+      "type": "hour",
+      "condition": ""
+    },
+    "circle": {
+      "base": 8
+    },
+    "components": {
+      "material": {
+        "description": "an obsidian acorn worth at least 500 gp",
+        "consumed": true,
+        "cost": 500
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "year"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "nec",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "1",
+        "units": "mile"
+      }
+    },
+    "tags": [
+      "ritual"
+    ]
+  },
+  "_key": "!items!KPdesolation0000"
+}

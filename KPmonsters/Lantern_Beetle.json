@@ -1,0 +1,456 @@
+{
+  "_id": "KPlanternbeetle0",
+  "name": "Lantern Beetle",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Lantern Beetle",
+    "width": 1,
+    "height": 1,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 0,
+      "brightness": 0,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Illumination",
+      "type": "feature",
+      "img": "icons/magic/light/explosion-star-glow-blue-purple.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The beetle sheds bright light in a 10-foot radius and dim light for an additional 10 feet. When it dies, its body continues to glow for another 6 hours.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "illumination"
+        }
+      },
+      "_key": "!actors.items!KPlanternbeetle0.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Horn",
+      "type": "feature",
+      "img": "icons/tools/instruments/flute-simple-wood.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "horn"
+        }
+      },
+      "_key": "!actors.items!KPlanternbeetle0.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Natural Armor",
+      "permission": {
+        "default": 0,
+        "OtBWCJNgwo0VVuQx": 3
+      },
+      "type": "gear",
+      "data": {
+        "description": {
+          "value": "",
+          "chat": "",
+          "unidentified": ""
+        },
+        "source": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "activation": {
+          "type": "",
+          "cost": 0,
+          "condition": ""
+        },
+        "duration": {
+          "value": null,
+          "units": ""
+        },
+        "target": {
+          "value": null,
+          "width": null,
+          "units": "",
+          "type": ""
+        },
+        "range": {
+          "value": null,
+          "long": null,
+          "units": ""
+        },
+        "uses": {
+          "value": 0,
+          "max": 0,
+          "per": null
+        },
+        "consume": {
+          "type": "",
+          "target": null,
+          "amount": null
+        },
+        "ability": null,
+        "actionType": "",
+        "attackBonus": 0,
+        "chatFlavor": "",
+        "critical": null,
+        "damage": {
+          "parts": [],
+          "versatile": ""
+        },
+        "formula": "",
+        "save": {
+          "ability": "",
+          "dc": null,
+          "scaling": "spell"
+        },
+        "armor": {
+          "value": 13,
+          "type": "natural",
+          "dex": null
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "dt": null,
+          "conditions": ""
+        },
+        "speed": {
+          "value": null,
+          "conditions": ""
+        },
+        "strength": 0,
+        "stealth": false,
+        "proficient": true
+      },
+      "folder": "",
+      "sort": 100001,
+      "flags": {
+        "black-flag": {
+          "relationship": {}
+        }
+      },
+      "img": "icons/svg/mystery-man.svg",
+      "effects": [],
+      "system": {
+        "activities": {},
+        "uses": {},
+        "description": {
+          "source": {}
+        },
+        "identifier": {},
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {},
+        "type": {}
+      },
+      "_key": "!actors.items!KPlanternbeetle0.0000000000000003"
+    }
+  ],
+  "sort": 876,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": -2,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 1,
+        "proficient": false
+      },
+      "constitution": {
+        "mod": 0,
+        "proficient": false
+      },
+      "intelligence": {
+        "mod": -5,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": -2,
+        "proficient": false
+      },
+      "charisma": {
+        "mod": -4,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 13
+      },
+      "hp": {
+        "max": 2,
+        "temp": null,
+        "tempmax": 0,
+        "value": 2
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 0,
+      "legendary": {
+        "max": 0
+      }
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [],
+        "communication": {},
+        "custom": [],
+        "tags": []
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        },
+        "resistances": {
+          "value": [],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 30,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "climb": 10,
+          "fly": 10
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {},
+        "units": "foot"
+      },
+      "size": "tiny",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "beast"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "ToB2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "intelligence"
+    },
+    "biography": {
+      "value": "<p><em>Many types of beetles inhabit the world, and, depending on the location and culture, they are used as food, companions, or beasts of burden by its people.</em><br><em><strong>Forest Beetles.</strong></em> @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPgiantbombardie]{Giant bombardier beetles} lurk on the forest floor. A placid herbivore content to go about its business, the beetle has a powerful defense mechanism in the form of a boiling liquid it can spray to scald would-be predators as it makes its escape.<br><em><strong>Arctic Beetles.</strong></em> @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPgiantsnowbeetl]{Giant snow beetles} are carrion-eating beetles that inhabit the coldest parts of the world. They collect snow into large balls for use against their enemies, for protection for their lairs, and to house their eggs. When food is abundant, they pack extra carrion into snowballs, saving the food for later or for feeding freshly hatched larvae. When attacked, giant snow beetles fling any snowballs on-hand that don’t contain their young, often splattering attackers with frozen, rotten meat.<br><em><strong>Underworld Beetles.</strong></em> @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPlanternbeetle0]{Lantern} and @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPsnifferbeetle0]{sniffer beetles} live in the Underworld and feast primarily on the fungus that grows in the darkest caverns. Both lantern and sniffer beetles are docile, and they’re often trained by denizens of the Underworld as mobile light sources or for detecting particular scents. The glow of the lantern beetle’s abdomen is from the digestion of bioluminescent fungus, which reacts with the beetle’s gut to make the glow. Most often found in the fungal forests of the Underworld, the lantern beetle can inhabit any cavern where bioluminescent fungus is plentiful. The beetle can consume other fungi and plants, but its abdomen dims to a mild glow if the beetle consumes no bioluminescent fungi for more than a month.<br><em><strong>Companions and Familiars.</strong></em> Forest rangers often train @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPgiantbombardie]{bombardier beetles} as companions, valuing the beetle’s spray for its ability to deter beasts without setting fire to the forest. Lantern and sniffer beetles can be called to serve a spellcaster via the find familiar spell. The lantern beetle is a popular choice among junior wizards seeking a light source for late-night studying. The sniffer beetle sees a variety of uses on the surface world, with its most common use being as the eyes and nose for wizards with limited vision.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPlanternbeetle0"
+}

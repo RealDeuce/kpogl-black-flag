@@ -1,0 +1,1516 @@
+{
+  "_id": "KPflithidir00000",
+  "name": "Flithidir",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Flithidir",
+    "width": 1,
+    "height": 1,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 60,
+      "brightness": 0,
+      "visionMode": "darkvision",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Cacophony",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "10"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>If three or more flithidirs are within 15 feet of each other, they can use their reactions to start a cacophony. Each creature that starts its turn within 30 feet of one of the flithidirs and that can hear the cacophony must succeed on a DC 10 Constitution saving throw or have disadvantage on its next attack roll or ability check. The DC increases by 1 for each flithidir participating in the cacophony to a maximum of DC 16. To join or maintain an existing cacophony, a flithidir must use its bonus action on its turn and end its turn within 15 feet of another flithidir participating in the cacophony. The cacophony ends when less than three flithidir maintain it. A flithidir can still speak and cast spells with verbal components while participating in a cacophony.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "cacophony"
+        }
+      },
+      "_key": "!actors.items!KPflithidir00000.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Shapechanger",
+      "type": "feature",
+      "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The flithidir can use its action to polymorph into a Small humanoid, into a Small or smaller bird, or back into its true fey form. Its statistics, other than its size and speed, are the same in each form. Any equipment it is wearing or carrying isn’t transformed. No matter the form, it always has bright or multicolored hair, fur, scales, or feathers. It reverts to its true form if it dies.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "shapechanger"
+        }
+      },
+      "_key": "!actors.items!KPflithidir00000.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Innate Spellcasting",
+      "type": "feature",
+      "img": "icons/magic/light/projectiles-star-purple.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The flithidir’s innate spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components.<br>At will: @UUID[Compendium.black-flag.spells.Item.AR6lGdaHEnUy6Em6]{minor illusion} (auditory only), @UUID[Compendium.black-flag.spells.Item.Pk6kPY9iPq5WT14T]{vicious mockery}<br>1/day each: @UUID[Compendium.black-flag.spells.Item.pw72u0bgcIKLtSBM]{charm person}, @UUID[Compendium.black-flag.spells.Item.qprbPrrLJee6tXx0]{enthrall}",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "innate-spellcasting"
+        }
+      },
+      "_key": "!actors.items!KPflithidir00000.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Multiattack",
+      "type": "feature",
+      "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The flithidir makes two melee attacks.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "multiattack"
+        }
+      },
+      "_key": "!actors.items!KPflithidir00000.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Dagger (Humanoid or Fey Form Only)",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/weapon.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "dexterity",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "60"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+          "source": {
+            "book": "ToB2",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [
+          "finesse"
+        ],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 4,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "piercing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": "20",
+          "long": "60",
+          "reach": "5",
+          "units": "foot",
+          "value": "20"
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPflithidir00000.0000000000000005"
+    },
+    {
+      "_id": "0000000000000006",
+      "name": "Beak (Bird Form Only)",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/weapon.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "dexterity",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+          "source": {
+            "book": "ToB2",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": ""
+        },
+        "container": null,
+        "price": {},
+        "weight": {
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [
+          "finesse"
+        ],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 4,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "piercing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "natural",
+          "category": "natural",
+          "base": ""
+        }
+      },
+      "_key": "!actors.items!KPflithidir00000.0000000000000006"
+    },
+    {
+      "_id": "0000000000000007",
+      "name": "Mocking Retort",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 7,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "reaction",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>When a creature the flithidir can see misses it with an attack, the flithidir can cast vicious mockery at the attacker.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "mocking-retort"
+        }
+      },
+      "_key": "!actors.items!KPflithidir00000.0000000000000007"
+    },
+    {
+      "_id": "oIzA2MEHwxhtQneU",
+      "name": "Minor Illusion",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "atwill",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/control/hypnosis-mesmerism-eye.webp",
+      "effects": [],
+      "folder": "Z8kZlnggh1PtuF3Y",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.</p><p>If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.</p><p>If you create an image of an objectâsuch as a chair, muddy footprints, or a small chestâit must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.</p><p>If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "minor-illusion"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 0
+        },
+        "components": {
+          "material": {
+            "description": "A bit of fleece.",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "value": "30",
+          "units": "foot"
+        },
+        "school": "illusion",
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "connected": false,
+            "type": "cube",
+            "size": "5",
+            "units": "foot"
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPflithidir00000.oIzA2MEHwxhtQneU"
+    },
+    {
+      "_id": "cdrYKaFi98YWaBMw",
+      "name": "Vicious Mockery",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "atwill",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/skills/toxins/cup-goblet-poisoned-spilled.webp",
+      "effects": [],
+      "folder": "Z8kZlnggh1PtuF3Y",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": [
+                  {
+                    "number": 1,
+                    "denomination": 4,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "whole",
+                      "number": 1,
+                      "formula": ""
+                    },
+                    "type": "psychic"
+                  }
+                ]
+              },
+              "effects": [],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You unleash a string of insults laced with subtle enchantments at a creature you can see within range. If the target can hear you (though it need not understand you), it must succeed on a Wisdom saving throw or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.</p><p>This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "vicious-mockery"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 0
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal"
+          ]
+        },
+        "duration": {
+          "value": "",
+          "units": "instantaneous"
+        },
+        "range": {
+          "value": "60",
+          "units": "foot"
+        },
+        "school": "necromancy",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPflithidir00000.cdrYKaFi98YWaBMw"
+    },
+    {
+      "_id": "eS7XnnApoxRxYXPs",
+      "name": "Charm Person",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "innate",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/fire/explosion-fireball-medium-purple-pink.webp",
+      "effects": [
+        {
+          "name": "Charm Person",
+          "origin": "Compendium.dnd5e.spells.Item.eS7XnnApoxRxYXPs",
+          "duration": {
+            "startTime": null,
+            "seconds": 3600,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "disabled": true,
+          "_id": "1QhUB3231btaCO0b",
+          "changes": [],
+          "description": "<p>The target is Charmed by the caster until the spell ends. The charmed creature regards the caster as a friendly acquaintance. When the spell ends, the creature knows it was charmed.</p>",
+          "transfer": false,
+          "statuses": [
+            "charmed"
+          ],
+          "flags": {},
+          "tint": "#ffffff",
+          "img": "icons/magic/fire/explosion-fireball-medium-purple-pink.webp",
+          "type": "base",
+          "sort": 0,
+          "_key": "!actors.items.effects!KPflithidir00000.eS7XnnApoxRxYXPs.1QhUB3231btaCO0b"
+        }
+      ],
+      "folder": "ERuXllkhTQF51rDJ",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [
+                {
+                  "_id": "1QhUB3231btaCO0b",
+                  "onSave": false
+                }
+              ],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": [
+                {
+                  "type": "item",
+                  "value": "1",
+                  "scaling": {
+                    "mode": ""
+                  }
+                }
+              ]
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "longRest",
+              "type": "recoverAll"
+            }
+          ],
+          "max": 1
+        },
+        "description": {
+          "value": "<p>You attempt to charm a humanoid you can see within range. It must make a Wisdom saving throw, and does so with advantage if you or your companions are fighting it. If it fails the saving throw, it is &amp;Reference[charmed] by you until the spell ends or until you or your companions do anything harmful to it. The charmed creature regards you as a friendly acquaintance. When the spell ends, the creature knows it was charmed by you.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "charm-person"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "range": {
+          "value": "30",
+          "units": "foot"
+        },
+        "school": "necromancy",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPflithidir00000.eS7XnnApoxRxYXPs"
+    },
+    {
+      "_id": "30ZgXtijJVCxQk5N",
+      "name": "Enthrall",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "innate",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/air/air-burst-spiral-pink.webp",
+      "effects": [],
+      "folder": "Qi4Se3we69ukl2V9",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": [
+                {
+                  "type": "item",
+                  "value": "1",
+                  "scaling": {
+                    "mode": ""
+                  }
+                }
+              ]
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "longRest",
+              "type": "recoverAll"
+            }
+          ],
+          "max": 1
+        },
+        "description": {
+          "value": "<p>You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can't be Charmed succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are Incapacitated or can no longer speak.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "enthrall"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 2
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "value": "60",
+          "units": "foot"
+        },
+        "school": "necromancy",
+        "target": {
+          "affects": {
+            "choice": false,
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": "any"
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPflithidir00000.30ZgXtijJVCxQk5N"
+    }
+  ],
+  "sort": 571,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": 0,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 3,
+        "proficient": false
+      },
+      "constitution": {
+        "mod": 1,
+        "proficient": false
+      },
+      "intelligence": {
+        "mod": 1,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 1,
+        "proficient": false
+      },
+      "charisma": {
+        "mod": 2,
+        "proficient": false
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 13
+      },
+      "hp": {
+        "max": 27,
+        "temp": null,
+        "tempmax": 0,
+        "value": 27
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 1,
+      "legendary": {
+        "max": 0
+      },
+      "perception": 13
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [
+          "auran",
+          "common",
+          "sylvan"
+        ],
+        "communication": {},
+        "custom": [],
+        "tags": []
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        },
+        "resistances": {
+          "value": [],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 30,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base",
+          "fly": 60
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {
+          "darkvision": 60
+        },
+        "units": "foot"
+      },
+      "size": "small",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "fey"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "ToB2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "charisma"
+    },
+    "biography": {
+      "value": "<p><em>The gnome-like creature flutters from tree to tree, sporting colorful, avian features.</em><br><strong>Avian Fey.</strong> Flithidirs are small fey that embody the bright, chaotic nature of birds. They are slender and keen-eyed with feathery crests and feathered wings. Flithidirs are creatures of contrasts—loud and lively, yet prone to moments of calm wonder; bold and cocky, yet easily startled; able to sing with breathtaking beauty or confuse their foes with earsplitting noise.<br><strong>Shapeshifters.</strong> Flithidirs are shapeshifters, able to change into birds or smaller humanoids, and they favor colorful clothes and adornments, even while shapeshifted. Relentlessly curious, flithidirs often take the form of a bird when they encounter strangers, quietly following and studying the creatures. If the strangers are deemed safe and intriguing, the flithidir approaches in a humanoid form to get better acquainted.<br><strong>Easily Bored.</strong> Flithidirs tirelessly seek out new things. Some desire new experiences—songs and stories, unusual foods, and sudden discoveries—while others are more covetous, ceaselessly collecting objects they find interesting. Sometimes this greed manifests as a magpie-like desire for shiny things, but a flithidir is also just as likely to be fascinated by items of a certain shape, texture, or color. When a flithidir encounters someone who possesses a thing it wants, it may offer something in exchange— usually a splendid song or acrobatic display—or it may simply request the item with great charm, reacting with frustration or rage if the object is denied to it.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPflithidir00000"
+}

@@ -1,0 +1,149 @@
+{
+  "_id": "KPendowattribute",
+  "name": "Endow Attribute",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 516,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You touch a creature with a ring that has been etched with symbols representing a particular ability (Strength, Dexterity, and so forth). The creature must make a successful Constitution saving throw or lose one-fifth (rounded down) of its points from that ability score. Those points are absorbed into the ring and stored there for the spell’s duration. If you then use an action to touch the ring to another creature on a later turn, the absorbed ability score points transfer to that creature. Once the points are transferred to another creature, you don’t need to maintain concentration on the spell; the recipient creature retains the transferred ability score points for the remainder of the hour.<br>The spell ends if you lose concentration before the transfer takes place, if either the target or the recipient dies, or if either the target or the recipient is affected by a successful <em>@UUID[Compendium.black-flag.spells.Item.t61I6zrmEDPdOLfw]{dispel magic}</em> spell. When the spell ends, the ability score points return to the original owner. Before then, that creature can’t regain the stolen attribute points, even with greater restoration or comparable magic.<br><em><strong>At Higher Levels.</strong></em> If you cast this spell using a spell slot of 7th or 8th level, the duration is 8 hours. If you use a 9th-level spell slot, the duration is 24 hours.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "endow-attribute"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 4
+    },
+    "components": {
+      "material": {
+        "description": "a ring worth at least 200 gp, which the spell consumes",
+        "consumed": false,
+        "cost": 200
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "null",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPendowattribute"
+}

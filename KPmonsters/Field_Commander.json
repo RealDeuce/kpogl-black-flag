@@ -1,0 +1,2571 @@
+{
+  "_id": "KPfieldcommander",
+  "name": "Field Commander",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "prototypeToken": {
+    "name": "Field Commander",
+    "width": 1,
+    "height": 1,
+    "displayName": 20,
+    "actorLink": false,
+    "lockRotation": true,
+    "rotation": 0,
+    "disposition": -1,
+    "displayBars": 40,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "randomImg": false,
+    "alpha": 1,
+    "light": {
+      "alpha": 1,
+      "angle": 360,
+      "bright": 0,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "speed": 5,
+        "intensity": 5,
+        "type": null,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      },
+      "attenuation": 0.5,
+      "color": null,
+      "negative": false,
+      "priority": 0
+    },
+    "texture": {
+      "src": null,
+      "tint": "#ffffff",
+      "scaleX": 1,
+      "scaleY": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "rotation": 0,
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "alphaThreshold": 0.75
+    },
+    "sight": {
+      "angle": 360,
+      "enabled": false,
+      "range": 0,
+      "brightness": 0,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": [],
+    "appendNumber": false,
+    "prependAdjective": false,
+    "hexagonalShape": 1,
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    }
+  },
+  "items": [
+    {
+      "_id": "0000000000000001",
+      "name": "Aura of Courage",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 1,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>As long as the field commander is conscious, all allies within 10 feet of it are immune to being frightened.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "aura-of-courage"
+        }
+      },
+      "_key": "!actors.items!KPfieldcommander.0000000000000001"
+    },
+    {
+      "_id": "0000000000000002",
+      "name": "Aura of Protection",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 2,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>As long as the field commander is conscious, all allies within 10 feet of it have advantage on saving throws.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "aura-of-protection"
+        }
+      },
+      "_key": "!actors.items!KPfieldcommander.0000000000000002"
+    },
+    {
+      "_id": "0000000000000003",
+      "name": "Spellcasting",
+      "type": "feature",
+      "img": "icons/magic/light/projectiles-star-purple.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 3,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The field commander is a 14th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It knows the following paladin spells:<br>1st level (4 slots): @UUID[Compendium.black-flag.spells.Item.lkBDXbx2O78UA8gz]{command}, @UUID[Compendium.black-flag.spells.Item.NQvy34IRCNEJfwip]{cure wounds}, @UUID[Compendium.black-flag.spells.Item.218rEsgus2IEnkzF]{divine favor}, @UUID[Compendium.black-flag.spells.Item.zRsCgtiBO7EuJbhb]{heroism}, @UUID[Compendium.black-flag.spells.Item.gBis1QK0mfhwc26a]{protection from evil and good}, @UUID[Compendium.black-flag.spells.Item.zqls78yW5JLJWzSN]{shield of faith}<br>2nd level (3 slots): @UUID[Compendium.black-flag.spells.Item.7zPIiNxqhZtPkQbk]{aid}, @UUID[Compendium.black-flag.spells.Item.8HvKuoDk8GBxsbZX]{find steed}, @UUID[Compendium.black-flag.spells.Item.6P5eYTRcKoIQFmGu]{magic weapon}<br>3rd level (3 slots): @UUID[Compendium.black-flag.spells.Item.RnAYCG4EsMkSqecn]{revivify}<br>4th level (1 slot): @UUID[Compendium.black-flag.spells.Item.4e5kuXZgzEHtxSMj]{death ward}",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "spellcasting"
+        }
+      },
+      "_key": "!actors.items!KPfieldcommander.0000000000000003"
+    },
+    {
+      "_id": "0000000000000004",
+      "name": "Multiattack",
+      "type": "feature",
+      "img": "icons/skills/melee/blade-tips-triple-steel.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 4,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>The field commander makes three attacks.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "multiattack"
+        }
+      },
+      "_key": "!actors.items!KPfieldcommander.0000000000000004"
+    },
+    {
+      "_id": "0000000000000005",
+      "name": "Longsword",
+      "type": "weapon",
+      "img": "icons/weapons/swords/greatsword-guard.webp",
+      "effects": [],
+      "folder": null,
+      "sort": 5,
+      "owndership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": true
+          }
+        }
+      },
+      "system": {
+        "activities": {
+          "KPOGLactivityAtk": {
+            "system": {
+              "attack": {
+                "ability": "strength",
+                "bonus": "0",
+                "critical": {
+                  "threshold": null
+                },
+                "flat": false,
+                "type": {
+                  "value": "melee",
+                  "classification": "weapon"
+                }
+              },
+              "damage": {
+                "critical": {
+                  "bonus": ""
+                },
+                "includeBase": true,
+                "parts": []
+              },
+              "effects": []
+            },
+            "type": "attack",
+            "_id": "KPOGLactivityAtk",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          },
+          "KPOGLactivitySav": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "constitution",
+              "dc": {
+                "ability": "",
+                "formula": "16"
+              }
+            },
+            "type": "save",
+            "_id": "KPOGLactivitySav",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {
+              "override": false,
+              "special": "",
+              "units": "foot",
+              "value": "5"
+            },
+            "sort": 1,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if wielded in two hands. If the target is a creature, the field commander can expend a spell slot as part of the attack to add one of the following effects:<ul><li>The target takes extra radiant damage equal to 1d8 per slot level.</li><li>The target must succeed on a DC 16 Constitution saving throw or be stunned until the end of its next turn.</li><li>The target must succeed on a DC 16 Wisdom saving throw or be frightened for 1 minute. The target can make a new saving throw at the end of each of its turns, overcoming its fright on a success.</li>",
+          "source": {
+            "book": "WL75",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "longsword"
+        },
+        "container": null,
+        "price": {
+          "value": 15,
+          "denomination": "gp"
+        },
+        "rarity": "",
+        "weight": {
+          "value": 3,
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": null,
+              "formula": ""
+            },
+            "type": "slashing"
+          }
+        },
+        "magicalBonus": null,
+        "range": {
+          "short": null,
+          "long": null,
+          "reach": "5",
+          "units": "foot",
+          "value": null
+        },
+        "type": {
+          "value": "melee",
+          "category": "martial",
+          "base": "longsword"
+        }
+      },
+      "_key": "!actors.items!KPfieldcommander.0000000000000005"
+    },
+    {
+      "_id": "0000000000000006",
+      "name": "Bolster Soldier",
+      "type": "feature",
+      "img": "systems/dnd5e/icons/svg/items/feature.svg",
+      "effects": [],
+      "folder": null,
+      "sort": 6,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {},
+      "system": {
+        "type": {
+          "category": "monster",
+          "value": ""
+        },
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "reaction",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>When the field commander sees an allied creature within 10 feet of it struck by a weapon attack, it can use its reaction to call encouragement, granting that creature 5 (1d10) temporary hit points.",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "bolster-soldier"
+        }
+      },
+      "_key": "!actors.items!KPfieldcommander.0000000000000006"
+    },
+    {
+      "_id": "arzCrMRgcNiQuh43",
+      "name": "Command",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/fire/explosion-fireball-small-purple.webp",
+      "effects": [],
+      "folder": "ERuXllkhTQF51rDJ",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "parts": []
+              },
+              "effects": [],
+              "ability": "wisdom",
+              "dc": {
+                "ability": "spellcasting",
+                "formula": ""
+              }
+            },
+            "type": "save",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p><p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</p><p><strong>Approach.</strong> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p><p><strong>Drop.</strong> The target drops whatever it is holding and then ends its turn.</p><p><strong>Flee.</strong> The target spends its turn moving away from you by the fastest available means.</p><p><strong>Grovel.</strong> The target falls prone and then ends its turn.</p><p><strong>Halt.</strong> The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p><p><strong>Higher Levels.Â </strong>When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "command"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "round"
+        },
+        "range": {
+          "value": "60",
+          "units": "foot"
+        },
+        "school": "necromancy",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPfieldcommander.arzCrMRgcNiQuh43"
+    },
+    {
+      "_id": "uUWb1wZgtMou0TVP",
+      "name": "Cure Wounds",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/life/heart-cross-green.webp",
+      "effects": [],
+      "folder": "ERuXllkhTQF51rDJ",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": [],
+              "healing": {
+                "number": 1,
+                "denomination": 8,
+                "bonus": "@mod",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1,
+                  "formula": ""
+                },
+                "type": "healing"
+              }
+            },
+            "type": "heal",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p><p><strong>Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "cure-wounds"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "",
+          "units": "instantaneous"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "evocation",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPfieldcommander.uUWb1wZgtMou0TVP"
+    },
+    {
+      "_id": "8MICCMeOXT3aJUy9",
+      "name": "Divine Favor",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/fire/dagger-rune-enchant-flame-blue-yellow.webp",
+      "effects": [],
+      "folder": "ERuXllkhTQF51rDJ",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "damage": {
+                "critical": {
+                  "allow": false,
+                  "bonus": ""
+                },
+                "parts": [
+                  {
+                    "number": 1,
+                    "denomination": 4,
+                    "bonus": "",
+                    "custom": {
+                      "enabled": false,
+                      "formula": ""
+                    },
+                    "scaling": {
+                      "mode": "",
+                      "number": null,
+                      "formula": ""
+                    },
+                    "type": "radiant"
+                  }
+                ]
+              },
+              "effects": []
+            },
+            "type": "damage",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "divine-favor"
+        },
+        "casting": {
+          "type": "bonus",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "units": "self"
+        },
+        "school": "evocation",
+        "target": {
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPfieldcommander.8MICCMeOXT3aJUy9"
+    },
+    {
+      "_id": "ge3Saet9zPTDyaoL",
+      "name": "Heroism",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/life/heart-cross-strong-blue.webp",
+      "effects": [],
+      "folder": "ERuXllkhTQF51rDJ",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": [],
+              "healing": {
+                "number": null,
+                "denomination": null,
+                "bonus": "",
+                "custom": {
+                  "enabled": true,
+                  "formula": "@mod"
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "temp"
+              }
+            },
+            "type": "heal",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being Frightened and gains Temporary Hit Points equal to your Spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "heroism"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "necromancy",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPfieldcommander.ge3Saet9zPTDyaoL"
+    },
+    {
+      "_id": "xmDBqZhRVrtLP8h2",
+      "name": "Protection from Evil and Good",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/defensive/shield-barrier-flaming-diamond-blue-yellow.webp",
+      "effects": [],
+      "folder": "ERuXllkhTQF51rDJ",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.</p><p>The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "protection-from-evil-and-good"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "Holy water or powdered silver and iron, which the spell consumes",
+            "consumed": true,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "abjuration",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPfieldcommander.xmDBqZhRVrtLP8h2"
+    },
+    {
+      "_id": "0000000000000012",
+      "name": "Shield Of Faith",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 25,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/items/spell.svg",
+      "effects": [],
+      "folder": null,
+      "system": {
+        "activities": {
+          "KPOGLactivityUtl": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "KPOGLactivityUtl",
+            "activation": {
+              "condition": "",
+              "override": false,
+              "primary": true,
+              "type": "bonus",
+              "value": 1
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "special": "",
+              "units": "instantaneous",
+              "value": ""
+            },
+            "range": {},
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false,
+                "formula": "",
+                "special": "",
+                "type": ""
+              },
+              "template": {
+                "count": "",
+                "connected": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "max": "",
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": null
+        },
+        "description": {
+          "value": "<p>A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+          "source": {
+            "book": "",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "shield-of-faith"
+        },
+        "casting": {
+          "type": "bonus",
+          "condition": ""
+        },
+        "circle": {
+          "base": 1
+        },
+        "components": {
+          "material": {
+            "description": "a small parchment with a bit of holy text written on it",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": 10,
+          "units": "minute"
+        },
+        "range": {
+          "value": "60",
+          "units": "foot"
+        },
+        "school": "abjuration",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPfieldcommander.0000000000000012"
+    },
+    {
+      "_id": "Opwh2PdX4runSBlm",
+      "name": "Aid",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/life/heart-cross-blue.webp",
+      "effects": [],
+      "folder": "Qi4Se3we69ukl2V9",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": [],
+              "healing": {
+                "number": null,
+                "denomination": null,
+                "bonus": "",
+                "custom": {
+                  "enabled": true,
+                  "formula": "5"
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": null,
+                  "formula": "(@item.level - 2) * 5"
+                },
+                "type": "healing"
+              }
+            },
+            "type": "heal",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 3rd level or higher, a target's hit points increase by an additional 5 for each slot level above 2nd.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "aid"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 2
+        },
+        "components": {
+          "material": {
+            "description": "A tiny strip of white cloth.",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "8",
+          "units": "hour"
+        },
+        "range": {
+          "value": "30",
+          "units": "foot"
+        },
+        "school": "abjuration",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "3",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPfieldcommander.Opwh2PdX4runSBlm"
+    },
+    {
+      "_id": "5eh2HFbS13078Y3H",
+      "name": "Find Steed",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/nature/wolf-paw-glow-teal-blue.webp",
+      "effects": [],
+      "folder": "Qi4Se3we69ukl2V9",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "bonuses": {
+                "ac": "",
+                "hp": "",
+                "attackDamage": "",
+                "saveDamage": "",
+                "healing": ""
+              },
+              "creatureSizes": [],
+              "creatureTypes": [
+                "celestial",
+                "fey",
+                "fiend"
+              ],
+              "match": {
+                "attacks": false,
+                "proficiency": false,
+                "saves": false
+              },
+              "profiles": [
+                {
+                  "name": "",
+                  "_id": "AjbDWduosqyViS2D",
+                  "uuid": "Compendium.dnd5e.monsters.Actor.FQMFuzzSh73d0Nrd",
+                  "level": {
+                    "min": null,
+                    "max": null
+                  },
+                  "types": []
+                },
+                {
+                  "name": "",
+                  "_id": "5bNPkSBX9Nc043lQ",
+                  "uuid": "Compendium.dnd5e.monsters.Actor.55PkbskG5iBZGrgR",
+                  "level": {
+                    "min": null,
+                    "max": null
+                  },
+                  "types": []
+                },
+                {
+                  "name": "",
+                  "_id": "3hWu8Ub25OiFqWhu",
+                  "uuid": "Compendium.dnd5e.monsters.Actor.YTpL2c3NO4sOn2UA",
+                  "level": {
+                    "min": null,
+                    "max": null
+                  },
+                  "types": []
+                },
+                {
+                  "name": "",
+                  "_id": "qwzKyNaevY3tXRfu",
+                  "uuid": "Compendium.dnd5e.monsters.Actor.PHO4J98zK2p4KNyc",
+                  "level": {
+                    "min": null,
+                    "max": null
+                  },
+                  "types": []
+                },
+                {
+                  "name": "",
+                  "_id": "DprNdxi3hb7lbrjw",
+                  "uuid": "Compendium.dnd5e.monsters.Actor.T1xZTDCGuvMBSq8d",
+                  "level": {
+                    "min": null,
+                    "max": null
+                  },
+                  "types": []
+                }
+              ],
+              "summon": {
+                "identifier": "",
+                "mode": "",
+                "prompt": true
+              }
+            },
+            "type": "summon",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form that you choose, such as a @UUID[Compendium.dnd5e.monsters.Actor.T1xZTDCGuvMBSq8d]{warhorse}, a @UUID[Compendium.black-flag.npcs.Actor.SjxwoQ8AHbO3zHoU]{pony}, a @UUID[Compendium.black-flag.npcs.Actor.pIR9tOfVD3TBs02T]{camel}, an @UUID[Compendium.black-flag.npcs.Actor.HygHNXNR3ltqfGCU]{elk}, or a @UUID[Compendium.black-flag.npcs.Actor.ck0kqumkVqWznctK]{mastiff}. (Your DM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.</p><p>Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. While mounted on your steed, you can make any spell you cast that targets only you also target your steed.</p><p>When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.</p><p>While your steed is within 1 mile of you, you can communicate with it telepathically.</p><p>You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": "pg. 143"
+          }
+        },
+        "identifier": {
+          "value": "find-steed"
+        },
+        "casting": {
+          "type": "minute",
+          "condition": ""
+        },
+        "circle": {
+          "base": 2
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "",
+          "units": "instantaneous"
+        },
+        "range": {
+          "value": "30",
+          "units": "foot"
+        },
+        "school": "conjuration",
+        "target": {
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "template": {
+            "connected": false,
+            "units": "any"
+          }
+        },
+        "tags": [
+          "mgc"
+        ]
+      },
+      "_key": "!actors.items!KPfieldcommander.5eh2HFbS13078Y3H"
+    },
+    {
+      "_id": "Sgjrf8qqv97CCWM4",
+      "name": "Magic Weapon",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/fire/dagger-rune-enchant-flame-blue.webp",
+      "effects": [
+        {
+          "name": "Magic Weapon, +1",
+          "flags": {
+            "dnd5e": {
+              "enchantment": {
+                "level": {
+                  "min": null,
+                  "max": 3
+                },
+                "riders": []
+              }
+            }
+          },
+          "_id": "SLSudYaACjmmmZsU",
+          "changes": [
+            {
+              "key": "name",
+              "mode": 5,
+              "value": "{}, +1",
+              "priority": null
+            },
+            {
+              "key": "system.properties",
+              "mode": 2,
+              "value": "mgc",
+              "priority": null
+            },
+            {
+              "key": "system.magicalBonus",
+              "mode": 5,
+              "value": "1",
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "description": "<p>This weapon becomes a magic weapon with a +1 bonus to Attack rolls and Damage Rolls.</p>",
+          "origin": null,
+          "transfer": false,
+          "statuses": [],
+          "tint": "#ffffff",
+          "img": "icons/magic/fire/dagger-rune-enchant-flame-blue.webp",
+          "type": "enchantment",
+          "sort": 0,
+          "_key": "!actors.items.effects!KPfieldcommander.Sgjrf8qqv97CCWM4.SLSudYaACjmmmZsU"
+        },
+        {
+          "name": "Magic Weapon, +2",
+          "flags": {
+            "dnd5e": {
+              "enchantment": {
+                "level": {
+                  "min": 4,
+                  "max": 5
+                },
+                "riders": []
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "name",
+              "mode": 5,
+              "value": "{}, +2",
+              "priority": null
+            },
+            {
+              "key": "system.properties",
+              "mode": 2,
+              "value": "mgc",
+              "priority": null
+            },
+            {
+              "key": "system.magicalBonus",
+              "mode": 5,
+              "value": "2",
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "description": "<p>This weapon becomes a magic weapon with a +2 bonus to Attack rolls and Damage Rolls.</p>",
+          "origin": null,
+          "transfer": false,
+          "statuses": [],
+          "tint": "#ffffff",
+          "_id": "8OhsRxK3dF1JeQXO",
+          "img": "icons/magic/fire/dagger-rune-enchant-flame-blue.webp",
+          "type": "enchantment",
+          "sort": 0,
+          "_key": "!actors.items.effects!KPfieldcommander.Sgjrf8qqv97CCWM4.8OhsRxK3dF1JeQXO"
+        },
+        {
+          "name": "Magic Weapon, +3",
+          "flags": {
+            "dnd5e": {
+              "enchantment": {
+                "level": {
+                  "min": 6,
+                  "max": null
+                },
+                "riders": []
+              }
+            }
+          },
+          "changes": [
+            {
+              "key": "name",
+              "mode": 5,
+              "value": "{}, +3",
+              "priority": null
+            },
+            {
+              "key": "system.properties",
+              "mode": 2,
+              "value": "mgc",
+              "priority": null
+            },
+            {
+              "key": "system.magicalBonus",
+              "mode": 5,
+              "value": "3",
+              "priority": null
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "combat": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null
+          },
+          "description": "<p>This weapon becomes a magic weapon with a +3 bonus to Attack rolls and Damage Rolls.</p>",
+          "origin": null,
+          "transfer": false,
+          "statuses": [],
+          "tint": "#ffffff",
+          "_id": "7L1wKfaEdN85IA0Z",
+          "img": "icons/magic/fire/dagger-rune-enchant-flame-blue.webp",
+          "type": "enchantment",
+          "sort": 0,
+          "_key": "!actors.items.effects!KPfieldcommander.Sgjrf8qqv97CCWM4.7L1wKfaEdN85IA0Z"
+        }
+      ],
+      "folder": "Qi4Se3we69ukl2V9",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": [
+                {
+                  "_id": "SLSudYaACjmmmZsU",
+                  "level": {
+                    "min": null,
+                    "max": 3
+                  },
+                  "riders": []
+                },
+                {
+                  "_id": "8OhsRxK3dF1JeQXO",
+                  "level": {
+                    "min": 4,
+                    "max": 5
+                  },
+                  "riders": []
+                },
+                {
+                  "_id": "7L1wKfaEdN85IA0Z",
+                  "level": {
+                    "min": 6,
+                    "max": null
+                  },
+                  "riders": []
+                }
+              ]
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {}
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to Attack rolls and Damage Rolls.</p><p><strong>At Higher Levels.</strong> When you cast this spell using a spell slot of 4th level or higher, the bonus increases to +2. When you use a spell slot of 6th level or higher, the bonus increases to +3.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "magic-weapon"
+        },
+        "casting": {
+          "type": "bonus",
+          "condition": ""
+        },
+        "circle": {
+          "base": 2
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "transmutation",
+        "target": {
+          "affects": {
+            "choice": false
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": [
+          "concentration"
+        ]
+      },
+      "_key": "!actors.items!KPfieldcommander.Sgjrf8qqv97CCWM4"
+    },
+    {
+      "_id": "LmRHHMtplpxr9fX6",
+      "name": "Revivify",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/life/heart-cross-strong-blue.webp",
+      "effects": [],
+      "folder": "5Si35RRLLaaoWvC3",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": [],
+              "healing": {
+                "number": null,
+                "denomination": null,
+                "bonus": "",
+                "custom": {
+                  "enabled": true,
+                  "formula": "1"
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "healing"
+              }
+            },
+            "type": "heal",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "revivify"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 3
+        },
+        "components": {
+          "material": {
+            "description": "Diamonds worth 300gp, which the spell consumes.",
+            "consumed": true,
+            "cost": 100
+          },
+          "required": [
+            "verbal",
+            "somatic",
+            "material"
+          ]
+        },
+        "duration": {
+          "value": "",
+          "units": "instantaneous"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "nec",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPfieldcommander.LmRHHMtplpxr9fX6"
+    },
+    {
+      "_id": "VtCXMdyM6mAdIJZb",
+      "name": "Death Ward",
+      "ownership": {
+        "default": 0
+      },
+      "type": "spell",
+      "sort": 0,
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "mode": "prepared",
+            "prepared": true,
+            "origin": {}
+          }
+        }
+      },
+      "img": "icons/magic/control/fear-fright-monster-purple-blue.webp",
+      "effects": [],
+      "folder": "5auWSClKMDUIV5Ni",
+      "system": {
+        "activities": {
+          "dnd5eactivity000": {
+            "system": {
+              "effects": []
+            },
+            "type": "utility",
+            "_id": "dnd5eactivity000",
+            "activation": {
+              "override": false,
+              "primary": true,
+              "type": "action",
+              "value": null
+            },
+            "consumption": {
+              "scale": {
+                "allowed": false,
+                "max": ""
+              },
+              "targets": []
+            },
+            "duration": {
+              "concentration": false,
+              "override": false,
+              "units": "instantaneous"
+            },
+            "range": {
+              "override": false
+            },
+            "sort": 0,
+            "target": {
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "connected": false,
+                "units": "foot"
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "recovery": [],
+              "spent": 0
+            },
+            "roll": {
+              "formula": "",
+              "name": "",
+              "prompt": false,
+              "visible": false
+            }
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "description": {
+          "value": "<p>You touch a creature and grant it a measure of protection from death.</p><p>The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.</p><p>If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "death-ward"
+        },
+        "casting": {
+          "type": "action",
+          "condition": ""
+        },
+        "circle": {
+          "base": 4
+        },
+        "components": {
+          "material": {
+            "description": "",
+            "consumed": false,
+            "cost": 0
+          },
+          "required": [
+            "verbal",
+            "somatic"
+          ]
+        },
+        "duration": {
+          "value": "8",
+          "units": "hour"
+        },
+        "range": {
+          "units": "touch"
+        },
+        "school": "abjuration",
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "1",
+            "type": "creature"
+          },
+          "template": {
+            "connected": false,
+            "units": ""
+          }
+        },
+        "tags": []
+      },
+      "_key": "!actors.items!KPfieldcommander.VtCXMdyM6mAdIJZb"
+    },
+    {
+      "_id": "SK2HATQ4abKUlV8i",
+      "name": "Breastplate",
+      "type": "armor",
+      "img": "icons/equipment/chest/breastplate-collared-steel-grey.webp",
+      "effects": [],
+      "folder": "JqTP017wj3uxDJ8g",
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "black-flag": {
+          "relationship": {
+            "equipped": false
+          }
+        }
+      },
+      "system": {
+        "description": {
+          "value": "<p>This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer relatively unencumbered.</p>",
+          "source": {
+            "book": "SRD 5.1",
+            "fallback": "",
+            "page": ""
+          }
+        },
+        "identifier": {
+          "value": "breastplate"
+        },
+        "container": null,
+        "price": {
+          "value": 400,
+          "denomination": "gp"
+        },
+        "quantity": 1,
+        "rarity": "",
+        "weight": {
+          "value": 20,
+          "units": "pound"
+        },
+        "attunement": {
+          "value": ""
+        },
+        "properties": [],
+        "armor": {
+          "value": 14,
+          "requiredStrength": null
+        },
+        "magicalBonus": null,
+        "type": {
+          "category": "medium",
+          "base": "breastplate"
+        }
+      },
+      "_key": "!actors.items!KPfieldcommander.SK2HATQ4abKUlV8i"
+    }
+  ],
+  "sort": 553,
+  "flags": {},
+  "system": {
+    "abilities": {
+      "strength": {
+        "mod": 4,
+        "proficient": false
+      },
+      "dexterity": {
+        "mod": 2,
+        "proficient": false
+      },
+      "constitution": {
+        "mod": 8,
+        "proficient": true
+      },
+      "intelligence": {
+        "mod": 1,
+        "proficient": false
+      },
+      "wisdom": {
+        "mod": 1,
+        "proficient": false
+      },
+      "charisma": {
+        "mod": 8,
+        "proficient": true
+      }
+    },
+    "modifiers": [],
+    "attributes": {
+      "ac": {
+        "override": 17
+      },
+      "hp": {
+        "max": 170,
+        "temp": null,
+        "tempmax": 0,
+        "value": 170
+      },
+      "initiative": {
+        "ability": ""
+      },
+      "exhaustion": 0,
+      "cr": 10,
+      "legendary": {
+        "max": 0
+      },
+      "perception": 15
+    },
+    "proficiencies": {
+      "languages": {
+        "values": [
+          "custom"
+        ],
+        "communication": {},
+        "custom": [
+          "Common and one other language"
+        ],
+        "tags": []
+      }
+    },
+    "traits": {
+      "condition": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "damage": {
+        "immunities": {
+          "value": [],
+          "custom": []
+        },
+        "resistances": {
+          "value": [],
+          "custom": []
+        },
+        "vulnerabilities": {
+          "value": [],
+          "custom": []
+        }
+      },
+      "movement": {
+        "base": 30,
+        "custom": [],
+        "tags": [],
+        "types": {
+          "walk": "@base"
+        },
+        "units": "foot"
+      },
+      "senses": {
+        "custom": [],
+        "tags": [],
+        "types": {},
+        "units": "foot"
+      },
+      "size": "medium",
+      "type": {
+        "custom": [],
+        "tags": [],
+        "value": "Humanoid"
+      }
+    },
+    "description": {
+      "source": {
+        "book": "WL75",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "spellcasting": {
+      "ability": "charisma"
+    },
+    "biography": {
+      "value": "<p>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}"
+    }
+  },
+  "effects": [],
+  "_key": "!actors!KPfieldcommander"
+}

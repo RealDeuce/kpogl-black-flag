@@ -1,0 +1,165 @@
+{
+  "_id": "KPvoidrift000000",
+  "name": "Void Rift",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 1229,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 8,
+                "denomination": 10,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "necrotic"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "strength",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "300"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p><em><strong>Deep Magic: </strong>Void</em><br>You speak a hideous string of Void Speech that leaves your mouth bloodied, causing a rift into nothingness to tear open. The rift takes the form of a 10-foot-radius sphere, and it forms around a point you can see within range. The area within 40 feet of the sphere’s outer edge becomes difficult terrain as the Void tries to draw everything into itself. A creature that starts its turn within 40 feet of the sphere or that enters that area for the first time on its turn must succeed on a Strength saving throw or be pulled 15 feet toward the rift. A creature that starts its turn in the rift or that comes into contact with it for the first time on its turn takes 8d10 necrotic damage. Creatures inside the rift are blinded and deafened. Unattended objects within 40 feet of the rift are drawn 15 feet toward it at the start of your turn, and they take damage as creatures if they come into contact with it.<br>While concentrating on the spell, you take 2d6 necrotic damage at the end of each of your turns.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "void-rift"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 9
+    },
+    "components": {
+      "material": {
+        "description": "a black opal worth 500 gp, carved with a Void glyph",
+        "consumed": false,
+        "cost": 500
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "300",
+      "units": "foot"
+    },
+    "school": "evocation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "sphere",
+        "size": "10",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPvoidrift000000"
+}

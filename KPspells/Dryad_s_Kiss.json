@@ -1,0 +1,163 @@
+{
+  "_id": "KPdryadskiss0000",
+  "name": "Dryad’s Kiss",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 487,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 3,
+                "denomination": 8,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "necrotic"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "120"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You perform an ancient incantation that summons flora from the fey realm. A creature you can see within range is covered with small, purple buds and takes 3d8 necrotic damage; a successful Wisdom saving throw negates the damage but doesn’t prevent the plant growth. The buds can be removed by the target or an ally of the target within 5 feet who uses an action to make a successful Intelligence (Nature) or Wisdom (Medicine) check against your spell save DC, or by a <em>@UUID[Compendium.black-flag.spells.Item.ZTVg00JolCuPkOOX]{greater restoration}</em> or <em>@UUID[Compendium.black-flag.spells.Item.bf9OcuTnbJoaUueU]{blight}</em> spell. While the buds remain, whenever the target takes damage from a source other than this spell, one bud blossoms into a purple and yellow flower that deals an extra 1d8 necrotic damage to the target. Once four blossoms have formed in this way, the buds can no longer be removed by nonmagical means. The buds and blossoms wilt and fall away when the spell ends, provided the creature is still alive.<br>If a creature affected by this spell dies, sweet-smelling blossoms quickly cover its body. The flowers wilt and die after one month.<br><em><strong>At Higher Levels.</strong></em> If this spell is cast using a spell slot of 5th level or higher, the number of targets increases by one for every two slot levels above 3rd.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "dryads-kiss"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "a flower petal or a drop of blood",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "120",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "5",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPdryadskiss0000"
+}

@@ -1,0 +1,160 @@
+{
+  "_id": "KPbloodpurge0000",
+  "name": "Blood Purge",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 228,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityDam": {
+        "system": {
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "parts": [
+              {
+                "number": 1,
+                "denomination": 4,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "piercing"
+              }
+            ]
+          },
+          "effects": []
+        },
+        "type": "damage",
+        "_id": "KPOGLactivityDam",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You purge impurities from the blood of a willing creature you touch. The target takes 1d4 piercing damage and has advantage on the next saving throw it makes against disease or against being poisoned before the spell ends. If the target is already suffering from a disease or poison that allows for repeated saving throws to remove the effect, it can immediately make a new saving throw against the effect with advantage. Regardless if this new save succeeds or fails, a target that is already suffering from a disease or the poisoned condition can’t be affected by this spell again until it finishes a long rest.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "blood-purge"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 0
+    },
+    "components": {
+      "material": {
+        "description": "a knife or dagger",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "nec",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "1",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPbloodpurge0000"
+}

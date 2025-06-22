@@ -1,0 +1,143 @@
+{
+  "_id": "KPplaguedoctorsc",
+  "name": "Plague Doctor’s Call",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 889,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You inhale deeply of the herb-and-flower parcel and attune yourself to the ebb and flow of pestilent spirits. For the duration, whenever you are within 1 mile of an active epidemic (a contagious disease currently affecting 10 or more creatures within 1,000 feet of each other), the scent of the herbs and flowers intensifies. This scent becomes stronger when you are pointed in the direction of the nearest victim of the epidemic and for as long as you continue moving in its direction. The scent vanishes and the spell ends when you are within 30 feet of a victim of an epidemic you sensed with this spell.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "plague-doctors-call"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 1
+    },
+    "components": {
+      "material": {
+        "description": "a parcel of dried flowers and herbs",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "divination",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "1",
+        "units": "mile"
+      }
+    },
+    "tags": [
+      "ritual",
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPplaguedoctorsc"
+}

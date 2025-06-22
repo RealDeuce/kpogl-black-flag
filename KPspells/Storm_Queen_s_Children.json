@@ -1,0 +1,163 @@
+{
+  "_id": "KPstormqueenschi",
+  "name": "Storm Queen’s Children",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 1119,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 4,
+                "denomination": 10,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "bludgeoning"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "strength",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "90"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You conjure up to three tornados on the ground at points you can see within range. Each tornado is a 10-foot radius, 30-foot-tall cylinder of swirling air centered on the point. Each creature that enters a tornado for the first time on a turn or starts its turn in a tornado must make a Strength saving throw. On a failed save, a Large or smaller creature takes 4d10 bludgeoning damage and is thrown up to 60 feet in a random direction and knocked prone. On a failed save, a Huge or larger creature takes 4d10 bludgeoning damage but is restrained until the start of its next turn instead of being thrown. On a successful save, a creature takes half the damage and isn’t thrown, restrained, or knocked prone, but it is pushed out of the tornado to an unoccupied space within 5 feet of the edge of the tornado.<br>If a thrown creature strikes a solid surface, the creature takes 1d6 bludgeoning damage for every 10 feet it was thrown. If the creature is thrown at another creature, that creature must succeed on a Dexterity saving throw against your spell save DC or take the same damage and be knocked prone. If a thrown creature is thrown into another tornado, it is then thrown up to 60 feet again in a random direction from that tornado.<br>At the start of each of your turns, the tornados move up to 30 feet in random directions and can affect you as easily as any other creature. If multiple tornados would move to the same space, one tornado moves to the space, and the other moves to within 10 feet of the space. The spell ends early if you are incapacitated or die.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "storm-queens-children"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 7
+    },
+    "components": {
+      "material": {
+        "description": "a piece of ivory carved into the shape of a tornado, worth at least 500 gp",
+        "consumed": false,
+        "cost": 500
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "90",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "10",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPstormqueenschi"
+}

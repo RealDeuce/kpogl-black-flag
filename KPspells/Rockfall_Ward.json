@@ -1,0 +1,139 @@
+{
+  "_id": "KProckfallward00",
+  "name": "Rockfall Ward",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 976,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "which you take when nonmagical debris fall within 120 feet of you",
+          "override": false,
+          "primary": true,
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You temporarily halt the fall of up to a 10-foot cube of nonmagical objects or debris, saving those who might have been crushed.The falling material’s rate of descent slows to 60 feet per round and comes to a stop 5 feet above the ground, where it hovers until the spell ends.This spell can’t prevent missile weapons from striking a target, and it can’t slow the descent of an object larger than a 10-foot cube. However, at the GM’s discretion, it can slow the descent of a section of a larger object, such as the wall of a falling building or a section of sail and rigging tied to a falling mast.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 2nd level or higher, the cube of debris and objects you can halt increases by 5 feet for each slot level above 1st.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "ToH",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "rockfall-ward"
+    },
+    "casting": {
+      "type": "reaction",
+      "condition": "which you take when nonmagical debris fall within 120 feet of you"
+    },
+    "circle": {
+      "base": 1
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "120",
+      "units": "foot"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "cube",
+        "size": "10",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KProckfallward00"
+}

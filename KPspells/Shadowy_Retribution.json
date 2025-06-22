@@ -1,0 +1,169 @@
+{
+  "_id": "KPshadowyretribu",
+  "name": "Shadowy Retribution",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 1037,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityDam": {
+        "system": {
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "parts": [
+              {
+                "number": 1,
+                "denomination": 4,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "piercing"
+              }
+            ]
+          },
+          "effects": []
+        },
+        "type": "damage",
+        "_id": "KPOGLactivityDam",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "self",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You fill a small silver cup with your own blood (taking 1d4 piercing damage) while chanting vile curses in the dark. Once the chant is completed, you consume the blood and swear an oath of vengeance against any who harm you.<br>If you are reduced to 0 hit points, your oath is invoked; a @UUID[Compendium.black-flag.npcs.Actor.jH8xObIbnEmk6Sjx]{shadow} materializes within 5 feet of you. The shadow attacks the creature that reduced you to 0 hit points, ignoring all other targets, until it or the target is slain, at which point the shadow dissipates into nothing.<br><em><strong>Ritual Focus.</strong></em> If you expend your ritual focus, the spell summons a @UUID[Compendium.black-flag.npcs.Actor.tPJ2ypkwT92mglS6]{specter} instead of a shadow.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "shadowy-retribution"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 4
+    },
+    "components": {
+      "material": {
+        "description": "a small silver cup filled with the caster’s blood",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 12,
+      "units": "hour"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "nec",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "",
+        "special": "",
+        "type": ""
+      },
+      "template": {
+        "count": "",
+        "connected": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "tags": [
+      "ritual"
+    ]
+  },
+  "_key": "!items!KPshadowyretribu"
+}

@@ -1,0 +1,146 @@
+{
+  "_id": "KPvanishwithin00",
+  "name": "Vanish Within",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 1215,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "which you take when a creature of your size or larger moves into a space within 5 feet of you",
+          "override": false,
+          "primary": true,
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>As a creature of your size or larger approaches, you magically step into the creature, melding yourself and all the equipment you carry with the creature until the start of your next turn. A hostile creature must succeed on a Wisdom saving throw to avoid the effect. At the start of your next turn, you emerge from the target into an unoccupied space within 5 feet of the target.<br>While merged with the target, nothing of your presence remains visible or otherwise detectable by nonmagical senses. You can’t see what occurs outside the target and any Wisdom (Perception) checks you make to hear sounds outside it have disadvantage. You remain aware of the passage of time, but you can’t move or cast spells on yourself while merged.<br>The creature you meld with is aware of your presence, and it can move and take actions normally. Damage to the creature doesn’t affect you. However, if the creature dies or is transformed while you are merged with it, you are expelled into the nearest unoccupied space, fall prone, and take 25 bludgeoning damage and 25 necrotic damage.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "vanish-within"
+    },
+    "casting": {
+      "type": "reaction",
+      "condition": "which you take when a creature of your size or larger moves into a space within 5 feet of you"
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "round"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "5",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPvanishwithin00"
+}

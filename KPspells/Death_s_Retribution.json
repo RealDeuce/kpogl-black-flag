@@ -1,0 +1,147 @@
+{
+  "_id": "KPdeathsretribut",
+  "name": "Death’s Retribution",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 413,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "dexterity",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "self",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You infuse yourself with devastating energy to be unleashed upon your death. When you cast the spell, choose one of the following damage types: acid, cold, fire, lightning, necrotic, radiant, or thunder. When you die, your body detonates, releasing an explosion of energy in a 30-foot-radius sphere centered on your body. Alternatively, you can use your reaction when you are reduced to 0 hit points to trigger this spell, detonating your body and dying immediately.<br>Each hostile creature within that explosion must make a Dexterity saving throw, taking 10d6 damage of the chosen type on a failed save, or half as much damage on a successful one. The creature that inflicted the fatal damage to you has disadvantage on the saving throw, and all 1s on the damage dice are treated as 2s when determining the amount of damage that creature takes. Your body and all nonmagical objects you are wearing and carrying are destroyed when you detonate. If this spell destroys your body, you can be restored to life only by means of a <em>@UUID[Compendium.black-flag.spells.Item.NRAGNLv32xGsz1b0]{true resurrection}</em> or <em>@UUID[Compendium.black-flag.spells.Item.TB5mhD1xitrWMfX6]{wish}</em> spell.<br>You can use only one death’s retribution spell at a time. If you cast this spell again, the previous effect ends and is replaced by the new casting.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 6th level or higher, the damage increases by 2d6 for each slot level above 5th.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "deaths-retribution"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 5
+    },
+    "components": {
+      "material": {
+        "description": "a glass orb",
+        "consumed": true,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 8,
+      "units": "hour"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "abjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "sphere",
+        "size": "30",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPdeathsretribut"
+}

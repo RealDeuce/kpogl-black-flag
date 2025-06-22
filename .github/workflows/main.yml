@@ -1,0 +1,43 @@
+name: KoboldPressOGL Release
+
+on:
+  push:
+    tags:
+      - v*
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/setup-node@v4
+    - name: Get Version
+      shell: bash
+      id: get-version
+      run: echo "version=$(node ./.github/workflows/get-version.js)" >> $GITHUB_OUTPUT
+    - run: scripts/installcli.sh
+    - run: scripts/build.sh
+    - name: Create Versioned Release
+      id: create_versioned_release
+      uses: ncipollo/release-action@v1
+      with:
+        allowUpdates: true
+        name: Release ${{ steps.get-version.outputs.version }}
+        draft: false
+        prerelease: false
+        token: ${{ secrets.GITHUB_TOKEN }}
+        artifacts: './module.json,./koboldpressogl.zip'
+        tag: v${{ steps.get-version.outputs.version }}
+    - name: Create Latest Release
+      id: create_latest_release
+      uses: ncipollo/release-action@v1
+      with:
+        allowUpdates: true
+        name: Latest
+        draft: false
+        prerelease: false
+        token: ${{ secrets.GITHUB_TOKEN }}
+        artifacts: './module.json,./koboldpressogl.zip'
+        tag: latest

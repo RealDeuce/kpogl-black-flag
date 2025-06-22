@@ -1,0 +1,164 @@
+{
+  "_id": "KPleystorm000000",
+  "name": "Ley Storm",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 761,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 2,
+                "denomination": 6,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "thunder"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "special",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>A roiling stormcloud of ley energy forms, centered around a point you can see and extending horizontally to a radius of 360 feet, with a thickness of 30 feet. Shifting color shoots through the writhing cloud, and thunder roars out of it. Each creature under the cloud at the moment when it’s created (no more than 5,000 feet beneath it) takes 2d6 thunder damage and is deafened for 5 minutes; a successful Constitution saving throw negates both effects.<br>Each round you maintain concentration on this spell, the storm produces additional effects on your turn.<br><em><strong>Round 2.</strong></em> Ley-infused pebbles rain from the cloud, causing 1d6 bludgeoning damage to everything beneath it (no saving throw).<br><em><strong>Round 3.</strong></em> Up to six bolts of ley energy leap from the cloud to strike creatures or objects of your choice beneath the cloud. No creature or object can be struck by more than one bolt. A creature struck takes 8d8 force damage, or half damage with a successful Dexterity saving throw.<br><em><strong>Round 4.</strong></em> A burst of prismatic light fills a 20-foot sphere centered on a point beneath the cloud. All creatures in the sphere are affected as if targeted by a <em>@UUID[Compendium.koboldpressogl-bf.koboldpressspells.Item.KPdisruptiveaura]{disruptive aura}</em> spell.<br><em><strong>Rounds 5-10.</strong></em> Flashes of multicolored light burst through and out of the cloud, causing creatures to have disadvantage on Wisdom (Perception) checks that rely on sight while they are beneath the cloud. In addition, each round, you trigger a burst of energy that fills a 20-foot sphere centered on a point you can see beneath the cloud. Each creature in the sphere takes 4d8 force damage (no saving throw).<br><em><strong>Special.</strong></em> A geomancer who casts this spell regains 4d10 hit points.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "HH",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "ley-storm"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 9
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "0",
+      "units": "special"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "360",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPleystorm000000"
+}

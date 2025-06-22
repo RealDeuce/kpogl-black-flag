@@ -1,0 +1,149 @@
+{
+  "_id": "KPcallshadowmast",
+  "name": "Call Shadow Mastiff",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 283,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": "13"
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "60"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You tap into the power of the Plane of Shadow and conjure a large dog made of pure shadow in an unoccupied space you can see within range. The shadow mastiff disappears when it drops to 0 hit points or when the spell ends.<br>The mastiff is friendly to you and your companions. Roll initiative for the mastiff, which has its own turns. It obeys verbal commands that you issue to it (no action required by you). If you don’t issue any commands to it, the mastiff defends itself from hostile creatures, but otherwise takes no actions.<br>The GM has the shadow mastiff ’s statistics, using a @UUID[Compendium.black-flag.npcs.Actor.jrFETGwaRC12Gcgo]{dire wolf}, except it is a Monstrosity, it doubles its proficiency bonus when making Dexterity (Stealth) checks, and it has the Bay action and the Shadow Stealth bonus action, both of which are described below:<br><em><strong>Bay.</strong></em> The shadow mastiff uses an action to release a terrifying howl. Each creature within a 30-foot cone of the mastiff must succeed on a DC 13 Wisdom saving throw or become frightened for 1 minute. While frightened, a creature must take the Dash action and move away from the mastiff by the safest available route on each of its turns, unless there is nowhere to move. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature’s saving throw is successful or the effect ends for it, the creature is immune to the Bay of shadow mastiffs for the next 24 hours.<br><em><strong>Shadow Stealth.</strong></em> As a bonus action while in dim light or darkness, the mastiff takes the Hide action.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "call-shadow-mastiff"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "a dog’s tooth",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "1",
+        "type": ""
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPcallshadowmast"
+}

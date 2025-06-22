@@ -1,0 +1,161 @@
+{
+  "_id": "KPchampionsweapo",
+  "name": "Champion’s Weapon",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 300,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityDam": {
+        "system": {
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "parts": [
+              {
+                "number": 1,
+                "denomination": 8,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "force"
+              }
+            ]
+          },
+          "effects": []
+        },
+        "type": "damage",
+        "_id": "KPOGLactivityDam",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "bonus",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "self",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>A spectral version of a melee weapon of your choice materializes in your hand. It has standard statistics for a weapon of its kind, but it deals force damage instead of its normal damage type and it sheds dim light in a 10-foot radius. You have proficiency with this weapon for the spell’s duration. The weapon can be wielded only by the caster; the spell ends if the weapon is held by a creature other than you or if you start your turn more than 10 feet from the weapon.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 3rd level or higher, the weapon deals an extra 1d8 force damage for each slot level above 2nd.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "champions-weapon"
+    },
+    "casting": {
+      "type": "bonus",
+      "condition": ""
+    },
+    "circle": {
+      "base": 2
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "10",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPchampionsweapo"
+}

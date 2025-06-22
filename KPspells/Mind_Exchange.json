@@ -1,0 +1,156 @@
+{
+  "_id": "KPmindexchange00",
+  "name": "Mind Exchange",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 820,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "charisma",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "60"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>One humanoid of your choice that you can see within range must make a Charisma saving throw. On a failed save, you project your mind into the body of the target. You use the target’s statistics but don’t gain access to its knowledge, class features, or proficiencies, retaining your own instead. Meanwhile, the target’s mind is shunted into your body, where it uses your statistics but likewise retains its own knowledge, class features, and proficiencies.<br>The exchange lasts until either of the two bodies drops to 0 hit points, until you end it as a bonus action, or until you are forced out of the target body by an effect such as a <em>@UUID[Compendium.black-flag.spells.Item.t61I6zrmEDPdOLfw]{dispel magic}</em> or <em>@UUID[Compendium.black-flag.spells.Item.K2znGDRplEsVj92W]{dispel evil and good}</em> spell (the latter spell defeats mind exchange even though possession by a humanoid isn’t usually affected by that spell). When the effect of this spell ends, both switched minds return to their original bodies. The target of the spell is immune to mind exchange for 24 hours after succeeding on the saving throw or after the exchange ends.<br>The effects of the exchange can be made permanent with a <em>@UUID[Compendium.black-flag.spells.Item.TB5mhD1xitrWMfX6]{wish}</em> spell or comparable magic.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "mind-exchange"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "a prism and silver coin",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 8,
+      "units": "hour"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "",
+        "special": "",
+        "type": ""
+      },
+      "template": {
+        "count": "",
+        "connected": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "tags": [
+      "ritual",
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPmindexchange00"
+}

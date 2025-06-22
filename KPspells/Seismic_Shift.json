@@ -1,0 +1,148 @@
+{
+  "_id": "KPseismicshift00",
+  "name": "Seismic Shift",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 1009,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "dexterity",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "self",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You disrupt the ground in a line 60 feet long and 10 feet wide extending from you in a direction you choose. You cause one of the following effects:<br><em><strong>Collapse.</strong></em> The ground crumbles in the line. Each creature in the line must make a Dexterity saving throw. On a failed save, a creature is restrained as it sinks a few feet into the ground. On a successful save, a creature’s speed is reduced by 10 feet until the end of its next turn as its feet and legs are covered in thick layers of earth. A restrained creature can use its action to make a Strength check against your spell save DC. If it succeeds, it is no longer restrained.<br><em><strong>Rupture.</strong></em> The ground bursts away from you along the line. Each creature in the line must make a Strength saving throw. On a failure, a creature is pushed up to 60 feet away from you in a direction following the line and knocked prone. On a successful save, a creature is pushed half the distance and isn’t knocked prone.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "seismic-shift"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 4
+    },
+    "components": {
+      "material": {
+        "description": "a small piece of sandstone",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Instantaneous"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "evocation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "line",
+        "size": "60",
+        "width": "",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPseismicshift00"
+}

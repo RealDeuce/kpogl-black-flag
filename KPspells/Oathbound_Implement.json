@@ -1,0 +1,147 @@
+{
+  "_id": "KPoathboundimple",
+  "name": "Oathbound Implement",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 859,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "30"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You place a magical oath upon a creature you can see within range, compelling it to complete a specific task or service that involves using a weapon as you decide. If the creature can understand you, it must succeed on a Wisdom saving throw or become bound by the task. When acting to complete the directed task, the target has advantage on the first attack roll it makes on each of its turns using a weapon. If the target attempts to use a weapon for a purpose other than completing the specific task or service, it has disadvantage on attack rolls with a weapon and must roll the weapon’s damage dice twice, using the lower total.<br>Completing the task ends the spell early. Should you issue a suicidal task, the spell ends. You can end the spell early by using an action to dismiss it. A <em>@UUID[Compendium.black-flag.spells.Item.1CSuwbYVhlmZMNGM]{remove curse}, @UUID[Compendium.black-flag.spells.Item.ZTVg00JolCuPkOOX]{greater restoration}</em>, or <em>@UUID[Compendium.black-flag.spells.Item.TB5mhD1xitrWMfX6]{wish}</em> spell also ends it.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "ToH",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "oathbound-implement"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal"
+      ]
+    },
+    "duration": {
+      "value": 10,
+      "units": "day"
+    },
+    "range": {
+      "value": "30",
+      "units": "foot"
+    },
+    "school": "necromancy",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "1",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": [
+      "ritual"
+    ]
+  },
+  "_key": "!items!KPoathboundimple"
+}

@@ -1,0 +1,149 @@
+{
+  "_id": "KPcelebration000",
+  "name": "Celebration",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 295,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "90"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You create a 30-foot-radius area around a point that you choose within range. An intelligent creature that enters the area or starts its turn there must make a Wisdom saving throw. On a failed save, the creature starts to engage in celebratory revelry: drinking, singing, laughing, and dancing. Affected creatures are reluctant to leave the area until the spell ends, preferring to continue the festivities. They forsake appointments, cease caring about their woes, and generally behave in a cordial (if not hedonistic) manner. This preoccupation with merrymaking occurs regardless of an affected creature’s agenda or alignment. Assassins procrastinate, servants join in the celebration rather than working, and guards abandon their posts.<br>The effect ends on a creature when it is attacked, takes damage, or is forced to leave the area. A creature that makes a successful saving throw can enter or leave the area without danger of being enchanted. A creature that fails the saving throw and is forcibly removed from the area must repeat the saving throw if it returns to the area.<br><em><strong>Ritual Focus.</strong></em> If you expend your ritual focus, an unaffected intelligent creature must make a new saving throw every time it starts its turn in the area, even if it has previously succeeded on a save against the spell.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "celebration"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 7
+    },
+    "components": {
+      "material": {
+        "description": "a small party favor",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": "90",
+      "units": "foot"
+    },
+    "school": "necromancy",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "30",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "ritual"
+    ]
+  },
+  "_key": "!items!KPcelebration000"
+}

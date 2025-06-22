@@ -1,0 +1,167 @@
+{
+  "_id": "KPboostershot000",
+  "name": "Booster Shot",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 253,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityDam": {
+        "system": {
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "parts": [
+              {
+                "number": 2,
+                "denomination": 10,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "acid"
+              }
+            ]
+          },
+          "effects": []
+        },
+        "type": "damage",
+        "_id": "KPOGLactivityDam",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You imbue a two-handed ranged weapon (typically a shortbow, longbow, light crossbow, or heavy crossbow) that you touch with a random magical benefit. While the spell lasts, a projectile fired from the weapon has an effect that occurs on a hit in addition to its normal damage. Roll a d6 to determine the additional effect for each casting of this spell.<table><tr><th>D6</th><th>EFFECT</th></tr><tr><td>1</td><td>2d10 acid damage to all creatures within 10 feet of the target</td></tr><tr><td>2</td><td>2d10 lightning damage to the target and 1d10 lightning damage to all creatures in a 5-foot-wide line between the weapon and the target</td></tr><tr><td>3</td><td>2d10 necrotic damage to the target, and the target has disadvantage on its first attack roll before the start of the weapon user’s next turn</td></tr><tr><td>4</td><td>2d10 cold damage to the target and 1d10 cold damage to all other creatures in a 60-foot cone in front of the weapon</td></tr><tr><td>5</td><td>2d10 force damage to the target, and the target is pushed 20 feet</td></tr><tr><td>6</td><td>2d10 psychic damage to the target, and the target is stunned until the start of the weapon user’s next turn</td></tr></table><br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 4th level or higher, all damage increases by 1d10 for each slot level above 3rd.</table><br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "booster-shot"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "evocation",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "",
+        "special": "",
+        "type": ""
+      },
+      "template": {
+        "count": "",
+        "connected": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPboostershot000"
+}

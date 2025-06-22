@@ -1,0 +1,169 @@
+{
+  "_id": "KPinstantarmored",
+  "name": "Instant Armored Vehicle",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 712,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 5,
+                "denomination": 8,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "bludgeoning"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "dexterity",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "60"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You transform a handful of materials into a Huge armored vehicle. The vehicle can take whatever form you want, but it has AC 18, 100 hit points, and a carrying capacity of 1,000 pounds. If it is reduced to 0 hit points, it is destroyed. If it is a ground vehicle, it has a speed of 90 feet. If it is an airborne vehicle, it has a flying speed of 45 feet. If it is a waterborne vehicle, it has a speed of 2 miles per hour. The vehicle can hold up to four Medium creatures within it. A creature inside it has three-quarters cover from attacks outside the vehicle, which contains arrow slits, portholes, and other small openings.<br>A creature piloting the armored vehicle can take the Careen action.To do so, the vehicle must move at least 10 feet in a straight line and enter or pass through the space of at least one Large or smaller creature.This movement doesn’t provoke opportunity attacks. Each creature in the armored vehicle’s path must make a Dexterity saving throw against your spell save DC. On a failed save, the creature takes 5d8 bludgeoning damage and is knocked prone. On a successful save, the creature can choose to be pushed 5 feet away from the space through which the vehicle passed. A creature that chooses not to be pushed suffers the consequences of a failed saving throw. If the creature piloting the armored vehicle isn’t proficient in land, water, or air vehicles (whichever is appropriate for the vehicle’s type), each target has advantage on the saving throw against the Careen action.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "ToH",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "instant-armored-vehicle"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 6
+    },
+    "components": {
+      "material": {
+        "description": "a diamond, metal scraps, and screws worth a combined value of at least 1,000 gp, which the spell consumes",
+        "consumed": false,
+        "cost": 1000
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Instantaneous"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "",
+        "special": "",
+        "type": ""
+      },
+      "template": {
+        "count": "",
+        "connected": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPinstantarmored"
+}

@@ -1,0 +1,142 @@
+{
+  "_id": "KPlegionofrabids",
+  "name": "Legion of Rabid Squirrels",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 748,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>While in a forest, you call a legion of rabid squirrels to descend from the nearby trees at a point you can see within range. The squirrels form into a swarm that uses the statistics of a @UUID[Compendium.black-flag.npcs.Actor.EPPs9D9dOiv1aMvP]{swarm of poisonous snakes}, except it has a climbing speed of 30 feet rather than a swimming speed. The legion of squirrels is friendly to you and your companions. Roll initiative for the legion, which has its own turns. The legion of squirrels obeys your verbal commands (no action required by you). If you don’t issue any commands to the legion, it defends itself from hostile creatures but otherwise takes no actions. If you command it to move farther than 60 feet from you, the spell ends and the legion disperses back into the forest. A canid, such as a dog, wolf, fox, or worg, has disadvantage on attack rolls against targets other than the legion of rabid squirrels while the swarm is within 60 feet of the creature. When the spell ends, the squirrels disperse back into the forest.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 4th level or higher, the legion’s poison damage increases by 1d6 for each slot level above 3rd.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "legion-of-rabid-squirrels"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "an acorn or nut",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "60",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPlegionofrabids"
+}

@@ -1,0 +1,146 @@
+{
+  "_id": "KPpowerwordplagu",
+  "name": "Power Word Plague",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 907,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "60"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You speak a word of power, infecting a creature within range that can see and hear you with a virulent disease. If the target has 150 hit points or fewer, it contracts the disease. In addition, choose a number of creatures equal to your spellcasting ability modifier within 30 feet of the target. Each of those creatures must succeed on a Constitution saving throw or also contract the disease. These secondary targets can have any hit point total.<br>While diseased, a target suffers the following effects:<ul><li>At the start of each of its turns, the target’s hit point maximum decreases by 20.</li><li>The target can’t regain hit points, except by magical spells higher than 5th level.</li><li>The target’s speed is halved. The disease ends on a creature when the creature is reduced to 0 hit points.</li><br>The disease can also be ended by a <em>@UUID[Compendium.black-flag.spells.Item.ZTVg00JolCuPkOOX]{greater restoration}, @UUID[Compendium.black-flag.spells.Item.46Yd7ExOTYuRanOs]{heal}</em>, or <em>@UUID[Compendium.black-flag.spells.Item.TB5mhD1xitrWMfX6]{wish}</em> spell.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "power-word-plague"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 8
+    },
+    "components": {
+      "material": {
+        "description": "a vial containing diseased skin",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Instantaneous"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "nec",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "30",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPpowerwordplagu"
+}

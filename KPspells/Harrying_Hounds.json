@@ -1,0 +1,147 @@
+{
+  "_id": "KPharryinghounds",
+  "name": "Harrying Hounds",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 647,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "180"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>When you cast this spell, choose a direction (north, south, northeast, or the like). Each creature in a 20-foot-radius sphere centered on a point you choose within range must succeed on a Wisdom saving throw when you cast this spell or be affected by it.<br>When an affected creature travels, it travels at a fast pace in the opposite direction of the one you chose, as it believes a pack of dogs or wolves follows it from the chosen direction. When an affected creature isn’t traveling, it is frightened of your chosen direction. The affected creature occasionally hears howls or sees glowing eyes in the darkness at the edge of its vision in that direction. An affected creature will not stop at a destination, instead pacing half-circles around the destination until the effect ends, terrified that the pack will overcome it if it stops moving. An affected creature can make a Wisdom saving throw at the end of each 4-hour period, ending the effect on itself on a success.<br>An affected creature moves along the safest available route unless it has nowhere to move, such as if it arrives at the edge of a cliff. When an affected creature can’t safely move in the opposite direction from your chosen direction, it cowers in place, defending itself from hostile creatures, but otherwise takes no actions. In such circumstances, the affected creature can repeat the saving throw every minute, ending the effect on itself on a success. The spell’s effect is suspended when an affected creature is engaged in combat, enabling it to move as necessary to face hostile creatures.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 6th level or higher, the duration increases by 4 hours for each slot level above 5th. If an affected creature travels for more than 8 hours, it risks exhaustion as if on a forced march.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "harrying-hounds"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 5
+    },
+    "components": {
+      "material": {
+        "description": "a tuft of fur from a hunting dog",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 8,
+      "units": "hour"
+    },
+    "range": {
+      "value": "180",
+      "units": "foot"
+    },
+    "school": "necromancy",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "sphere",
+        "size": "20",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPharryinghounds"
+}

@@ -1,0 +1,140 @@
+{
+  "_id": "KPchrysalis00000",
+  "name": "Chrysalis",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 314,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "which you take when a friendly creature you can see within 60 feet of you is reduced to 0 hit points",
+          "override": false,
+          "primary": true,
+          "type": "reaction",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>A protective chrysalis surrounds a creature you can see within range as it is reduced to 0 hit points. While protected in this way, the target is still unconscious from being reduced to 0 hit points, but unlike when a creature is normally unconscious, attacks from attackers within 5 feet aren’t automatically critical hits. In addition, the target has three-quarters cover and isn’t prone while protected. The target must make applicable death saving throws, as normal.<br>The chrysalis has hit points equal to 5d8 + three times your spellcasting ability modifier. When the protected target would take damage, the chrysalis takes the damage instead. The chrysalis is destroyed when it has 0 hit points.<br>If the chrysalis remains at the end of your next turn, the target regains hit points equal to the chrysalis’s remaining hit points, then the chrysalis crumbles to dust and is destroyed. As the chrysalis crumbles, spectral wings manifest on the target’s back, and the target gains a flying speed of 30 feet for 1 minute.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "chrysalis"
+    },
+    "casting": {
+      "type": "reaction",
+      "condition": "which you take when a friendly creature you can see within 60 feet of you is reduced to 0 hit points"
+    },
+    "circle": {
+      "base": 5
+    },
+    "components": {
+      "material": {
+        "description": "a caterpillar cocoon",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "round"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "5",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPchrysalis00000"
+}

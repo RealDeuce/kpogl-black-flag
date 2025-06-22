@@ -1,0 +1,147 @@
+{
+  "_id": "KPinstantsnare00",
+  "name": "Instant Snare",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 715,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "dexterity",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "120"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You create a snare on a point you can see within range. You can leave the snare as a magical trap, or you can use your reaction to trigger the trap when a Large or smaller creature you can see moves within 10 feet of the snare. If you leave the snare as a trap, a creature must succeed on an Intelligence (Investigation) or Wisdom (Perception) check against your spell save DC to find the trap.<br>When a Large or smaller creature moves within 5 feet of the snare, the trap triggers. The creature must succeed on a Dexterity saving throw or be magically pulled into the air. The creature is restrained and hangs upside down 5 feet above the snare’s location for 1 minute. A restrained creature can repeat the saving throw at the end of each of its turns, escaping the snare on a success. Alternatively, a creature, including the restrained target, can use its action to make an Intelligence (Arcana) check against your spell save DC. On a success, the restrained creature is freed, and the snare resets itself 1 minute later. If the creature succeeds on the check by 5 or more, the snare is destroyed instead.<br>This spell alerts you with a ping in your mind when the trap is triggered if you are within 1 mile of the snare. This ping awakens you if you are sleeping.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 3rd level or higher, you can create one additional snare for each slot level above 2nd. When you receive the mental ping that a trap was triggered, you know which snare was triggered if you have more than one.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "instant-snare"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 2
+    },
+    "components": {
+      "material": {
+        "description": "a loop of twine",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 24,
+      "units": "hour"
+    },
+    "range": {
+      "value": "120",
+      "units": "foot"
+    },
+    "school": "abjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "10",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPinstantsnare00"
+}

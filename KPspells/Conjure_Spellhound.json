@@ -1,0 +1,148 @@
+{
+  "_id": "KPconjurespellho",
+  "name": "Conjure Spellhound",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 358,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": "14"
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "90"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You summon a spellhound, a Large hound with a shimmering, multihued coat, in an unoccupied space you can see within range. The spellhound disappears when it drops to 0 hit points or when the spell ends.<br>The spellhound is friendly to you and your companions for the duration. Roll initiative for the creature, which has its own turns. It obeys any verbal commands that you issue to it (no action required by you). If you don’t issue any commands to the spellhound, it defends itself from hostile creatures but otherwise takes no actions. While you control the spellhound, you and your companions are immune to the spellhound’s Nullifying Howl.<br>If your concentration is broken, the spellhound doesn’t disappear. Instead, you lose control of the spellhound, it becomes hostile toward you and your companions, and it might attack. An uncontrolled spellhound can’t be dismissed by you, and it disappears 1 hour after you summoned it.<br>The GM has the spellhound’s statistics, using a @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPspellhound0000]{spellhound} or a @UUID[Compendium.black-flag.npcs.Actor.rgZKxFrXIhvhMoPe]{winter wolf} with the following action:<br><em><strong>Nullifying Howl (1/Day).</strong></em> The spellhound lets out a high-pitched, multiphonic howl to disrupt magical effects within 60 feet of it. Any spell of 3rd level or lower within the area ends. For each spell of 4th-level or higher in the area, the spellhound makes an ability check, adding its Constitution modifier to the roll. The DC equals 10 + the spell’s level. On a success, the spell ends. In addition, each spellcaster within 30 feet of the spellhound that can hear the howl must succeed on a DC 14 Constitution saving throw or be stunned until the end of its next turn.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using certain higher-level spell slots, more spellhounds appear: two with a 6th-level slot and three with an 8th-level slot.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "conjure-spellhound"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 4
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": "90",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "1",
+        "type": ""
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPconjurespellho"
+}

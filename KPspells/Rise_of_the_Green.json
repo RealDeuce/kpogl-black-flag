@@ -1,0 +1,170 @@
+{
+  "_id": "KPriseofthegreen",
+  "name": "Rise of the Green",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 971,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 1,
+                "denomination": 6,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "bludgeoning"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "strength",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "180"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>The spell gives life to existing plants in range. If there are no plants in range, the spell creates undergrowth and trees that persist for the duration. One of the trees becomes a treant friendly to you and your companions. Roll initiative for the treant, which has its own turn. It obeys any verbal commands that you issue to it. If you don’t issue it any commands, it defends itself from hostile creatures but otherwise takes no actions.<br>The animated undergrowth creates difficult terrain for your enemies. Additionally, at the beginning of each of your turns, all creatures that are on the ground in range must succeed on a Strength saving throw or become restrained until the spell ends. A restrained creature can use an action to make a Strength (Athletics) check against your spell save DC, ending the effect on itself on a success. If a creature is restrained by plants at the beginning of your turn, it takes 1d6 bludgeoning damage.<br>Finally, the trees swing at each enemy in range, requiring each creature to make a Dexterity saving throw. A creature takes 6d6 bludgeoning damage on a failed save or half as much damage on a successful one.<br>You can use a bonus action to recenter the spell on yourself. This does not grow additional trees in areas that previously had none.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a 9th-level slot, an additional tree becomes a treant, the undergrowth deals an additional 1d6 bludgeoning damage, and the trees inflict an additional 2d6 bludgeoning damage.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "WG3",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "rise-of-the-green"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 8
+    },
+    "components": {
+      "material": {
+        "description": "a cutting from a treant",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "range": {
+      "value": "180",
+      "units": "foot"
+    },
+    "school": "evocation",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "",
+        "special": "",
+        "type": ""
+      },
+      "template": {
+        "count": "",
+        "connected": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPriseofthegreen"
+}

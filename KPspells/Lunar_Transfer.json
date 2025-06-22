@@ -1,0 +1,163 @@
+{
+  "_id": "KPlunartransfer0",
+  "name": "Lunar Transfer",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 785,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 2,
+                "denomination": 12,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "force"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "200"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>This spell instantly summons a glittering moonbeam that transports one sleeping creature or object of your choice that you can see within range to a destination you select. If you target a creature hostile to you, it can make a Wisdom saving throw. On a successful save, the spell fails, and you appear in the target location instead. A transferred creature wakes up as soon as it arrives at its destination. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can’t be held or carried by a creature hostile to you. The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether the creature or object arrives there successfully.<br>The GM rolls a d20 and consults the Lunar Transfer table below.<ul><li>Grove or Magic Circle means a hallowed druid grove or a permanent teleportation circle whose sigil sequence you know.</li><li>Memento means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard’s library, bed linen from a royal suite, or a chunk of marble from a lich’s secret tomb.</li><li>Very Familiar is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell.</li><li>Seen Casually is someplace you have seen more than once but with which you aren’t very familiar.</li><li>Viewed Once is a place you have seen once, possibly using magic.</li><li>Description is a place whose location and appearance you know through someone else’s description, perhaps from a map.</li><li>False Destination is a place that doesn’t exist. Perhaps you tried to scry an enemy’s sanctum but instead viewed an illusion, or perhaps you are attempting to teleport to a familiar location that no longer exists.</li><table><tr><th>d20</th><th>Grove or Circle</th><th>Memento</th><th>Very Familiar</th><th>Seen Casually</th><th>Viewed Once</th><th>Description</th><th>False Destination</th></tr><tr><td>1</td><td>Similar area</td><td>Mishap</td><td>Mishap</td><td>Mishap</td><td>Mishap</td><td>Mishap</td><td>Mishap</td></tr><tr><td>2-5</td><td>Off target</td><td>Similar</td><td>Similar</td><td>Similar</td><td>Mishap</td><td>Mishap</td><td>Mishap</td></tr><tr><td>6-9</td><td>On target</td><td>Off target</td><td>Off target</td><td>Similar</td><td>Similar</td><td>Similar</td><td>Mishap</td></tr><tr><td>10-13</td><td>On target</td><td>On target</td><td>Off target</td><td>Off target</td><td>Off target</td><td>Similar</td><td>Similar</td></tr><tr><td>14-17</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>Off target</td><td>Similar</td></tr><tr><td>18-19</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>Similar</td></tr><tr><td>20</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>On target</td><td>Similar</td></tr></table><br><em><strong>On Target.</strong></em> The target creature or object appears where you want it to.</table><br><em><strong>Off Target.</strong></em> The target creature or object appears a random distance away from the destination in a random direction. Distance off target is 5 miles times a d20 roll, though never more than half the distance traveled. For example, if you sent someone 250 miles and they landed off target, and you rolled an 8 on the d20, then they would arrive off target by 40 miles. If you had sent them only 20 miles, they could not be more than 10 miles off target. The GM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass. If you were teleporting someone to a coastal city and they wound up 20 miles out at sea, they could be in trouble.</table><br><em><strong>Similar.</strong></em> Your target creature or object winds up in a different area that’s visually or thematically similar to the target area. If you are sending someone to your home laboratory, for example, they might wind up in another wizard’s laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, the creature or object appears in the closest similar place, but since the spell has no range limit, they could conceivably wind up anywhere on the plane.</table><br><em><strong>Mishap.</strong></em> The spell’s unpredictable magic results in a difficult journey. The teleporting creature or object takes 2d12 force damage, and the GM rerolls on the table to see where you (instead of the target) wind up. (Multiple mishaps can occur, dealing damage each time.)</table><br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "lunar-transfer"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 4
+    },
+    "components": {
+      "material": {
+        "description": "an opal worth at least 500 gp, which the spell consumes",
+        "consumed": false,
+        "cost": 500
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Instantaneous"
+    },
+    "range": {
+      "value": "200",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "cube",
+        "size": "10",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPlunartransfer0"
+}

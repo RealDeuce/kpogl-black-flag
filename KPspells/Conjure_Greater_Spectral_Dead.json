@@ -1,0 +1,162 @@
+{
+  "_id": "KPconjuregreater",
+  "name": "Conjure Greater Spectral Dead",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 350,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityDam": {
+        "system": {
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "parts": [
+              {
+                "number": 1,
+                "denomination": 6,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "psychic"
+              }
+            ]
+          },
+          "effects": []
+        },
+        "type": "damage",
+        "_id": "KPOGLactivityDam",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "60"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You summon an incorporeal undead creature that appears in an unoccupied space you can see within range. You choose one of the following options for what appears:<ul><li>One @UUID[Compendium.black-flag.npcs.Actor.yE6PgxHymFFfBNSu]{wraith}</li><li>One @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPspectralguardi]{spectral guardian}</li><li>One @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPswarmofwolfspi]{swarm of wolf spirits}</li><br>Summoned creatures disappear when they drop to 0 hit points or when the spell ends.<br>The summoned creature doesn’t attack you or your companions for the duration. Roll initiative for the summoned creature, which has its own turns. The creature attacks your enemies and tries to stay within 60 feet of you, but it otherwise controls its own actions. The summoned creature despises being bound and might harm or impede you and your companions by any means at its disposal other than direct attacks if the opportunity arises. At the beginning of the creature’s turn, you can use your reaction to verbally command it. The creature obeys your commands for that turn, and you take 1d6 psychic damage at the end of the turn. If your concentration is broken, the creature doesn’t disappear. Instead, you can no longer command it, it becomes hostile to you and your companions, and it attacks you and your allies if it believes it has a chance to win the fight or to inflict meaningful harm; otherwise it flees. You can’t dismiss the uncontrolled creature, but it disappears 1 hour after you summoned it.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a 9th-level spell slot, you summon a @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPdeathwisp00000]{deathwisp} or two @UUID[Compendium.black-flag.npcs.Actor.i5ZMW53YK1mODw9r]{ghosts} instead.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "conjure-greater-spectral-dead"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 7
+    },
+    "components": {
+      "material": {
+        "description": "a handful of bone dust, a crystal prism worth at least 100 gp, and a platinum coin",
+        "consumed": false,
+        "cost": 100
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "1",
+        "type": ""
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPconjuregreater"
+}

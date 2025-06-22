@@ -1,0 +1,166 @@
+{
+  "_id": "KPsummonavatar00",
+  "name": "Summon Avatar",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 1132,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 1,
+                "denomination": 6,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "psychic"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "charisma",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": "15"
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "60"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You summon a worldly incarnation of a Great Old One, which appears in an unoccupied space you can see within range. This avatar manifests as an emanation of elder darkness, augmented by boons from the Void. Choose one of the following options for the type of avatar that appears. (Other options might be available if the GM allows.) An asterisk indicates a spell described in this section:<ul><li><em>Avatar of Cthulhu.</em> The incarnation is a @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPdeepone0000000]{deep one} that can innately cast <em>@UUID[Compendium.black-flag.spells.Item.lkBDXbx2O78UA8gz]{command}</em> and <em>@UUID[Compendium.koboldpressogl-bf.koboldpressspells.Item.KPsleepofthedeep]{sleep of the deep}</em> at will.</li><li><em>Avatar of Nyarlathotep.</em> The incarnation is a @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPdarkvoice00000]{dark voice} that can innately cast <em>@UUID[Compendium.black-flag.spells.Item.HorNiol8kDK0QGIo]{bane}</em> and <em>@UUID[Compendium.koboldpressogl-bf.koboldpressspells.Item.KPsemblanceofdre]{semblance of dread}</em> at will.</li><li><em>Avatar of Shub-Niggurath.</em> The incarnation is a @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPgoatman0000000]{goat-man} that can innately cast <em>@UUID[Compendium.koboldpressogl-bf.koboldpressspells.Item.KPblackgoatsbles]{Black Goat’s blessing}</em> and <em>@UUID[Compendium.koboldpressogl-bf.koboldpressspells.Item.KPunseenstrangle]{unseen strangler}</em> at will.</li><li><em>Avatar of Yog-Sothoth.</em> The incarnation is a human with 1d4 + 1 flesh warps that can innately cast <em>@UUID[Compendium.koboldpressogl-bf.koboldpressspells.Item.KPgiftofresilien]{gift of resilience}</em> and <em>@UUID[Compendium.black-flag.spells.Item.46QP4gtGhM6YXqQN]{thunderwave}</em> at will.</li><br>When the avatar appears, you must make a Charisma saving throw. On a success, the avatar is friendly to you and your allies. On a failed save, the avatar is friendly to no one and attacks the nearest creature, pursuing and fighting for as long as possible.<br>Roll initiative for the avatar, which takes its own turns. If it is friendly to you, it obeys verbal commands you issue to it (no action required by you). If the avatar has no command, it attacks the nearest creature.<br>Each round when you maintain concentration on the spell, you must make a successful DC 15 Wisdom saving throw at the end of your turn or take 1d6 psychic damage. If the total of this damage exceeds your Wisdom score, you gain 1 point of Void taint and you are afflicted with a form of short-term madness. The same penalty recurs when the damage exceeds twice your Wisdom score, three times your Wisdom score, and so forth, if you maintain concentration for that long.<br>The avatar disappears when it drops to 0 hit points or when the spell ends. If you stop concentrating before 1 hour has elapsed, it becomes uncontrolled and hostile until it disappears 1d6 rounds later or until it is killed.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "summon-avatar"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 9
+    },
+    "components": {
+      "material": {
+        "description": "a vial of the caster’s blood, a dried opium poppy, and a silver dagger",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "1",
+        "type": ""
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": [
+      "ritual",
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPsummonavatar00"
+}

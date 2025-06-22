@@ -1,0 +1,163 @@
+{
+  "_id": "KPblackwell00000",
+  "name": "Black Well",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 213,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 6,
+                "denomination": 8,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "necrotic"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "strength",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "300"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You summon a seething sphere of dark energy 5 feet in diameter at a point within range. The sphere pulls creatures toward it and devours the life force of those it envelops. Every creature other than you that starts its turn within 90 feet of the black well must make a successful Strength saving throw or be pulled 50 feet toward the well. A creature pulled into the well takes 6d8 necrotic damage and is stunned; a successful Constitution saving throw halves the damage and causes the creature to become incapacitated. A creature that starts its turn inside the well also makes a Constitution saving throw; the creature is stunned on a failed save or incapacitated on a success. An incapacitated creature that leaves the well recovers immediately and can take actions and reactions on that turn.<br>A creature takes damage only upon entering the well-it takes no additional damage for remaining there-but if it leaves the well and is pulled back in again, it takes damage again. A total of nine Medium creatures, three Large creatures, or one Huge creature can be inside the well’s other-dimensional space at one time. When the spell’s duration ends, all creatures inside it tumble out in a heap, landing prone.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a spell slot of 7th level or higher, the damage dealt by the well increases by 1d8-and the well pulls creatures an additional 5 feet-for each slot level above 6th.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "black-well"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 6
+    },
+    "components": {
+      "material": {
+        "description": "",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "300",
+      "units": "foot"
+    },
+    "school": "nec",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "sphere",
+        "size": "2.5",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPblackwell00000"
+}

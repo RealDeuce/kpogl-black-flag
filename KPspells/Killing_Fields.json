@@ -1,0 +1,147 @@
+{
+  "_id": "KPkillingfields0",
+  "name": "Killing Fields",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 730,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "300"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You invoke primal spirits of nature to transform natural terrain in a 100-foot cube in range into a private hunting preserve. The area can’t include manufactured structures and if such a structure exists in the area, the spell ends.<br>While you are conscious and within the area, you are aware of the presence and direction, though not exact location, of each beast and monstrosity with an Intelligence of 3 or lower in the area. When a beast or monstrosity with an Intelligence of 3 or lower tries to leave the area, it must make a Wisdom saving throw. On a failure, it is disoriented, uncertain of its surroundings or direction, and remains within the area for 1 hour. On a success, it leaves the area.<br>When you cast this spell, you can specify individuals that are helped by the area’s effects. All other creatures in the area are hindered by the area’s effects. You can also specify a password that, when spoken aloud, gives the speaker the benefits of being helped by the area’s effects.<br><em>Killing fields</em> creates the following effects within the area.<br><em><strong>Pack Hunters.</strong></em> A helped creature has advantage on attack rolls against a hindered creature if at least one helped ally is within 5 feet of the hindered creature and the helped ally isn’t incapacitated.<br><em><strong>Slaying.</strong></em> Once per turn, when a helped creature hits with any weapon, the weapon deals an extra 1d6 damage of the same type dealt by its weapon to a hindered creature.<br><em><strong>Tracking.</strong></em> A helped creature has advantage on Wisdom (Survival) and Dexterity (Stealth) checks against a hindered creature.<br>You can create a permanent killing field by casting this spell in the same location every day for one year. Structures built in the area after the killing field is permanent don’t end the spell.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "killing-fields"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 5
+    },
+    "components": {
+      "material": {
+        "description": "a game animal, which must be sacrificed as part of casting the spell",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 24,
+      "units": "hour"
+    },
+    "range": {
+      "value": "300",
+      "units": "foot"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "cube",
+        "size": "100",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPkillingfields0"
+}

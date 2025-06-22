@@ -1,0 +1,142 @@
+{
+  "_id": "KPrecreateevent0",
+  "name": "Recreate Event",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 953,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>Your magic summons an illusory recreation of an event, allowing you to watch and learn from different angles. When you cast this spell, choose a period of time you have experienced within the last 7 days that is up to 1 minute long. Illusory copies of the people, places, and events that existed within 30 feet of you during that minute fill the spell’s area. The illusion appears centered on the past version of you and is recreated from your perspective at the time you experienced it. The recreation is not limited to your line of sight, and it magically recreates everything that occurred within 30 feet of you at that time.<br>For the duration, you can command the illusion to replay, pause, speed up, or slow down as you wish. You and other creatures can walk within the illusory scene, investigating and watching the event. You have advantage on Intelligence (Investigation) and Wisdom (Perception) checks made while observing the event. The spell doesn’t provide insight into the minds of creatures that were present at that time, and it is limited to actions and movements that could have been observed by an average person experiencing the event. For example, it might depict wet footprints left by an invisible creature that walked past you during the event, but it wouldn’t reveal the invisible creature.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "recreate-event"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 7
+    },
+    "components": {
+      "material": {
+        "description": "a time piece made of brass and inlaid with diamonds worth at least 250 gp",
+        "consumed": false,
+        "cost": 250
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "illusion",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "cube",
+        "size": "30",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPrecreateevent0"
+}

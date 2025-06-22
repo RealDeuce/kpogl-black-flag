@@ -1,0 +1,165 @@
+{
+  "_id": "KPgreatersealofs",
+  "name": "Greater Seal of Sanctuary",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 630,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 15,
+                "denomination": 8,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "radiant"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "charisma",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You inscribe an angelic seal on the ground, the floor, or other solid surface of a structure. The seal creates a spherical sanctuary with a radius of 100 feet, centered on the seal. For the duration, aberrations, elementals, fey, fiends, and undead that approach to within 5 feet of the boundary know they are about to come into contact with a deadly barrier. If such a creature moves so as to touch the boundary, or tries to cross the boundary by any means, including teleportation and extradimensional travel, it must make a Charisma saving throw. On a failed save, it takes 15d8 radiant damage, is repelled to 5 feet outside the boundary, and can’t target anything inside the boundary with attacks, spells, or abilities until the spell ends. On a successful save, the creature takes half as much radiant damage and can cross the boundary. If the creature is a fiend that isn’t on its home plane, it is immediately destroyed (no saving throw) instead of taking damage.<br>Aberrations, elementals, fey, and undead that are within 100 feet of the seal (inside the boundary) have disadvantage on ability checks, attack rolls, and saving throws, and each such creature takes 4d8 radiant damage at the start of its turn.<br>Creatures other than aberrations, elementals, fey, fiends, and undead can’t be charmed or frightened while within 100 feet of the seal.<br>The seal has AC 18, 75 hit points, resistance to bludgeoning, piercing, and slashing damage, and immunity to psychic and poison damage. Ranged attacks against the seal are made with disadvantage. If it is scribed on the surface of an object that is later destroyed (such as a wooden door), the seal is not damaged and remains in place, perhaps suspended in midair. The spell ends only if the seal itself is reduced to 0 hit points.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "greater-seal-of-sanctuary"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 9
+    },
+    "components": {
+      "material": {
+        "description": "incense and special inks worth 500 gp, which the spell consumes",
+        "consumed": false,
+        "cost": 500
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 24,
+      "units": "hour"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "abjuration",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "100",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "ritual"
+    ]
+  },
+  "_key": "!items!KPgreatersealofs"
+}

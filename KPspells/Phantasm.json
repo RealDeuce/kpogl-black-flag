@@ -1,0 +1,171 @@
+{
+  "_id": "KPphantasm000000",
+  "name": "Phantasm",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 881,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 4,
+                "denomination": 10,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "psychic"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "self",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You reach out with your consciousness and influence the dreams of another creature. The creature must be on the same plane of existence as you and have a minimum Intelligence score of 7. If the target is not asleep or in meditation (in the case of elves or similar creatures) when the spell is cast, the spell fails. This spell has no effect on Constructs or Undead.<br>The target must make a Wisdom saving throw. On a failed save, the target’s dream becomes a nightmare, and it takes 4d10 psychic damage. On a successful save, the target takes half the damage, the spell ends, and you take 4d10 psychic damage as you are shoved from the dream. At the start of each of its turns, the target can make another Wisdom saving throw, taking 4d10 psychic damage on a failed save, or ending the spell on a successful one. Once the target succeeds on its saving throw, it can’t be affected by this spell again until 7 days have passed. The target can’t wake itself, but if it is awakened by an outside force or if it is reduced to 0 hit points, the spell ends.<br>If the target succeeds on the saving throw, it can make a Wisdom (Insight) check against your spell save DC. On a success, if the target is familiar with you, it recognizes you as the attacker. If the target succeeds but is unfamiliar with you, it doesn’t recognize you, though at the GM’s discretion, it may vaguely recognize you at a later date if you cross paths.<br>For the duration of the spell, your body lies in repose in the location you cast the spell. You are blind and deaf to your body’s surroundings, though you can feel and are aware if you take damage. If your body is moved, the spell ends. If your target is awakened, the spell ends.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell at 7th level or higher, you deal an additional 1d10 psychic damage per spell slot above 6th.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "phantasm"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 6
+    },
+    "components": {
+      "material": {
+        "description": "a sympathetic item from the target, a pinch of grave dirt, and powdered sapphire worth at least 5,000 gp, which the spell consumes",
+        "consumed": false,
+        "cost": 5000
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "illusion",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "",
+        "special": "",
+        "type": ""
+      },
+      "template": {
+        "count": "",
+        "connected": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "tags": [
+      "ritual",
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPphantasm000000"
+}

@@ -1,0 +1,149 @@
+{
+  "_id": "KPdoomofstackeds",
+  "name": "Doom of Stacked Stones",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 463,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "constitution",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "30"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You and three creatures of your choice within range must succeed on a Constitution saving throw when the spell is cast and again at the start of each of your turns while the spell is in effect. A creature whose saving throw fails is restrained. If one of the three targeted creatures fails this saving throw, as many as two other creatures (per initial target), each within 30 feet of the initial target, must make the same save. A restrained creature must continue to make saving throws each turn, and their condition worsens on a failure, as follows:<table><tr><th>Number of Turns Affected</th><th>Condition</th></tr><tr><td>1 (spell is cast)</td><td>Restrained</td></tr><tr><td>2</td><td>Incapacitated</td></tr><tr><td>3</td><td>Stunned</td></tr><tr><td>4</td><td>Paralyzed</td></tr><tr><td>5</td><td>Petrified (turned to stone)</td></tr></table><br>Each condition afflicted adds to the previous conditions. New saving throws reduce the severity of the condition affecting a target by one step on a success. If a target other than you succeeds on the saving throw while it is restrained, the spell ends for it. (You must make a saving throw each round. )</table><br>As with all concentration spells, you can end the spell at any time (no action required). If you are turned to stone, the spell ends after all affected creatures make their saving throws. Creatures recover immediately when the spell ends, except for creatures turned to stone, which remain that way until the effect is removed.</table><br>Creatures turned to stone can see, hear, and smell normally, but they don’t need to eat or breathe. If shatter is cast on a stone creature, it must succeed on a Constitution saving throw against the caster’s spell save DC or be killed.</table><br>Creatures transformed into stone can be restored with <em>@UUID[Compendium.black-flag.spells.Item.t61I6zrmEDPdOLfw]{dispel magic}, @UUID[Compendium.black-flag.spells.Item.ZTVg00JolCuPkOOX]{greater restoration}</em>, or comparable magic.</table><br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "doom-of-stacked-stones"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 6
+    },
+    "components": {
+      "material": {
+        "description": "a granite pebble",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "30",
+      "units": "foot"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "30",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPdoomofstackeds"
+}

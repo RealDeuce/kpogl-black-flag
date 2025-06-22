@@ -1,0 +1,147 @@
+{
+  "_id": "KPplaguehysteria",
+  "name": "Plague Hysteria",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 890,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>Your touch curses a creature that isn’t a Construct or Undead with the symptoms of a disease of your choice, which can include cackle fever, sewer plague, or any of the diseases caused by the contagion spell or found in the Random Disease table in Chapter 2. The target must succeed on a Wisdom saving throw or become convinced it is suffering from a disease, including manifesting physical symptoms. However, it suffers no actual damage, conditions, or penalties from this disease. All symptoms are superficial and vanish when the spell ends. This is a curse, not a disease, and as such, spells and effects that cure or detect diseases have no effect.<br>While cursed and manifesting symptoms, the target emits an aura of hysterical fear. A creature that isn’t a Construct or Undead and that comes within 60 feet of the target must succeed on a Wisdom saving throw or become frightened of the target.<br>While frightened, that creature must take the Dash action and move away from the target by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn’t have line of sight to the cursed target, the creature can make a Wisdom saving throw against your spell save DC, ending the frightened condition on itself on a success. If a creature’s saving throw is successful or the frightened effect ends for it, the creature can’t be frightened by this spell again for the next 24 hours.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "plague-hysteria"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 6
+    },
+    "components": {
+      "material": {
+        "description": "a pinch of ashes",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 24,
+      "units": "hour"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "nec",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "null",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPplaguehysteria"
+}

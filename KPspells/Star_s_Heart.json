@@ -1,0 +1,163 @@
+{
+  "_id": "KPstarsheart0000",
+  "name": "Star’s Heart",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 1103,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 8,
+                "denomination": 6,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "bludgeoning"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "strength",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "action",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "50"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>This spell increases gravity tenfold in a 50-foot radius centered on you. Each creature in the area other than you drops whatever it’s holding, falls prone, becomes incapacitated, and can’t move. If a solid object (such as the ground) is encountered when a flying or levitating creature falls, the creature takes three times the normal falling damage. Any creature except you that enters the area or starts its turn there must make a successful Strength saving throw or fall prone and become incapacitated and unable to move. A creature that starts its turn prone and incapacitated makes a Strength saving throw. On a failed save, the creature takes 8d6 bludgeoning damage; on a successful save, it takes 4d6 bludgeoning damage, it’s no longer incapacitated, and it can move at half speed.<br>All ranged weapon attacks inside the area have a normal range of 5 feet and a maximum range of 10 feet. The same applies to spells that create missiles that have mass, such as <em>@UUID[Compendium.black-flag.spells.Item.ZJcpzubvE6PLsS5c]{flaming sphere}</em>. A creature under the influence of a <em>@UUID[Compendium.black-flag.spells.Item.ebGqTLYBFxSDf3g7]{freedom of movement}</em> spell or comparable magic has advantage on the Strength saving throws required by this spell, and its speed isn’t reduced once it recovers from being incapacitated.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "stars-heart"
+    },
+    "casting": {
+      "type": "action",
+      "condition": ""
+    },
+    "circle": {
+      "base": 9
+    },
+    "components": {
+      "material": {
+        "description": "an ioun stone",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "minute"
+    },
+    "range": {
+      "value": "50",
+      "units": "foot"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "50",
+        "units": "foot"
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPstarsheart0000"
+}

@@ -1,0 +1,148 @@
+{
+  "_id": "KPbloodstrike000",
+  "name": "Blood Strike",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 232,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>By performing this ritual, you can cast a spell on one nearby creature and have it affect a different, more distant creature. Both targets must be related by blood (no more distantly than first cousins). Neither of them needs to be a willing target.<br>The <em>blood strike</em> ritual is completed first, taking 10 minutes to cast on yourself. Then the spell to be transferred is immediately cast by you on the initial target, which must be close enough to touch no matter what the spell's normal range is. The secondary target must be within 1 mile and on the same plane of existence as you. If the second spell allows a saving throw, it's made by the secondary target, not the initial target. If the saving throw succeeds, any portion of the spell that's avoided or negated by the secondary target affects the initial target instead.<br>A creature can be the secondary target of <em>blood strike</em> only once every 24 hours; subsequent attempts during that time take full effect against the initial target with no chance to affect the secondary target.<br>Only spells that have a single target can be transferred via blood stike. For example, a <em>@UUID[Compendium.black-flag.spells.Item.VYvD59yJYefhAwOI]{fireball}</em> spell can't be cast through <em>blood strike</em>, but <em>@UUID[Compendium.black-flag.spells.Item.RBoSYpr3alIlLBro]{magic missile}</em> or <em>@UUID[Compendium.black-flag.spells.Item.fUkZjWTGW0wFntSB]{gaseous form}</em> can be.<br>Alternatively, you can choose one affliction (anything that could be cured by <em>@UUID[Compendium.black-flag.spells.Item.ZTVg00JolCuPkOOX]{greater restoration}</em> or <em>@UUID[Compendium.black-flag.spells.Item.Aqff6XGGmiVXo6A6]{lesser restoration}</em>) currently affecting the initial creature and transfer it to the secondary creature, which then makes any applicable saving throw against the effect. If the saving throw fails or there is no saving throw, the affliction transfers completely and no longer affects the initial target. If the saving throw succeeds, the initial creature is still afflicted and also suffers anew any damage or conditions associated with first exposure to the affliction.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DC&SS",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "blood-strike"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 5
+    },
+    "components": {
+      "material": {
+        "description": "a blood relative of the target",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Special (see below)"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "nec",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "",
+        "special": "",
+        "type": ""
+      },
+      "template": {
+        "count": "",
+        "connected": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "tags": [
+      "ritual"
+    ]
+  },
+  "_key": "!items!KPbloodstrike000"
+}

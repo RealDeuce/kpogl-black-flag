@@ -1,0 +1,169 @@
+{
+  "_id": "KPmolechsblessin",
+  "name": "Molech's Blessing",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 828,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 1,
+                "denomination": 10,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "",
+                  "number": null,
+                  "formula": ""
+                },
+                "type": "fire"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": "15"
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "hour",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p><em><strong>Deep Magic: </strong>clockwork ritual</em><br>You call upon the dark blessings of the furnace god Molech. In an hour-long ritual begun at midnight, you dedicate a living being to Molech by branding the deity’s symbol onto the victim’s forehead. If the ritual is completed and the victim fails to make a successful Wisdom saving throw (or the victim chooses not to make one), the being is transformed into an avatar of Molech under your control.<br>The avatar is 8 feet tall and appears to be made of black iron wreathed in flames. Its eyes, mouth, and a portion of its torso are cut away to show the churning fire inside that crackles with wailing voices. The avatar has all the statistics and abilities of an @UUID[Compendium.black-flag.npcs.Actor.AbtSnvjVHTDzZciV]{earth elemental}, with the following differences:<ul><li>Alignment is Neutral Evil;</li><li>Speed is 50 feet and it cannot burrow or use earth glide;</li><li>it gains the fire form ability of a fire elemental, but it cannot squeeze through small spaces;</li><li>its Slam does an additional 1d10 fire damage.</li><br>This transformation lasts for 24 hours. At the end of that time, the subject returns to its normal state and takes 77 (14d10) fire damage, or half damage with a successful DC 15 Constitution saving throw.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM:Cw",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "molechs-blessing"
+    },
+    "casting": {
+      "type": "hour",
+      "condition": ""
+    },
+    "circle": {
+      "base": 7
+    },
+    "components": {
+      "material": {
+        "description": "a sentient being and a branding iron with Molech’s symbol",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": null,
+      "units": "Instantaneous"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "",
+        "special": "",
+        "type": ""
+      },
+      "template": {
+        "count": "",
+        "connected": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPmolechsblessin"
+}

@@ -1,0 +1,149 @@
+{
+  "_id": "KPfaerietoast000",
+  "name": "Faerie Toast",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 537,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": []
+          },
+          "effects": [],
+          "ability": "wisdom",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": ""
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "touch",
+          "value": "0"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You and up to five other creatures make a toast and drink to the lords and ladies of the fey. When you cast the spell, choose one of the following toasts, the targets of which must be within 10 feet of you throughout the casting.<br><em><strong>Commiseration.</strong></em> Spellcasting participants can form or join a hag coven. While in the coven, each of the participants can share spell slots among themselves. Spells known by one member of the coven are known by all members of the coven for the duration and can be cast using any of the shared spell slots.<br><em><strong>Friendship.</strong></em> For the duration, each of the participants in the toast becomes Fey, in place of its original type, and it has advantage on the first Charisma check it makes against a Fey each minute.<br><em><strong>Husbandry.</strong></em> For the duration, each of the participants can communicate with Beasts as though they shared a language (though they gain no magical ability to influence the creatures).<br><em><strong>Nightmares.</strong></em> For the duration, the first time a creature comes within 30 feet of one of the participants, that creature must make a Wisdom saving throw or be frightened of all the participants for 1 minute.<br><em><strong>Playfulness.</strong></em> For the duration, each of the participants grows gossamer wings, and it can use a bonus action to flutter the wings and gain a flying speed equal to its walking speed. The participant must start and end its movement on a solid surface, such as a roof or the ground. If it is flying at the end of its turn, it falls to the ground and takes falling damage. If the participant flutters the wings again, the effect ends. When the wings have been used for a total of 1 minute, they disappear and this spell ends for that creature.<br><em><strong>Restfulness.</strong></em> For the duration, each of the participants gains advantage on saving throws against being charmed and can’t be put to sleep by a spell or other magical effect for the duration.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM2",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "faerie-toast"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 3
+    },
+    "components": {
+      "material": {
+        "description": "a bottle of wine worth at least 100 gp, which the spell consumes, and a cup for each participant",
+        "consumed": false,
+        "cost": 100
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 8,
+      "units": "hour"
+    },
+    "range": {
+      "value": "0",
+      "units": "touch"
+    },
+    "school": "transmutation",
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "connected": false,
+        "type": "radius",
+        "size": "10",
+        "units": "foot"
+      }
+    },
+    "tags": [
+      "ritual"
+    ]
+  },
+  "_key": "!items!KPfaerietoast000"
+}

@@ -1,0 +1,171 @@
+{
+  "_id": "KPsummoneldritch",
+  "name": "Summon Eldritch Servitor",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 1134,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivitySav": {
+        "system": {
+          "damage": {
+            "parts": [
+              {
+                "number": 1,
+                "denomination": 4,
+                "bonus": "",
+                "custom": {
+                  "enabled": false,
+                  "formula": ""
+                },
+                "scaling": {
+                  "mode": "whole",
+                  "number": 1
+                },
+                "type": "psychic"
+              }
+            ]
+          },
+          "effects": [],
+          "ability": "charisma",
+          "dc": {
+            "ability": "spellcasting",
+            "formula": "15"
+          }
+        },
+        "type": "save",
+        "_id": "KPOGLactivitySav",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {
+          "override": false,
+          "special": "",
+          "units": "foot",
+          "value": "60"
+        },
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You summon eldritch aberrations that appear in unoccupied spaces you can see within range. Choose one of the following options for what appears:<ul><li>Two @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPghastofleng000]{ghasts of Leng}</li><li>One @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPshantak0000000]{shantak}</li><br>When the summoned creatures appear, you must make a Charisma saving throw. On a success, the creatures are friendly to you and your allies. On a failure, the creatures are friendly to no one and attack the nearest creatures, pursuing and fighting for as long as possible.<br>Roll initiative for the summoned creatures, which take their own turns as a group. If friendly to you, they obey your verbal commands (no action required by you to issue a command), or they attack the nearest living creature if they are not commanded otherwise.<br>Each round when you maintain concentration on the spell, you must make a successful DC 15 Wisdom saving throw at the end of your turn or take 1d4 psychic damage. If the total of this damage exceeds your Wisdom score, you gain 1 point of Void taint and you are afflicted with a form of short-term madness. The same penalty applies when the damage exceeds twice your Wisdom score, three times your Wisdom score, and so forth, if you maintain concentration for that long.<br>A summoned creature disappears when it drops to 0 hit points or when the spell ends. If you stop concentrating on the spell before 1 hour has elapsed, the creatures become uncontrolled and hostile until they disappear 1d6 rounds later or until they are killed.<br><em><strong>At Higher Levels.</strong></em> When you cast this spell using a 7th-or 8th-level spell slot, you can summon four @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPghastofleng000]{ghasts of Leng} or a @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPhoundoftindalo]{hound of Tindalos}. When you cast it with a 9th-level spell slot, you can summon five @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPghastofleng000]{ghasts of Leng} or a @UUID[Compendium.koboldpressogl-bf.koboldpressmonsters.Actor.KPnightgaunt0000]{nightgaunt}.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "summon-eldritch-servitor"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 5
+    },
+    "components": {
+      "material": {
+        "description": "a vial of the caster’s blood and a silver dagger",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 1,
+      "units": "hour"
+    },
+    "range": {
+      "value": "60",
+      "units": "foot"
+    },
+    "school": "conjuration",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "",
+        "special": "",
+        "type": ""
+      },
+      "template": {
+        "count": "",
+        "connected": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": ""
+      }
+    },
+    "tags": [
+      "ritual",
+      "concentration"
+    ]
+  },
+  "_key": "!items!KPsummoneldritch"
+}

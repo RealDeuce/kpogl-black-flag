@@ -1,0 +1,140 @@
+{
+  "_id": "KPhuntersenduran",
+  "name": "Hunter’s Endurance",
+  "ownership": {
+    "default": 0
+  },
+  "type": "spell",
+  "sort": 684,
+  "flags": {
+    "black-flag": {
+      "relationship": {
+        "mode": "prepared",
+        "prepared": false,
+        "origin": {}
+      }
+    }
+  },
+  "img": "systems/dnd5e/icons/svg/items/spell.svg",
+  "effects": [],
+  "folder": null,
+  "system": {
+    "activities": {
+      "KPOGLactivityUtl": {
+        "system": {
+          "effects": []
+        },
+        "type": "utility",
+        "_id": "KPOGLactivityUtl",
+        "activation": {
+          "condition": "",
+          "override": false,
+          "primary": true,
+          "type": "minute",
+          "value": 1
+        },
+        "consumption": {
+          "scale": {
+            "allowed": false,
+            "max": ""
+          },
+          "targets": []
+        },
+        "duration": {
+          "concentration": false,
+          "override": false,
+          "special": "",
+          "units": "instantaneous",
+          "value": ""
+        },
+        "range": {},
+        "sort": 0,
+        "target": {
+          "affects": {
+            "choice": false,
+            "formula": "",
+            "special": "",
+            "type": ""
+          },
+          "template": {
+            "count": "",
+            "connected": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
+    },
+    "uses": {
+      "max": null
+    },
+    "description": {
+      "value": "<p>You call on the land to sustain you as you hunt your quarry. Describe or name a creature that is familiar to you. If you aren’t familiar with the target creature, you must use a fingernail, lock of hair, bit of fur, or drop of blood from it as a material component to target that creature with this spell.<br>Until the spell ends, you have advantage on all Wisdom (Perception) and Wisdom (Survival) checks to find and track the target, and you must actively pursue the target as if under a <em>@UUID[Compendium.black-flag.spells.Item.YSzXYjKJFknLj95F]{geas}</em>. In addition, you don’t suffer from exhaustion levels you gain from pursuing your quarry, such as from lack of rest or environmental hazards between you and the target, while the spell is active. When the spell ends, you suffer from all levels of exhaustion that were suspended by the spell. The spell ends only after 24 hours, when the target is dead, when the target is on a different plane, or when the target is restrained in your line of sight.<br>Content licensed under the @UUID[Compendium.koboldpressogl-bf.koboldpressjournal.JournalEntry.KoboldPressOGL00.JournalEntryPage.KoboldPressOGLpg]{Open Game License}",
+      "source": {
+        "book": "DM1",
+        "fallback": "",
+        "page": ""
+      }
+    },
+    "identifier": {
+      "value": "hunters-endurance"
+    },
+    "casting": {
+      "type": "minute",
+      "condition": ""
+    },
+    "circle": {
+      "base": 1
+    },
+    "components": {
+      "material": {
+        "description": "a fingernail, lock of hair, bit of fur, or drop of blood from the target, if unfamiliar",
+        "consumed": false,
+        "cost": 0
+      },
+      "required": [
+        "verbal",
+        "somatic",
+        "material"
+      ]
+    },
+    "duration": {
+      "value": 24,
+      "units": "hour"
+    },
+    "range": {
+      "value": "0",
+      "units": "self"
+    },
+    "school": "necromancy",
+    "target": {
+      "affects": {
+        "choice": false,
+        "formula": "1",
+        "type": "creature"
+      },
+      "template": {
+        "connected": false,
+        "units": ""
+      }
+    },
+    "tags": []
+  },
+  "_key": "!items!KPhuntersenduran"
+}
