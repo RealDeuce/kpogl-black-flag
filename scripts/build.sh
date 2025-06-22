@@ -12,5 +12,5 @@ pack KPjournal
 pack KPmonsters
 pack KPspells
 
-rm koboldpressogl.zip
-zip -r koboldpressogl.zip lang module.json packs
+rm koboldpressogl-bf.zip
+zip -r koboldpressogl-bf.zip lang module.json packs

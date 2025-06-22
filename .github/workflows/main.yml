@@ -28,7 +28,7 @@ jobs:
         draft: false
         prerelease: false
         token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: './module.json,./koboldpressogl.zip'
+        artifacts: './module.json,./koboldpressogl-bf.zip'
         tag: v${{ steps.get-version.outputs.version }}
     - name: Create Latest Release
       id: create_latest_release
@@ -39,5 +39,5 @@ jobs:
         draft: false
         prerelease: false
         token: ${{ secrets.GITHUB_TOKEN }}
-        artifacts: './module.json,./koboldpressogl.zip'
+        artifacts: './module.json,./koboldpressogl-bf.zip'
         tag: latest
